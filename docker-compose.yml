@@ -1,1 +1,14 @@
-
+versoin: "3"
+services:
+        unity:
+            build: App
+            expose: 
+                - "8080"
+        nginx:
+            build: 3rd-party Server/nginx
+            expose: 
+                - "8081:80"
+        test-service:
+            build: 3rd-party Server/test-service
+            expose: 
+                - "8081:80"
