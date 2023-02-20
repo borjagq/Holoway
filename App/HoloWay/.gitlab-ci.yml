@@ -14,7 +14,7 @@ variables:
   UNITY_DIR: $CI_PROJECT_DIR # this needs to be an absolute path. Defaults to the root of your tree.
 
 
-image: unityci/editor:windows-2021.3.17f1-base-1.0.1
+image: unityci/editor:ubuntu-2021.3.17f1-base-1.0.1
 
 
 
