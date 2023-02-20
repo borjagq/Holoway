@@ -63,7 +63,7 @@ get-activation-file:
       when: manual
   stage: prepare
   script:
-    - chmod +x ./ci/get_activation_file.sh && ./ci/get_activation_file.sh
+    - chmod +x /ci/get_activation_file.sh && /ci/get_activation_file.sh
   artifacts:
     paths:
       - $UNITY_ACTIVATION_FILE
