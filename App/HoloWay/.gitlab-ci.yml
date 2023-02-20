@@ -8,14 +8,15 @@ stages:
 variables:
   BUILD_NAME: HoloWay
   UNITY_ACTIVATION_FILE: ./unity3d.alf
+  UNITY_VERSION: "2021.3.17f1"
   IMAGE: unityci/editor # https://hub.docker.com/r/unityci/editor
-  IMAGE_VERSION: "2021.3.17f1" # This will automatically use latest v1.x.x, see https://github.com/game-ci/docker/releases
-  UNITY_DIR: ./ # this needs to be an absolute path. Defaults to the root of your tree.
-  # You can expose this in Unity via Application.version
-  VERSION_NUMBER_VAR: $CI_COMMIT_REF_SLUG-$CI_PIPELINE_ID-$CI_JOB_ID
-  VERSION_BUILD_VAR: $CI_PIPELINE_IID
+  IMAGE_VERSION: 1 # https://github.com/game-ci/docker/releases
+  UNITY_DIR: $CI_PROJECT_DIR # this needs to be an absolute path. Defaults to the root of your tree.
 
-image: $IMAGE:$UNITY_VERSION-base-$IMAGE_VERSION
+
+image: editor-windows-2021.3.17f1-base-1.0.1
+
+
 
 get-unity-version:
   image: alpine
@@ -23,10 +24,11 @@ get-unity-version:
   variables:
     GIT_DEPTH: 1
   script:
-    - echo UNITY_VERSION=2021.3.17f1 | tee prepare.env
+    - echo UNITY_VERSION=$(cat $UNITY_DIR/ProjectSettings/ProjectVersion.txt | grep "m_EditorVersion:.*" | awk '{ print $2}') | tee prepare.env
   artifacts:
     reports:
       dotenv: prepare.env
+
 
 .unity_before_script: &unity_before_script
   before_script:
