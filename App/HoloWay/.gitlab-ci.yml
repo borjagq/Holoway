@@ -32,7 +32,7 @@ get-unity-version:
 
 .unity_before_script: &unity_before_script
   before_script:
-    - chmod +x ./ci/before_script.sh && ./ci/before_script.sh
+    - chmod +x App/HoloWay/ci/before_script.sh && App/HoloWay/ci/before_script.sh
   needs:
     - job: get-unity-version
       artifacts: true
@@ -63,7 +63,7 @@ get-activation-file:
       when: manual
   stage: prepare
   script:
-    - chmod +x ./ci/get_activation_file.sh && ./ci/get_activation_file.sh
+    - chmod +x App/HoloWay/ci/get_activation_file.sh && App/HoloWay/ci/get_activation_file.sh
   artifacts:
     paths:
       - $UNITY_ACTIVATION_FILE
