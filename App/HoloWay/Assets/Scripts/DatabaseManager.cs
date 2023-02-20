@@ -23,14 +23,13 @@ public class DatabaseManager : MonoBehaviour
 
     public DatabaseManager()
     {
-
+        Debug.Log("Created");
     }
 
     void Start()
     {
         userID = SystemInfo.deviceUniqueIdentifier;
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
-        GetUserInfo();
     }
 
     public void CreateUser()
@@ -91,7 +90,7 @@ public class DatabaseManager : MonoBehaviour
 
     public string GetReturnedName()
     {
-        GetUserInfo();
+        
         return valNameReturned;
     }
 
