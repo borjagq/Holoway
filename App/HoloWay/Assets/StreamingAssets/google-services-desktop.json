@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "188073847643",
-    "project_id": "holoway-4a58e",
-    "storage_bucket": "holoway-4a58e.appspot.com"
+    "project_number": "412479265344",
+    "firebase_url": "https://holoway-e983c-default-rtdb.firebaseio.com",
+    "project_id": "holoway-e983c",
+    "storage_bucket": "holoway-e983c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:188073847643:android:7533ed124ac03deba5487e",
+        "mobilesdk_app_id": "1:412479265344:android:8240a72aff68ed749fdda5",
         "android_client_info": {
-          "package_name": "com.Holoway.firebasedb"
+          "package_name": "com.Holoway.DataBaseTest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "188073847643-ep886fbvbgfgstu1pduvpnbjeev62aj9.apps.googleusercontent.com",
+          "client_id": "412479265344-7mm0jpt7teodie2jb78j8hvo1mhdraqf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyABqiG47us4wOib70GvKchrCTC5_kd3Jfw"
+          "current_key": "AIzaSyCA_cToSi_r4kh_27ZJatfCgriSQehZpew"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "188073847643-ep886fbvbgfgstu1pduvpnbjeev62aj9.apps.googleusercontent.com",
+              "client_id": "412479265344-7mm0jpt7teodie2jb78j8hvo1mhdraqf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

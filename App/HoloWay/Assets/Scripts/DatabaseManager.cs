@@ -6,6 +6,7 @@ using Firebase;
 using Firebase.Database;
 using System;
 
+
 public class DatabaseManager : MonoBehaviour
 {
     public TMP_InputField Name;
@@ -14,21 +15,32 @@ public class DatabaseManager : MonoBehaviour
     public TMP_Text NameText;
     public TMP_Text GoldText;
 
-    private string userID;
-    private DatabaseReference dbReference;
+    private string userID { get; set; }
+    private DatabaseReference dbReference { get; set; }
+
+    public string valNameReturned;
+    public string valGoldReturned;
+
+    public DatabaseManager()
+    {
+
+    }
 
     void Start()
     {
         userID = SystemInfo.deviceUniqueIdentifier;
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        GetUserInfo();
     }
 
     public void CreateUser()
     {
         User newUser = new User(Name.text, int.Parse(Gold.text));
         string json = JsonUtility.ToJson(newUser);
-
+        Debug.Log(json);
         dbReference.Child("users").Child(userID).SetRawJsonValueAsync(json);
+
+        //CreateUserButton = !CreateUserButton;
     }
 
     
@@ -44,7 +56,8 @@ public class DatabaseManager : MonoBehaviour
 
             onCallback.Invoke(snapshot.Value.ToString());
 
-            Debug.Log(snapshot.Value.ToString());
+            valNameReturned = snapshot.Value.ToString();
+            //Debug.Log(valNameReturned);
         }
     }
 
@@ -60,7 +73,8 @@ public class DatabaseManager : MonoBehaviour
 
             onCallback.Invoke(int.Parse(snapshot.Value.ToString()));
 
-            Debug.Log(int.Parse(snapshot.Value.ToString()));
+            valGoldReturned = snapshot.Value.ToString();
+            //Debug.Log(int.Parse(valGoldReturned));
         }
     }
 
@@ -73,4 +87,18 @@ public class DatabaseManager : MonoBehaviour
             GoldText.text = gold.ToString();
         }));
     }
+
+
+    public string GetReturnedName()
+    {
+        GetUserInfo();
+        return valNameReturned;
+    }
+
+    public string GetReturnedGold()
+    {
+        GetUserInfo();
+        return valGoldReturned;
+    }
+
 }
