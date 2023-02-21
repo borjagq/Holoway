@@ -108,7 +108,7 @@ get-activation-file:
     - chmod +x App/HoloWay/ci/build.sh && App/HoloWay/ci/build.sh
   artifacts:
     paths:
-      - $UNITY_DIR/Builds/
+      - App/HoloWay/Builds/
   # https://gitlab.com/gableroux/unity3d-gitlab-ci-example/-/issues/83
   # you may need to remove or replace these to fit your need if you are using your own runners
   tags:
@@ -202,7 +202,7 @@ pages:
   image: alpine:latest
   stage: deploy
   script:
-    - mv "$UNITY_DIR/Builds/WebGL/${BUILD_NAME}" public
+    - mv "App/HoloWay/Builds/WebGL/${BUILD_NAME}" public
   artifacts:
     paths:
       - public
