@@ -41,7 +41,7 @@ get-unity-version:
   cache:
     key: "$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG-$TEST_PLATFORM"
     paths:
-      - $UNITY_DIR/Library/
+      - App/HoloWay/Library/
 
 .license: &license
   rules:
