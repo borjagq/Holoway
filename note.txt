@@ -1,0 +1,6 @@
+GTA kind of menu for interaction
+
+Interaction with some objects
+
+Add whiteboard into the room scene
+
