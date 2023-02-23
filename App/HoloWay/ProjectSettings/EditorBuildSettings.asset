@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/WebScenes/MainMenu.unity
-    guid: 354799e26b3356942bf3e69dc599fe5c
-  - enabled: 1
-    path: Assets/Scenes/WebScenes/AvatarRoom.unity
-    guid: 079b0f206882fe04397d58518e523f05
+  m_Scenes: []
   m_configObjects: {}
