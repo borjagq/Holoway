@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "generatedon": "2023-02-27T15:41:59Z",
+    "parser": "MultiReportParser (2x OpenCoverParser)",
+    "assemblies": 2,
+    "classes": 21,
+    "files": 21,
+    "coveredlines": 103,
+    "uncoveredlines": 467,
+    "coverablelines": 570,
+    "totallines": 1230,
+    "linecoverage": 18,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 15,
+    "totalmethods": 81,
+    "methodcoverage": 18.5
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "PlaymodeTests", "classes": 3, "coverage": 52.8, "coveredlines": 56, "coverablelines": 106, "totallines": 310, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 62.5, "coveredmethods": 10, "totalmethods": 16, "classesinassembly": [
+        { "name": "DatabasePlayModeTests", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "ExternalAPITests", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "LoginScreenTests", "coverage": 98.2, "coveredlines": 56, "coverablelines": 57, "totallines": 204, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10 } ] },
+      { "name": "Scripts", "classes": 18, "coverage": 10.1, "coveredlines": 47, "coverablelines": 464, "totallines": 920, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 7.6, "coveredmethods": 5, "totalmethods": 65, "classesinassembly": [
+        { "name": "APIHelper", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 159, "totallines": 262, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 },
+        { "name": "CameraTargettingScript", "coverage": 0, "coveredlines": 0, "coverablelines": 32, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "DatabaseManager", "coverage": 0, "coveredlines": 0, "coverablelines": 51, "totallines": 103, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
+        { "name": "FootstepBehaviour", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "FootstepBehaviourAnimator", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 21, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "GetExternalAPIData", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "LoginMenuScript", "coverage": 62.9, "coveredlines": 17, "coverablelines": 27, "totallines": 48, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
+        { "name": "LoginSceneInitialization", "coverage": 100, "coveredlines": 30, "coverablelines": 30, "totallines": 70, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
+        { "name": "MainMenuScript", "coverage": 0, "coveredlines": 0, "coverablelines": 39, "totallines": 77, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 11 },
+        { "name": "PlayerEmoticonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 20, "totallines": 34, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "PlayerMovementScript", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 99, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "StopShakingHands", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "StopSitToStand", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "StopStandToSit", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "StopWaving", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "TextCameraLookAt", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "User", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 } ] } ]
+  }
+}
