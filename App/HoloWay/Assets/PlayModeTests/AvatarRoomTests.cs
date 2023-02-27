@@ -14,6 +14,6 @@ public class AvatarRoomTests : InputTestFixture
     }
     public IEnumerator Test_MoveCharacter()
     {
-
+        yield return null;
     }
 }
