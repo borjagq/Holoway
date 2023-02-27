@@ -6,5 +6,8 @@ using NUnit.Framework;
 public class MainMenuTests
 {
     [SetUp]
+    public void Setup()
+    {
 
+    }
 }
