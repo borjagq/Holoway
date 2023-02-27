@@ -9,5 +9,6 @@ public class StopSitToStand : StateMachineBehaviour
     {
         
         animator.SetBool("IsStartStanding", false);
+        animator.SetBool("IsSitting", false);
     }
 }

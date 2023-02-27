@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Web/LoginMenu.unity
     guid: cc4f027e6307ee94a9d13ff5ce6d4d46
+  - enabled: 1
+    path: Assets/Scenes/Web/AvatarRoom.unity
+    guid: 079b0f206882fe04397d58518e523f05
   m_configObjects: {}

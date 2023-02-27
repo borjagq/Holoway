@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,11 +128,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (6)
+      value: Chair-5
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 49071651}
   - component: {fileID: 49071650}
   m_Layer: 0
-  m_Name: Table (3)
+  m_Name: Table-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,9 +434,44 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 16
+  m_Father: {fileID: 2087928139}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &121025305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121025306}
+  m_Layer: 0
+  m_Name: Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &121025306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121025305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1668316480}
+  - {fileID: 1623121773}
+  - {fileID: 396644896}
+  - {fileID: 657436334}
+  m_Father: {fileID: 1176551424}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121725460
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +740,7 @@ GameObject:
   - component: {fileID: 396644898}
   - component: {fileID: 396644897}
   m_Layer: 0
-  m_Name: Wall (2)
+  m_Name: Wall-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,13 +753,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396644895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 20, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 4
+  m_Father: {fileID: 121025306}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &396644897
 BoxCollider:
@@ -825,11 +860,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -885,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (1)
+      value: Chair-2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -945,11 +980,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1005,7 +1040,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (5)
+      value: Chair-8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -1141,7 +1176,7 @@ GameObject:
   - component: {fileID: 657436336}
   - component: {fileID: 657436335}
   m_Layer: 0
-  m_Name: Wall (3)
+  m_Name: Wall-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1154,13 +1189,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657436333}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 10}
   m_LocalScale: {x: 20, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 5
+  m_Father: {fileID: 121025306}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &657436335
 BoxCollider:
@@ -1656,7 +1691,7 @@ GameObject:
   - component: {fileID: 994639480}
   - component: {fileID: 994639479}
   m_Layer: 0
-  m_Name: Table (2)
+  m_Name: Table-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,8 +1775,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 15
+  m_Father: {fileID: 2087928139}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1066948686
 GameObject:
@@ -1797,11 +1832,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1857,7 +1892,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair
+      value: Chair-1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -2180,23 +2215,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2049892790}
-  - {fileID: 1726948593}
-  - {fileID: 1668316480}
-  - {fileID: 1623121773}
-  - {fileID: 396644896}
-  - {fileID: 657436334}
-  - {fileID: 1548353830}
-  - {fileID: 590867611}
-  - {fileID: 1186159103}
-  - {fileID: 1967211323}
-  - {fileID: 6940845}
-  - {fileID: 1879223409}
-  - {fileID: 1932004652}
-  - {fileID: 606748396}
-  - {fileID: 1914347378}
-  - {fileID: 994639482}
-  - {fileID: 49071653}
+  - {fileID: 1342519717}
+  - {fileID: 121025306}
+  - {fileID: 1778754618}
+  - {fileID: 2087928139}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2237,11 +2259,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2297,7 +2319,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (2)
+      value: Chair-3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -2777,6 +2799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Remy
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 35d04048776bec749aa693537ffe1f62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1630794972795428178, guid: 35d04048776bec749aa693537ffe1f62, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2877,6 +2903,39 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1342519716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342519717}
+  m_Layer: 0
+  m_Name: Floors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342519717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342519716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2049892790}
+  - {fileID: 1726948593}
+  m_Father: {fileID: 1176551424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1458186988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3241,7 @@ GameObject:
   - component: {fileID: 1623121775}
   - component: {fileID: 1623121774}
   m_Layer: 0
-  m_Name: Wall (1)
+  m_Name: Wall-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3195,13 +3254,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623121772}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10, y: 2, z: 0}
   m_LocalScale: {x: 0.1, y: 4, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 3
+  m_Father: {fileID: 121025306}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1623121774
 BoxCollider:
@@ -3279,7 +3338,7 @@ GameObject:
   - component: {fileID: 1668316482}
   - component: {fileID: 1668316481}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: Wall-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3292,13 +3351,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668316479}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10, y: 2, z: 0}
   m_LocalScale: {x: 0.1, y: 4, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 2
+  m_Father: {fileID: 121025306}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1668316481
 BoxCollider:
@@ -3376,7 +3435,7 @@ GameObject:
   - component: {fileID: 1726948595}
   - component: {fileID: 1726948594}
   m_Layer: 0
-  m_Name: Floor (1)
+  m_Name: Floor-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3394,7 +3453,7 @@ Transform:
   m_LocalScale: {x: 20, y: 0.1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
+  m_Father: {fileID: 1342519717}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1726948594
@@ -3536,6 +3595,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771761291}
   m_CullTransparentMesh: 1
+--- !u!1 &1778754617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1778754618}
+  m_Layer: 0
+  m_Name: Chairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778754618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778754617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1548353830}
+  - {fileID: 590867611}
+  - {fileID: 1186159103}
+  - {fileID: 1967211323}
+  - {fileID: 6940845}
+  - {fileID: 1879223409}
+  - {fileID: 1932004652}
+  - {fileID: 606748396}
+  m_Father: {fileID: 1176551424}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1806802485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,11 +3935,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3897,7 +3995,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (4)
+      value: Chair-6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -4080,7 +4178,7 @@ GameObject:
   - component: {fileID: 1914347376}
   - component: {fileID: 1914347375}
   m_Layer: 0
-  m_Name: Table (1)
+  m_Name: Table-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4164,19 +4262,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
-  m_RootOrder: 14
+  m_Father: {fileID: 2087928139}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1932004649
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4232,7 +4330,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (7)
+      value: Chair-7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -4383,11 +4481,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1176551424}
+    m_TransformParent: {fileID: 1778754618}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4443,7 +4541,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2cdee5e651076014eaffb66c9ab1e848, type: 2}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_Name
-      value: Green chair (3)
+      value: Chair-4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec9429633ca7dc4449bfb1e55ec38c04, type: 3}
       propertyPath: m_TagString
@@ -5089,7 +5187,7 @@ GameObject:
   - component: {fileID: 2049892792}
   - component: {fileID: 2049892791}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Floor-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5107,7 +5205,7 @@ Transform:
   m_LocalScale: {x: 20, y: 0.1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1176551424}
+  m_Father: {fileID: 1342519717}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2049892791
@@ -5178,6 +5276,40 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1c5fe719b13db84d8fdc6dc2648e77e, type: 3}
   m_PrefabInstance: {fileID: 2028865746}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2087928138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087928139}
+  m_Layer: 0
+  m_Name: Tables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2087928139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087928138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1914347378}
+  - {fileID: 994639482}
+  - {fileID: 49071653}
+  m_Father: {fileID: 1176551424}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2147015759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1c5fe719b13db84d8fdc6dc2648e77e, type: 3}
