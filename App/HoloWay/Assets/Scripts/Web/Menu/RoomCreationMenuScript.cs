@@ -24,4 +24,5 @@ public class RoomCreationMenuScript : MonoBehaviour
         else
             ConfirmButton.interactable= false;
     }
+
 }
