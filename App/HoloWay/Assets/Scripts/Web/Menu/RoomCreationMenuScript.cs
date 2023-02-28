@@ -1,21 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UIElements;
+/*using UnityEngine.UI;*/
 public class RoomCreationMenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public UnityEngine.UI.Button ConfirmButton;
+    public TMP_InputField RoomCodeInput;
     public void BackButtonOnClick()
     {
         SceneManager.LoadScene(1);
@@ -23,5 +16,12 @@ public class RoomCreationMenuScript : MonoBehaviour
     public void CreateRoomButtonOnClick()
     {
         SceneManager.LoadScene(3);
+    }
+    public void RoomCodeOnInput()
+    {
+        if(RoomCodeInput.text.Length > 0)
+            ConfirmButton.interactable = true;
+        else
+            ConfirmButton.interactable= false;
     }
 }

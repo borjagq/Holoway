@@ -4,6 +4,8 @@ using UnityEngine;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class RoomCreationMenuTests
 {
@@ -47,6 +49,45 @@ public class RoomCreationMenuTests
     {
         yield return null; //Skip a frame
         Assert.NotNull(GameObject.Find("UICanvas/Background/JoinRoomPanel/Text_CreateEmptyRoom"));
+    }
+    [UnityTest]
+    public IEnumerator Test_CheckCanvasRoomCodeTextField()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode"));
+    }
+    [UnityTest]
+    public IEnumerator Text_CheckConfirmButtonDisabled()
+    {
+        yield return null; //Skip a frame
+        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
+        Button button = ConfirmButton.GetComponent<Button>();
+        Assert.AreEqual(false, button.interactable);
+    }
+    [UnityTest]
+    public IEnumerator Text_CheckConfirmButtonOnInputEnable()
+    {
+        yield return null; //Skip a frame
+        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
+        GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("Test");
+        Button button = ConfirmButton.GetComponent<Button>();
+        yield return new WaitForSeconds(5f);
+        Assert.AreEqual(true, button.interactable);
+    }
+    [UnityTest]
+    public IEnumerator Text_CheckConfirmButtonOnInputRemoveDisable()
+    {
+        yield return null; //Skip a frame
+        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
+        GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("Test");
+        Button button = ConfirmButton.GetComponent<Button>();
+        yield return new WaitForSeconds(1f);
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("");
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(false, button.interactable);
+
     }
     [UnityTest]
     public IEnumerator Test_CheckCanvasCreateRoomCreateEmptyRoomButton()
@@ -96,4 +137,5 @@ public class RoomCreationMenuTests
         Assert.AreEqual(3, SceneManager.GetActiveScene().buildIndex);
 
     }
+
 }
