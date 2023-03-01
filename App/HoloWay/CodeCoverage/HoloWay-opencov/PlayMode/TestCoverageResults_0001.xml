@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
-  <Summary numSequencePoints="62" visitedSequencePoints="62" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="10" numClasses="10" visitedMethods="15" numMethods="15" />
+  <Summary numSequencePoints="77" visitedSequencePoints="77" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="12" numClasses="12" visitedMethods="18" numMethods="18" />
   <Modules>
     <Module>
-      <Summary numSequencePoints="19" visitedSequencePoints="19" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="7" numMethods="7" />
+      <Summary numSequencePoints="22" visitedSequencePoints="22" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="8" numMethods="8" />
       <ModuleTime>0001-01-01T00:00:00</ModuleTime>
       <ModuleName>Scripts</ModuleName>
       <Files>
@@ -41,8 +41,8 @@
               <Name>System.Void MainMenuScript::Start()</Name>
               <FileRef uid="18" />
               <SequencePoints>
-                <SequencePoint vc="7" uspid="1120" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="18" />
-                <SequencePoint vc="7" uspid="1121" ordinal="0" offset="1" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="9" uspid="1135" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="9" uspid="1136" ordinal="0" offset="1" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="18" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -52,15 +52,15 @@
               <Name>System.Void MainMenuScript::Update()</Name>
               <FileRef uid="18" />
               <SequencePoints>
-                <SequencePoint vc="2005" uspid="1122" ordinal="0" offset="0" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="18" />
-                <SequencePoint vc="2005" uspid="1123" ordinal="0" offset="1" sl="22" sc="5" el="22" ec="5" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="2630" uspid="1137" ordinal="0" offset="0" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="2630" uspid="1138" ordinal="0" offset="1" sl="22" sc="5" el="22" ec="5" bec="0" bev="0" fileid="18" />
               </SequencePoints>
               <BranchPoints />
             </Method>
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="15" visitedSequencePoints="15" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="5" numMethods="5" />
+          <Summary numSequencePoints="18" visitedSequencePoints="18" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
           <FullName>RoomSelectionMenuScript</FullName>
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
@@ -69,9 +69,9 @@
               <Name>System.Void RoomSelectionMenuScript::SelectRoom(System.Int32)</Name>
               <FileRef uid="20" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="1170" ordinal="0" offset="0" sl="9" sc="5" el="9" ec="5" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="3" uspid="1171" ordinal="0" offset="1" sl="10" sc="9" el="10" ec="9" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="3" uspid="1172" ordinal="0" offset="8" sl="11" sc="5" el="11" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1185" ordinal="0" offset="0" sl="9" sc="5" el="9" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1186" ordinal="0" offset="1" sl="10" sc="9" el="10" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1187" ordinal="0" offset="8" sl="11" sc="5" el="11" ec="5" bec="0" bev="0" fileid="20" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -81,9 +81,9 @@
               <Name>System.Int32 RoomSelectionMenuScript::GetSelectedRoomId()</Name>
               <FileRef uid="20" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="1173" ordinal="0" offset="0" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="3" uspid="1174" ordinal="0" offset="1" sl="14" sc="9" el="14" ec="9" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="3" uspid="1175" ordinal="0" offset="10" sl="15" sc="5" el="15" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1188" ordinal="0" offset="0" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1189" ordinal="0" offset="1" sl="14" sc="9" el="14" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="3" uspid="1190" ordinal="0" offset="10" sl="15" sc="5" el="15" ec="5" bec="0" bev="0" fileid="20" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -93,9 +93,9 @@
               <Name>System.Void RoomSelectionMenuScript::SelectRoomOneOnClick()</Name>
               <FileRef uid="20" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1176" ordinal="0" offset="0" sl="17" sc="5" el="17" ec="5" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1177" ordinal="0" offset="1" sl="18" sc="9" el="18" ec="9" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1178" ordinal="0" offset="9" sl="19" sc="5" el="19" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1191" ordinal="0" offset="0" sl="17" sc="5" el="17" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1192" ordinal="0" offset="1" sl="18" sc="9" el="18" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1193" ordinal="0" offset="9" sl="19" sc="5" el="19" ec="5" bec="0" bev="0" fileid="20" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -105,9 +105,9 @@
               <Name>System.Void RoomSelectionMenuScript::SelectRoomTwoOnClick()</Name>
               <FileRef uid="20" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1179" ordinal="0" offset="0" sl="21" sc="5" el="21" ec="5" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1180" ordinal="0" offset="1" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1181" ordinal="0" offset="9" sl="23" sc="5" el="23" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1194" ordinal="0" offset="0" sl="21" sc="5" el="21" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1195" ordinal="0" offset="1" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1196" ordinal="0" offset="9" sl="23" sc="5" el="23" ec="5" bec="0" bev="0" fileid="20" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -117,9 +117,21 @@
               <Name>System.Void RoomSelectionMenuScript::SelectRoomThreeOnClick()</Name>
               <FileRef uid="20" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1182" ordinal="0" offset="0" sl="25" sc="5" el="25" ec="5" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1183" ordinal="0" offset="1" sl="26" sc="9" el="26" ec="9" bec="0" bev="0" fileid="20" />
-                <SequencePoint vc="1" uspid="1184" ordinal="0" offset="9" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1197" ordinal="0" offset="0" sl="25" sc="5" el="25" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1198" ordinal="0" offset="1" sl="26" sc="9" el="26" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1199" ordinal="0" offset="9" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663382</MetadataToken>
+              <Name>System.Void RoomSelectionMenuScript::BackButtonOnClick()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1200" ordinal="0" offset="0" sl="29" sc="5" el="29" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1201" ordinal="0" offset="1" sl="30" sc="9" el="30" ec="9" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="1202" ordinal="0" offset="8" sl="31" sc="5" el="31" ec="5" bec="0" bev="0" fileid="20" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -128,7 +140,7 @@
       </Classes>
     </Module>
     <Module>
-      <Summary numSequencePoints="43" visitedSequencePoints="43" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="8" numClasses="8" visitedMethods="8" numMethods="8" />
+      <Summary numSequencePoints="55" visitedSequencePoints="55" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="10" numClasses="10" visitedMethods="10" numMethods="10" />
       <ModuleTime>0001-01-01T00:00:00</ModuleTime>
       <ModuleName>PlaymodeTests</ModuleName>
       <Files>
@@ -151,9 +163,9 @@
               <Name>System.Void RoomSelectionMenuTests::Setup()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="7" uspid="1325" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="7" uspid="1326" ordinal="0" offset="1" sl="15" sc="9" el="15" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="7" uspid="1327" ordinal="0" offset="8" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="9" uspid="1343" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="9" uspid="1344" ordinal="0" offset="1" sl="15" sc="9" el="15" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="9" uspid="1345" ordinal="0" offset="8" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -165,14 +177,14 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663536</MetadataToken>
+              <MetadataToken>100663538</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_CheckCanvas&gt;d__1::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1519" ordinal="0" offset="31" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1520" ordinal="0" offset="32" sl="21" sc="9" el="21" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1521" ordinal="0" offset="55" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1522" ordinal="0" offset="71" sl="23" sc="5" el="23" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1537" ordinal="0" offset="31" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1538" ordinal="0" offset="32" sl="21" sc="9" el="21" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1539" ordinal="0" offset="55" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1540" ordinal="0" offset="71" sl="23" sc="5" el="23" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -184,14 +196,14 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663542</MetadataToken>
+              <MetadataToken>100663544</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_Room1ButtonExistance&gt;d__2::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1523" ordinal="0" offset="31" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1524" ordinal="0" offset="32" sl="28" sc="9" el="28" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1525" ordinal="0" offset="55" sl="29" sc="9" el="29" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1526" ordinal="0" offset="71" sl="30" sc="5" el="30" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1541" ordinal="0" offset="31" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1542" ordinal="0" offset="32" sl="28" sc="9" el="28" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1543" ordinal="0" offset="55" sl="29" sc="9" el="29" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1544" ordinal="0" offset="71" sl="30" sc="5" el="30" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -203,14 +215,14 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663548</MetadataToken>
+              <MetadataToken>100663550</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_Room2ButtonExistance&gt;d__3::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1527" ordinal="0" offset="31" sl="33" sc="5" el="33" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1528" ordinal="0" offset="32" sl="34" sc="9" el="34" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1529" ordinal="0" offset="55" sl="35" sc="9" el="35" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1530" ordinal="0" offset="71" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1545" ordinal="0" offset="31" sl="33" sc="5" el="33" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1546" ordinal="0" offset="32" sl="34" sc="9" el="34" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1547" ordinal="0" offset="55" sl="35" sc="9" el="35" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1548" ordinal="0" offset="71" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -222,14 +234,14 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663554</MetadataToken>
+              <MetadataToken>100663556</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_Room3ButtonExistance&gt;d__4::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1531" ordinal="0" offset="31" sl="39" sc="5" el="39" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1532" ordinal="0" offset="32" sl="40" sc="9" el="40" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1533" ordinal="0" offset="55" sl="41" sc="9" el="41" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1534" ordinal="0" offset="71" sl="42" sc="5" el="42" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1549" ordinal="0" offset="31" sl="39" sc="5" el="39" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1550" ordinal="0" offset="32" sl="40" sc="9" el="40" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1551" ordinal="0" offset="55" sl="41" sc="9" el="41" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1552" ordinal="0" offset="71" sl="42" sc="5" el="42" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -241,18 +253,18 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663560</MetadataToken>
+              <MetadataToken>100663562</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_RoomSelectionButton1&gt;d__5::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1535" ordinal="0" offset="42" sl="47" sc="5" el="47" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1536" ordinal="0" offset="43" sl="48" sc="9" el="48" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1537" ordinal="0" offset="66" sl="49" sc="9" el="49" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1538" ordinal="0" offset="82" sl="50" sc="9" el="50" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1539" ordinal="0" offset="99" sl="51" sc="9" el="51" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1540" ordinal="0" offset="111" sl="52" sc="9" el="52" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1541" ordinal="0" offset="143" sl="53" sc="9" el="53" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1542" ordinal="0" offset="171" sl="54" sc="5" el="54" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1553" ordinal="0" offset="42" sl="47" sc="5" el="47" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1554" ordinal="0" offset="43" sl="48" sc="9" el="48" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1555" ordinal="0" offset="66" sl="49" sc="9" el="49" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1556" ordinal="0" offset="82" sl="50" sc="9" el="50" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1557" ordinal="0" offset="99" sl="51" sc="9" el="51" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1558" ordinal="0" offset="111" sl="52" sc="9" el="52" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1559" ordinal="0" offset="143" sl="53" sc="9" el="53" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1560" ordinal="0" offset="171" sl="54" sc="5" el="54" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -264,18 +276,18 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663566</MetadataToken>
+              <MetadataToken>100663568</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_RoomSelectionButton2&gt;d__6::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1543" ordinal="0" offset="42" sl="57" sc="5" el="57" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1544" ordinal="0" offset="43" sl="58" sc="9" el="58" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1545" ordinal="0" offset="66" sl="59" sc="9" el="59" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1546" ordinal="0" offset="82" sl="60" sc="9" el="60" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1547" ordinal="0" offset="99" sl="61" sc="9" el="61" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1548" ordinal="0" offset="111" sl="62" sc="9" el="62" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1549" ordinal="0" offset="143" sl="63" sc="9" el="63" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1550" ordinal="0" offset="171" sl="64" sc="5" el="64" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1561" ordinal="0" offset="42" sl="57" sc="5" el="57" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1562" ordinal="0" offset="43" sl="58" sc="9" el="58" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1563" ordinal="0" offset="66" sl="59" sc="9" el="59" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1564" ordinal="0" offset="82" sl="60" sc="9" el="60" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1565" ordinal="0" offset="99" sl="61" sc="9" el="61" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1566" ordinal="0" offset="111" sl="62" sc="9" el="62" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1567" ordinal="0" offset="143" sl="63" sc="9" el="63" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1568" ordinal="0" offset="171" sl="64" sc="5" el="64" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -287,18 +299,60 @@
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663572</MetadataToken>
+              <MetadataToken>100663574</MetadataToken>
               <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_RoomSelectionButton3&gt;d__7::MoveNext()</Name>
               <FileRef uid="28" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="1551" ordinal="0" offset="42" sl="67" sc="5" el="67" ec="5" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1552" ordinal="0" offset="43" sl="68" sc="9" el="68" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1553" ordinal="0" offset="66" sl="69" sc="9" el="69" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1554" ordinal="0" offset="82" sl="70" sc="9" el="70" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1555" ordinal="0" offset="99" sl="71" sc="9" el="71" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1556" ordinal="0" offset="111" sl="72" sc="9" el="72" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1557" ordinal="0" offset="143" sl="73" sc="9" el="73" ec="9" bec="0" bev="0" fileid="28" />
-                <SequencePoint vc="1" uspid="1558" ordinal="0" offset="171" sl="74" sc="5" el="74" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1569" ordinal="0" offset="42" sl="67" sc="5" el="67" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1570" ordinal="0" offset="43" sl="68" sc="9" el="68" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1571" ordinal="0" offset="66" sl="69" sc="9" el="69" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1572" ordinal="0" offset="82" sl="70" sc="9" el="70" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1573" ordinal="0" offset="99" sl="71" sc="9" el="71" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1574" ordinal="0" offset="111" sl="72" sc="9" el="72" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1575" ordinal="0" offset="143" sl="73" sc="9" el="73" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1576" ordinal="0" offset="171" sl="74" sc="5" el="74" ec="5" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>RoomSelectionMenuTests/&lt;Test_CheckCanvasButtonBack&gt;d__8</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663580</MetadataToken>
+              <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_CheckCanvasButtonBack&gt;d__8::MoveNext()</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1577" ordinal="0" offset="31" sl="77" sc="5" el="77" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1578" ordinal="0" offset="32" sl="78" sc="9" el="78" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1579" ordinal="0" offset="55" sl="79" sc="9" el="79" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1580" ordinal="0" offset="71" sl="80" sc="5" el="80" ec="5" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>RoomSelectionMenuTests/&lt;Test_CheckCanvasBackButtonOnClick&gt;d__9</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663586</MetadataToken>
+              <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_CheckCanvasBackButtonOnClick&gt;d__9::MoveNext()</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1581" ordinal="0" offset="42" sl="83" sc="5" el="83" ec="5" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1582" ordinal="0" offset="43" sl="84" sc="9" el="84" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1583" ordinal="0" offset="66" sl="85" sc="9" el="85" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1584" ordinal="0" offset="82" sl="86" sc="9" el="86" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1585" ordinal="0" offset="99" sl="87" sc="9" el="87" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1586" ordinal="0" offset="111" sl="88" sc="9" el="88" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1587" ordinal="0" offset="143" sl="89" sc="9" el="89" ec="9" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="1" uspid="1588" ordinal="0" offset="173" sl="91" sc="5" el="91" ec="5" bec="0" bev="0" fileid="28" />
               </SequencePoints>
               <BranchPoints />
             </Method>

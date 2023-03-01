@@ -1,32 +1,32 @@
 {
   "summary": {
-    "generatedon": "2023-02-28T20:18:16Z",
+    "generatedon": "2023-03-01T16:45:38Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 2,
     "classes": 29,
     "files": 29,
-    "coveredlines": 62,
+    "coveredlines": 77,
     "uncoveredlines": 687,
-    "coverablelines": 749,
-    "totallines": 1562,
-    "linecoverage": 8.2,
+    "coverablelines": 764,
+    "totallines": 1583,
+    "linecoverage": 10,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 15,
-    "totalmethods": 121,
-    "methodcoverage": 12.3
+    "coveredmethods": 18,
+    "totalmethods": 124,
+    "methodcoverage": 14.5
  },
   "coverage": {
     "assemblies": [
-      { "name": "PlaymodeTests", "classes": 7, "coverage": 17.3, "coveredlines": 43, "coverablelines": 248, "totallines": 558, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 18.1, "coveredmethods": 8, "totalmethods": 44, "classesinassembly": [
+      { "name": "PlaymodeTests", "classes": 7, "coverage": 21.1, "coveredlines": 55, "coverablelines": 260, "totallines": 575, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 21.7, "coveredmethods": 10, "totalmethods": 46, "classesinassembly": [
         { "name": "AvatarRoomTests", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "DatabasePlayModeTests", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "ExternalAPITests", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "LoginScreenTests", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 204, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 },
         { "name": "MainMenuTests", "coverage": 0, "coveredlines": 0, "coverablelines": 2, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "RoomCreationMenuTests", "coverage": 0, "coveredlines": 0, "coverablelines": 91, "totallines": 141, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
-        { "name": "RoomSelectionMenuTests", "coverage": 100, "coveredlines": 43, "coverablelines": 43, "totallines": 75, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 } ] },
-      { "name": "Scripts", "classes": 22, "coverage": 3.7, "coveredlines": 19, "coverablelines": 501, "totallines": 1004, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 9, "coveredmethods": 7, "totalmethods": 77, "classesinassembly": [
+        { "name": "RoomSelectionMenuTests", "coverage": 100, "coveredlines": 55, "coverablelines": 55, "totallines": 92, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10 } ] },
+      { "name": "Scripts", "classes": 22, "coverage": 4.3, "coveredlines": 22, "coverablelines": 504, "totallines": 1008, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 10.2, "coveredmethods": 8, "totalmethods": 78, "classesinassembly": [
         { "name": "APIHelper", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 159, "totallines": 262, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 },
         { "name": "CameraTargettingScript", "coverage": 0, "coveredlines": 0, "coverablelines": 32, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
@@ -42,7 +42,7 @@
         { "name": "PlayerEmoticonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 20, "totallines": 34, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "PlayerMovementScript", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 99, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "RoomCreationMenuScript", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
-        { "name": "RoomSelectionMenuScript", "coverage": 100, "coveredlines": 15, "coverablelines": 15, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
+        { "name": "RoomSelectionMenuScript", "coverage": 100, "coveredlines": 18, "coverablelines": 18, "totallines": 32, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
         { "name": "StopShakingHands", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "StopSitToStand", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "StopStandToSit", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },

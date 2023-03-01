@@ -72,4 +72,21 @@ public class RoomSelectionMenuTests
         yield return new WaitForSeconds(1.5f);
         Assert.AreEqual(3, script.GetSelectedRoomId());
     }
+    [UnityTest]
+    public IEnumerator Test_CheckCanvasButtonBack()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Back"));
+    }
+    [UnityTest]
+    public IEnumerator Test_CheckCanvasBackButtonOnClick()
+    {
+        yield return null; //Skip a frame
+        GameObject Canvas = GameObject.Find("UICanvas");
+        RoomSelectionMenuScript script = Canvas.GetComponent<RoomSelectionMenuScript>();
+        script.BackButtonOnClick();
+        yield return new WaitForSeconds(1.5f);
+        Assert.AreEqual(2, SceneManager.GetActiveScene().buildIndex);
+
+    }
 }
