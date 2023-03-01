@@ -70,9 +70,10 @@ public class RoomCreationMenuTests
         yield return null; //Skip a frame
         GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
         GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("Test");
+        RoomCodeTextField.GetComponent<TMP_InputField>().text = "Test";
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
         Button button = ConfirmButton.GetComponent<Button>();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         Assert.AreEqual(true, button.interactable);
     }
     [UnityTest]
@@ -81,10 +82,12 @@ public class RoomCreationMenuTests
         yield return null; //Skip a frame
         GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
         GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("Test");
+        RoomCodeTextField.GetComponent<TMP_InputField>().text = "Test";
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
         Button button = ConfirmButton.GetComponent<Button>();
         yield return new WaitForSeconds(1f);
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke("");
+        RoomCodeTextField.GetComponent<TMP_InputField>().text = "";
+        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
         yield return new WaitForSeconds(1f);
         Assert.AreEqual(false, button.interactable);
 

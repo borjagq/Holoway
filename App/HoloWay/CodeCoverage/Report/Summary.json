@@ -1,49 +1,52 @@
 {
   "summary": {
-    "generatedon": "2023-02-28T00:37:01Z",
+    "generatedon": "2023-02-28T02:53:40Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 2,
-    "classes": 25,
-    "files": 25,
-    "coveredlines": 18,
-    "uncoveredlines": 662,
-    "coverablelines": 680,
-    "totallines": 1430,
-    "linecoverage": 2.6,
+    "classes": 28,
+    "files": 28,
+    "coveredlines": 260,
+    "uncoveredlines": 440,
+    "coverablelines": 700,
+    "totallines": 1473,
+    "linecoverage": 37.1,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 3,
-    "totalmethods": 104,
-    "methodcoverage": 2.8
+    "coveredmethods": 45,
+    "totalmethods": 110,
+    "methodcoverage": 40.9
  },
   "coverage": {
     "assemblies": [
-      { "name": "PlaymodeTests", "classes": 6, "coverage": 6.8, "coveredlines": 14, "coverablelines": 205, "totallines": 483, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 5.5, "coveredmethods": 2, "totalmethods": 36, "classesinassembly": [
+      { "name": "PlaymodeTests", "classes": 6, "coverage": 89.4, "coveredlines": 186, "coverablelines": 208, "totallines": 486, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 91.6, "coveredmethods": 33, "totalmethods": 36, "classesinassembly": [
         { "name": "AvatarRoomTests", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "DatabasePlayModeTests", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "ExternalAPITests", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "LoginScreenTests", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 204, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 },
+        { "name": "DatabasePlayModeTests", "coverage": 64.8, "coveredlines": 24, "coverablelines": 37, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
+        { "name": "ExternalAPITests", "coverage": 100, "coveredlines": 12, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
+        { "name": "LoginScreenTests", "coverage": 98.2, "coveredlines": 56, "coverablelines": 57, "totallines": 204, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10 },
         { "name": "MainMenuTests", "coverage": 0, "coveredlines": 0, "coverablelines": 2, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "RoomCreationMenuTests", "coverage": 15.3, "coveredlines": 14, "coverablelines": 91, "totallines": 141, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 11.7, "coveredmethods": 2, "totalmethods": 17 } ] },
-      { "name": "Scripts", "classes": 19, "coverage": 0.8, "coveredlines": 4, "coverablelines": 475, "totallines": 947, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 1.4, "coveredmethods": 1, "totalmethods": 68, "classesinassembly": [
-        { "name": "APIHelper", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "RoomCreationMenuTests", "coverage": 100, "coveredlines": 94, "coverablelines": 94, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 17, "totalmethods": 17 } ] },
+      { "name": "Scripts", "classes": 22, "coverage": 15, "coveredlines": 74, "coverablelines": 492, "totallines": 987, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 16.2, "coveredmethods": 12, "totalmethods": 74, "classesinassembly": [
+        { "name": "APIHelper", "coverage": 100, "coveredlines": 7, "coverablelines": 7, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 159, "totallines": 262, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 },
         { "name": "CameraTargettingScript", "coverage": 0, "coveredlines": 0, "coverablelines": 32, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "DatabaseManager", "coverage": 0, "coveredlines": 0, "coverablelines": 51, "totallines": 103, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
         { "name": "FootstepBehaviour", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "FootstepBehaviourAnimator", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 21, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "GetExternalAPIData", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "LoginMenuScript", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 48, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "LoginSceneInitialization", "coverage": 0, "coveredlines": 0, "coverablelines": 30, "totallines": 70, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "MainMenuScript", "coverage": 0, "coveredlines": 0, "coverablelines": 39, "totallines": 77, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 11 },
+        { "name": "GlobalAudioSettings", "coverage": 0, "coveredlines": 0, "coverablelines": 8, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "GlobalGameSettings", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 10, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
+        { "name": "GlobalGameStrings", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 12, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "LoginMenuScript", "coverage": 62.9, "coveredlines": 17, "coverablelines": 27, "totallines": 48, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
+        { "name": "LoginSceneInitialization", "coverage": 100, "coveredlines": 30, "coverablelines": 30, "totallines": 70, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
+        { "name": "MainMenuScript", "coverage": 10.2, "coveredlines": 4, "coverablelines": 39, "totallines": 77, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 18.1, "coveredmethods": 2, "totalmethods": 11 },
         { "name": "PlayerEmoticonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 20, "totallines": 34, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "PlayerMovementScript", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 99, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
-        { "name": "RoomCreationMenuScript", "coverage": 36.3, "coveredlines": 4, "coverablelines": 11, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 33.3, "coveredmethods": 1, "totalmethods": 3 },
+        { "name": "RoomCreationMenuScript", "coverage": 100, "coveredlines": 11, "coverablelines": 11, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "StopShakingHands", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "StopSitToStand", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "StopStandToSit", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "StopWaving", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "TextCameraLookAt", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "User", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 } ] } ]
+        { "name": "User", "coverage": 100, "coveredlines": 5, "coverablelines": 5, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 } ] } ]
   }
 }
