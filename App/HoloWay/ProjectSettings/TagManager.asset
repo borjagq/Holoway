@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Selectable
+  - Whiteboard
   layers:
   - Default
   - TransparentFX

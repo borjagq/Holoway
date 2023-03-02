@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:App/HoloWay/Assets/Prefabs/UI/GameDefaultInputField.prefab.meta
 guid: 16096ba4347dc424a8929b75e3dd0e3a
 PrefabImporter:
+========
+guid: e477801ee1ed5414da0a8830b9c400c5
+DefaultImporter:
+>>>>>>>> Stashed changes:App/HoloWay/Assets/Scenes/Web/RoomCreationMenu.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
