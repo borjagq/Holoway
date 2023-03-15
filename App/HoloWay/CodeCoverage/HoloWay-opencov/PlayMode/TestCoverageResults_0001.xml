@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+<<<<<<< HEAD
   <Summary numSequencePoints="294" visitedSequencePoints="266" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="90.48" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="27" numClasses="27" visitedMethods="38" numMethods="38" />
   <Modules>
     <Module>
@@ -41,12 +42,71 @@
                 <SequencePoint vc="1" uspid="1079" ordinal="0" offset="1" sl="11" sc="9" el="11" ec="9" bec="0" bev="0" fileid="11" />
                 <SequencePoint vc="1" uspid="1080" ordinal="0" offset="14" sl="12" sc="9" el="12" ec="9" bec="0" bev="0" fileid="11" />
                 <SequencePoint vc="1" uspid="1081" ordinal="0" offset="27" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="11" />
+=======
+  <Summary numSequencePoints="24" visitedSequencePoints="24" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="4" numClasses="4" visitedMethods="7" numMethods="7" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="5" numMethods="5" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Scripts</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/APIHelper.cs" />
+        <File uid="2" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalAudioSettings.cs" />
+        <File uid="3" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameSettings.cs" />
+        <File uid="4" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameStrings.cs" />
+        <File uid="5" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/JsonResponse/LoginResponse.cs" />
+        <File uid="6" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Menu/CommonMenuScript.cs" />
+        <File uid="7" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Scene/LoginSceneInitialization.cs" />
+        <File uid="8" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/DatabaseManager.cs" />
+        <File uid="9" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/GetExternalAPIData.cs" />
+        <File uid="10" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/User.cs" />
+        <File uid="11" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Aesthetics/TextCameraLookAt.cs" />
+        <File uid="12" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviour.cs" />
+        <File uid="13" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviourAnimator.cs" />
+        <File uid="14" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopShakingHands.cs" />
+        <File uid="15" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopSitToStand.cs" />
+        <File uid="16" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopStandToSit.cs" />
+        <File uid="17" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopWaving.cs" />
+        <File uid="18" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/CameraTargettingScript.cs" />
+        <File uid="19" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/LoginMenuScript.cs" />
+        <File uid="20" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/MainMenuScript.cs" />
+        <File uid="21" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomCreationMenuScript.cs" />
+        <File uid="22" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomSelectionMenuScript.cs" />
+        <File uid="23" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerEmoticonHandler.cs" />
+        <File uid="24" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerMovementScript.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>MainMenuScript</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663361</MetadataToken>
+              <Name>System.Void MainMenuScript::Start()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="877" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="878" ordinal="0" offset="1" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663362</MetadataToken>
+              <Name>System.Void MainMenuScript::Update()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="45" uspid="879" ordinal="0" offset="0" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="45" uspid="880" ordinal="0" offset="1" sl="22" sc="5" el="22" ec="5" bec="0" bev="0" fileid="20" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>
           </Methods>
         </Class>
         <Class>
+<<<<<<< HEAD
           <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
           <FullName>StopStandToSit</FullName>
           <Methods>
@@ -60,6 +120,20 @@
                 <SequencePoint vc="2" uspid="1083" ordinal="0" offset="1" sl="11" sc="9" el="11" ec="9" bec="0" bev="0" fileid="12" />
                 <SequencePoint vc="2" uspid="1084" ordinal="0" offset="14" sl="12" sc="9" el="12" ec="9" bec="0" bev="0" fileid="12" />
                 <SequencePoint vc="2" uspid="1085" ordinal="0" offset="27" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="12" />
+=======
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>RoomSelectionMenuScript</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663377</MetadataToken>
+              <Name>System.Void RoomSelectionMenuScript::SelectRoom(System.Int32)</Name>
+              <FileRef uid="22" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="927" ordinal="0" offset="0" sl="9" sc="5" el="9" ec="5" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="928" ordinal="0" offset="1" sl="10" sc="9" el="10" ec="9" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="929" ordinal="0" offset="8" sl="11" sc="5" el="11" ec="5" bec="0" bev="0" fileid="22" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -70,6 +144,7 @@
           <FullName>CameraTargettingScript</FullName>
           <Methods>
             <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+<<<<<<< HEAD
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken>100663348</MetadataToken>
               <Name>System.Void CameraTargettingScript::Start()</Name>
@@ -108,11 +183,22 @@
                 <SequencePoint vc="0" uspid="1110" ordinal="0" offset="255" sl="57" sc="13" el="57" ec="13" bec="0" bev="0" fileid="14" />
                 <SequencePoint vc="0" uspid="1111" ordinal="0" offset="266" sl="59" sc="9" el="59" ec="9" bec="0" bev="0" fileid="14" />
                 <SequencePoint vc="1547" uspid="1112" ordinal="0" offset="267" sl="60" sc="5" el="60" ec="5" bec="0" bev="0" fileid="14" />
+=======
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663378</MetadataToken>
+              <Name>System.Int32 RoomSelectionMenuScript::GetSelectedRoomId()</Name>
+              <FileRef uid="22" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="930" ordinal="0" offset="0" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="931" ordinal="0" offset="1" sl="14" sc="9" el="14" ec="9" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="932" ordinal="0" offset="10" sl="15" sc="5" el="15" ec="5" bec="0" bev="0" fileid="22" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>
-            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+<<<<<<< HEAD
               <MetadataToken>100663351</MetadataToken>
               <Name>CameraTargettingScript::CameraTargettingScript()</Name>
               <FileRef uid="14" />
@@ -317,6 +403,15 @@
                 <SequencePoint vc="21" uspid="1255" ordinal="0" offset="14" sl="26" sc="5" el="26" ec="5" bec="0" bev="0" fileid="18" />
                 <SequencePoint vc="21" uspid="1256" ordinal="0" offset="25" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="18" />
                 <SequencePoint vc="21" uspid="1257" ordinal="0" offset="36" sl="28" sc="5" el="28" ec="5" bec="0" bev="0" fileid="18" />
+=======
+              <MetadataToken>100663379</MetadataToken>
+              <Name>System.Void RoomSelectionMenuScript::SelectRoomOneOnClick()</Name>
+              <FileRef uid="22" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="933" ordinal="0" offset="0" sl="17" sc="5" el="17" ec="5" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="934" ordinal="0" offset="1" sl="18" sc="9" el="18" ec="9" bec="0" bev="0" fileid="22" />
+                <SequencePoint vc="1" uspid="935" ordinal="0" offset="9" sl="19" sc="5" el="19" ec="5" bec="0" bev="0" fileid="22" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -325,6 +420,7 @@
       </Classes>
     </Module>
     <Module>
+<<<<<<< HEAD
       <Summary numSequencePoints="173" visitedSequencePoints="173" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="22" numClasses="22" visitedMethods="22" numMethods="22" />
       <ModuleTime>0001-01-01T00:00:00</ModuleTime>
       <ModuleName>PlaymodeTests</ModuleName>
@@ -353,12 +449,42 @@
                 <SequencePoint vc="21" uspid="1310" ordinal="0" offset="20" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="19" />
                 <SequencePoint vc="21" uspid="1311" ordinal="0" offset="32" sl="25" sc="9" el="25" ec="9" bec="0" bev="0" fileid="19" />
                 <SequencePoint vc="21" uspid="1312" ordinal="0" offset="39" sl="26" sc="5" el="26" ec="5" bec="0" bev="0" fileid="19" />
+=======
+      <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="2" numMethods="2" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>PlaymodeTests</ModuleName>
+      <Files>
+        <File uid="25" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/AvatarRoomTests.cs" />
+        <File uid="26" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/DatabasePlayModeTests.cs" />
+        <File uid="27" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/LoginScreenTests.cs" />
+        <File uid="28" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/MainMenuTests.cs" />
+        <File uid="29" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomCreationMenuTests.cs" />
+        <File uid="30" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomSelectionMenuTests.cs" />
+        <File uid="31" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/SettingsMenuTests.cs" />
+        <File uid="32" fullPath="C:/Users/Siddharth Shenoy/Desktop/Work/Unity Projects/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/ExternalAPITests.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>RoomSelectionMenuTests</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Void RoomSelectionMenuTests::Setup()</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1082" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1083" ordinal="0" offset="1" sl="15" sc="9" el="15" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1084" ordinal="0" offset="8" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="30" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>
           </Methods>
         </Class>
         <Class>
+<<<<<<< HEAD
           <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
           <FullName>AvatarRoomTests/&lt;Test_CheckCamera&gt;d__3</FullName>
           <Methods>
@@ -835,6 +961,25 @@
                 <SequencePoint vc="4" uspid="1491" ordinal="0" offset="164" sl="249" sc="25" el="249" ec="25" bec="0" bev="0" fileid="19" />
                 <SequencePoint vc="1" uspid="1492" ordinal="0" offset="185" sl="257" sc="9" el="257" ec="9" bec="0" bev="0" fileid="19" />
                 <SequencePoint vc="1" uspid="1493" ordinal="0" offset="213" sl="258" sc="5" el="258" ec="5" bec="0" bev="0" fileid="19" />
+=======
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>RoomSelectionMenuTests/&lt;Test_RoomSelectionButton1&gt;d__5</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663576</MetadataToken>
+              <Name>System.Boolean RoomSelectionMenuTests/&lt;Test_RoomSelectionButton1&gt;d__5::MoveNext()</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1299" ordinal="0" offset="42" sl="47" sc="5" el="47" ec="5" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1300" ordinal="0" offset="43" sl="48" sc="9" el="48" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1301" ordinal="0" offset="66" sl="49" sc="9" el="49" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1302" ordinal="0" offset="82" sl="50" sc="9" el="50" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1303" ordinal="0" offset="99" sl="51" sc="9" el="51" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1304" ordinal="0" offset="111" sl="52" sc="9" el="52" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1305" ordinal="0" offset="143" sl="53" sc="9" el="53" ec="9" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="1306" ordinal="0" offset="171" sl="54" sc="5" el="54" ec="5" bec="0" bev="0" fileid="30" />
+>>>>>>> RoomCreationMenu
               </SequencePoints>
               <BranchPoints />
             </Method>

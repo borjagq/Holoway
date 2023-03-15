@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:App/HoloWay/Assets/Scenes/Web/UMATestScene.unity.meta
 guid: c96195ba76e4e5944972598ff7f1fc2c
+========
+guid: e477801ee1ed5414da0a8830b9c400c5
+>>>>>>>> RoomCreationMenu:App/HoloWay/Assets/Scenes/Web/RoomCreationMenu.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

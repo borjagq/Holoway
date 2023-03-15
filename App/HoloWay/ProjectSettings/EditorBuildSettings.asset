@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Web/LoginMenu.unity
     guid: cc4f027e6307ee94a9d13ff5ce6d4d46
   - enabled: 1
-    path: Assets/Scenes/Web/AvatarRoom.unity
-    guid: 079b0f206882fe04397d58518e523f05
+    path: Assets/Scenes/Web/MainMenu.unity
+    guid: 354799e26b3356942bf3e69dc599fe5c
+  - enabled: 1
+    path: Assets/Scenes/Web/RoomCreationMenu.unity
+    guid: e477801ee1ed5414da0a8830b9c400c5
+  - enabled: 1
+    path: Assets/Scenes/Web/RoomSelection.unity
+    guid: f8846fcf984e3bf4e839eb541be3eb55
+  - enabled: 1
+    path: Assets/Scenes/Web/SettingsMenu.unity
+    guid: 9cae6cd16da8724419d6722ec3dad669
   m_configObjects: {}
