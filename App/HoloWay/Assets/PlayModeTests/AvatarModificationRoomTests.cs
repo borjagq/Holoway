@@ -10,14 +10,10 @@ using static UnityEngine.GraphicsBuffer;
 
 public class AvatarModificationRoomTests : InputTestFixture
 {
-    private Mouse DefaultMouse;
-    private Keyboard DefaultKeyboard;
 
     [SetUp]
     public override void Setup()
     {
-        DefaultMouse = InputSystem.AddDevice<Mouse>();
-        DefaultKeyboard = InputSystem.AddDevice<Keyboard>();
         SceneManager.LoadScene(6);
     }
     [UnityTest]
@@ -187,8 +183,8 @@ public class AvatarModificationRoomTests : InputTestFixture
     //================================================================
     //  TESTS FOR: Change Gender
     //================================================================
-    /*
 
+    /*
     //DOESNT WORK YET
     [UnityTest]
     public IEnumerator Test_CharacterChangeGenderToMale()
@@ -207,6 +203,8 @@ public class AvatarModificationRoomTests : InputTestFixture
         Assert.AreEqual("HumanMaleHighPoly", RaceName);
     }
 
+    
+
     [UnityTest]
     public IEnumerator Test_CharacterChangeGenderToFemale()
     {
@@ -215,16 +213,7 @@ public class AvatarModificationRoomTests : InputTestFixture
         GameObject GUIElement = GameObject.Find("CharacterModificationScript");
         AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
 
-
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
-        TMP_Dropdown Dropdown = Object.GetComponent<TMP_Dropdown>();
-
-
-        Move(this.DefaultMouse.position, Object.transform.position);
-        
-        //Debug.Log(val);
-        
-        //CharacterAnim.Dropdown_Gender_OnChange(1);
+        CharacterAnim.Dropdown_Gender_OnChange(1);
 
         yield return new WaitForSeconds(2.5f);
 
@@ -311,7 +300,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     //  TESTS FOR: Escape from Camera Focus
     //================================================================
 
-    /*
+    
     //DOESNT WORK YET
     [UnityTest]
     public IEnumerator Test_ChangeCameraEscapes()
@@ -325,13 +314,14 @@ public class AvatarModificationRoomTests : InputTestFixture
 
         CharacterAnim.FocusCameraToBodyPart(Object);
         
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2);
 
-        CharacterAnim.RefocusCamera();
+        CharacterAnim.simulatePress = true;
         GameObject FocusObject = CharacterAnim.GetCurrentTarget();
 
+        yield return new WaitForSeconds(2);
 
         Assert.AreEqual(Object, FocusObject);
     }
-    */
+   
 }

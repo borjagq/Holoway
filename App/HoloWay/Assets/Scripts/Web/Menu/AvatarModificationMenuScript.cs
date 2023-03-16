@@ -40,10 +40,11 @@ public class AvatarModificationMenuScript : MonoBehaviour
     private bool _IsCameraMoving = false;
     private float _StartTime;
     private int _CurrentMenuIndex = 0;
-
+    bool _escapeButton = false;
 
     public GameObject _CurrentTarget;
     public String _CurrentRace;
+    public bool simulatePress = false;
 
     //[Header("Dropdowns")]
     public void Start()
@@ -76,6 +77,18 @@ public class AvatarModificationMenuScript : MonoBehaviour
         }
     }
 
+    public bool GetEscapePressed()
+    {
+        if (simulatePress)
+        {
+            return true;
+        }
+        else
+        {
+            return Input.GetKeyDown(KeyCode.Escape);
+        }
+    }
+
     public void Update()
     {
         if(_IsCameraMoving) { 
@@ -90,7 +103,10 @@ public class AvatarModificationMenuScript : MonoBehaviour
 
             }
         }
-        if(Input.GetKeyDown(KeyCode.Escape) && _IsCameraFocused)
+
+
+        _escapeButton = GetEscapePressed();
+        if (_escapeButton && _IsCameraFocused)
         {
             RefocusCamera();
         }
