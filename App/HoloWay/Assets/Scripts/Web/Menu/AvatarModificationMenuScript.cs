@@ -40,10 +40,15 @@ public class AvatarModificationMenuScript : MonoBehaviour
     private bool _IsCameraMoving = false;
     private float _StartTime;
     private int _CurrentMenuIndex = 0;
+
+
+    public GameObject _CurrentTarget;
+    public String _CurrentRace;
+
     //[Header("Dropdowns")]
     public void Start()
     {
-        
+
         RaceName[0] = "HumanMale";
         RaceName[1] = "HumanFemale";
         if (UseHighPolyModels)
@@ -53,6 +58,24 @@ public class AvatarModificationMenuScript : MonoBehaviour
         }
         _OldCameraPosition = MainCamera.transform.position;
     }
+
+    public void RefocusCamera()
+    {
+        _TargetPosition = _OldCameraPosition;
+
+        GameObject Object = GameObject.Find("Main Camera");
+        _CurrentTarget = Object;
+
+        _IsCameraMoving = true;
+        _IsCameraFocused = false;
+        _StartTime = Time.time;
+        if (_CurrentMenuIndex > 0)
+        {
+            _CurrentMenuIndex--;
+            EnableMenu(_CurrentMenuIndex);
+        }
+    }
+
     public void Update()
     {
         if(_IsCameraMoving) { 
@@ -69,22 +92,14 @@ public class AvatarModificationMenuScript : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape) && _IsCameraFocused)
         {
-            _TargetPosition = _OldCameraPosition;
-            _IsCameraMoving = true;
-            _IsCameraFocused = false;
-            _StartTime = Time.time;
-            if (_CurrentMenuIndex > 0)
-            {
-                _CurrentMenuIndex--;
-                EnableMenu(_CurrentMenuIndex);
-            }
+            RefocusCamera();
         }
     }
     public void Dropdown_Gender_OnChange(Int32 DropdownValue)
     {
+        _CurrentRace = RaceName[GenderDropdown.value];
         Avatar.activeRace.name = RaceName[GenderDropdown.value];
         Avatar.ChangeRace(RaceName[GenderDropdown.value], true);
-        Debug.Log(GenderDropdown.value);
     }
     public void EnableMenu(int menu_index)
     {
@@ -105,9 +120,23 @@ public class AvatarModificationMenuScript : MonoBehaviour
         _StartTime = Time.time;
         _IsCameraMoving = true;
         //MainCamera.transform.position = target.transform.position;
-        _TargetPosition = target.transform.position;
+
+        _CurrentTarget = target;
+
+        _TargetPosition = _CurrentTarget.transform.position;
         _IsCameraFocused = true;
         _CurrentMenuIndex++;
         EnableMenu(_CurrentMenuIndex);
     }
+
+    public GameObject GetCurrentTarget()
+    {
+        return _CurrentTarget;
+    }
+
+    public String GetRaceName()
+    {
+        return _CurrentRace;
+    }
+
 }
