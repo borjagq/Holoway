@@ -6,7 +6,7 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 Assets/AssetStoreTools*
-
+App/HoloWay/CodeCoverage/*
 # Visual Studio cache directory
 .vs/
 

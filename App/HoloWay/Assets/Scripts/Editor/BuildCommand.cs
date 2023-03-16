@@ -5,6 +5,7 @@ using System.IO;
 
 static class BuildCommand
 {
+    /*
     private const string KEYSTORE_PASS  = "KEYSTORE_PASS";
     private const string KEY_ALIAS_PASS = "KEY_ALIAS_PASS";
     private const string KEY_ALIAS_NAME = "KEY_ALIAS_NAME";
@@ -259,4 +260,5 @@ static class BuildCommand
         PlayerSettings.Android.keystorePass = keystorePass;
         PlayerSettings.Android.keyaliasPass = keystoreAliasPass;
     }
+    */
 }
