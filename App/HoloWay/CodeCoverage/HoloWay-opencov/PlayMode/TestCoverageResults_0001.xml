@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+  <Summary numSequencePoints="9" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="88.89" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="2" numMethods="2" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Scripts</ModuleName>
+      <Files>
+        <File uid="1" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/APIHelper.cs" />
+        <File uid="2" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalAudioSettings.cs" />
+        <File uid="3" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameSettings.cs" />
+        <File uid="4" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameStrings.cs" />
+        <File uid="5" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/JsonResponse/LoginResponse.cs" />
+        <File uid="6" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Menu/CommonMenuScript.cs" />
+        <File uid="7" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Scene/LoginSceneInitialization.cs" />
+        <File uid="8" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/ConnectPlayer.cs" />
+        <File uid="9" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/DatabaseManager.cs" />
+        <File uid="10" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/GetExternalAPIData.cs" />
+        <File uid="11" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/User.cs" />
+        <File uid="12" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Aesthetics/TextCameraLookAt.cs" />
+        <File uid="13" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviour.cs" />
+        <File uid="14" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviourAnimator.cs" />
+        <File uid="15" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopShakingHands.cs" />
+        <File uid="16" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopSitToStand.cs" />
+        <File uid="17" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopStandToSit.cs" />
+        <File uid="18" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopWaving.cs" />
+        <File uid="19" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/CameraTargettingScript.cs" />
+        <File uid="20" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/LoginMenuScript.cs" />
+        <File uid="21" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/MainMenuScript.cs" />
+        <File uid="22" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomCreationMenuScript.cs" />
+        <File uid="23" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomSelectionMenuScript.cs" />
+        <File uid="24" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/ModCameraScript.cs" />
+        <File uid="25" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerEmoticonHandler.cs" />
+        <File uid="26" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerMovementScript.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>ConnectPlayer</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>static System.Void ConnectPlayer::connect()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1022" ordinal="0" offset="0" sl="9" sc="5" el="9" ec="5" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="1023" ordinal="0" offset="1" sl="11" sc="5" el="11" ec="5" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module>
+      <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="85.71" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>PlaymodeTests</ModuleName>
+      <Files>
+        <File uid="27" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/AvatarModificationRoomTests.cs" />
+        <File uid="28" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/AvatarRoomTests.cs" />
+        <File uid="29" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/DatabasePlayModeTests.cs" />
+        <File uid="30" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/LoginScreenTests.cs" />
+        <File uid="31" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/MainMenuTests.cs" />
+        <File uid="32" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomCreationMenuTests.cs" />
+        <File uid="33" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomSelectionMenuTests.cs" />
+        <File uid="34" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/SettingsMenuTests.cs" />
+        <File uid="35" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/ExternalAPITests.cs" />
+        <File uid="36" fullPath="D:/Facultate/Advance Software/HoloWay-Final/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/MultiplayerTests.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="85.71" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>MultiplayerTests/&lt;Test_ConnectionForOnePlayer&gt;d__0</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="85.71" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="85.71" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663649</MetadataToken>
+              <Name>System.Boolean MultiplayerTests/&lt;Test_ConnectionForOnePlayer&gt;d__0::MoveNext()</Name>
+              <FileRef uid="36" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1707" ordinal="0" offset="31" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="1" uspid="1708" ordinal="0" offset="32" sl="21" sc="9" el="21" ec="9" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="1" uspid="1709" ordinal="0" offset="55" sl="22" sc="9" el="22" ec="9" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="1" uspid="1710" ordinal="0" offset="62" sl="23" sc="9" el="23" ec="9" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="1" uspid="1711" ordinal="0" offset="73" sl="24" sc="9" el="24" ec="9" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="1" uspid="1712" ordinal="0" offset="79" sl="25" sc="9" el="25" ec="9" bec="0" bev="0" fileid="36" />
+                <SequencePoint vc="0" uspid="1713" ordinal="0" offset="106" sl="26" sc="5" el="26" ec="5" bec="0" bev="0" fileid="36" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
