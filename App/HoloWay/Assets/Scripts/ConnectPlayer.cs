@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
+
 
 public class ConnectPlayer : MonoBehaviour
 {
@@ -11,54 +12,55 @@ public class ConnectPlayer : MonoBehaviour
     {
        
     }
-    
 
+    [SerializeField]
     private Button startServerButton;
-    
 
+    [SerializeField]
     private Button startClientButton;
-    
-  
+
+    [SerializeField]
     private Button startHostButton;
 
     private void Start()
     {
-        //startServerButton.onClick.AddListener(() =>
-        //{
-        //   if (NetworkManager.Singleton.StartHost())
-        //    {
-        //        Logger.Instance.LogInfo("Server Started");
-        //    }
-        //   else
-        //    {
-        //        Logger.Instance.LogInfo("Server not Started");
-        //    }
-        //});
-        //startClientButton.onClick.AddListener(() =>
-        //{
-        //    if (NetworkManager.Singleton.StartClient())
-        //    {
-        //        Logger.Instance.LogInfo("Client Started");
-        //    }
-        //    else
-        //    {
-        //        Logger.Instance.LogInfo("Client not Started");
-        //    }
-        //});
+        startServerButton.onClick.AddListener(() =>
+        {
+           if (NetworkManager.Singleton.StartHost())
+            {
+                Debug.Log("Server Started");
+            }
+           else
+            {
+                Debug.Log("Server not Started");
+            }
+        });
+        startClientButton.onClick.AddListener(() =>
+        {
+            if (NetworkManager.Singleton.StartClient())
+            {
+                Debug.Log("Client Started");
+            }
+            else
+            {
+                Debug.Log("Client not Started");
+            }
+        });
 
-        //startHostButton.onClick.AddListener(() =>
-        //{
+        startHostButton.onClick.AddListener(() =>
+        {
 
-        //    if (NetworkManager.Singleton.StartHost())
-        //    {
-        //        Logger.Instance.LogInfo("Host Started");
-        //    }
-        //    else
-        //    {
-        //        Logger.Instance.LogInfo("Host  has not  Started");
-        //    }
+            if (NetworkManager.Singleton.StartHost())
+            {
+                Debug.Log("Host Started");
+            }
+            else
+            {
+                Debug.Log("Host  has not  Started");
+            }
 
-        //});
+        });
+
     }
-        
+
 }
