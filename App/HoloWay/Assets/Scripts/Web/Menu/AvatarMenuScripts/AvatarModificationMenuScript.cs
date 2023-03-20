@@ -1,0 +1,220 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UMA;
+using UMA.CharacterSystem;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AvatarModificationMenuScript : MonoBehaviour
+{
+    private String[] RaceName = new String[2];
+
+    //================================================================================
+    //  STATIC VARIABLES
+    //================================================================================
+    public static Stack<GameObject> MenuStack = new Stack<GameObject>();
+
+    [Header("Variables")]
+    public float LerpFactor = 1.0f;
+    public float MinCamTargetDistance = 0.01f;
+    public bool UseHighPolyModels = true;
+    public GameObject DefaultMenu;
+    public GameObject BackButtonMenu;
+    public String EdittingBodyPart;
+
+    [Header("Color Picker")]
+    public TMP_InputField Input_ColorR;
+    public TMP_InputField Input_ColorG;
+    public TMP_InputField Input_ColorB;
+
+
+    [Header("UMA specific attributes")]
+    public GameObject UMAPlayer;
+    public DynamicCharacterAvatar Avatar;
+    public UMAData AvatarUmaData;
+    public Dictionary<string, int> AvatarUmaSlotDataMap = new Dictionary<string, int>();
+
+    [Header("Inputs - Menu 1")]
+    [Header("Dropdowns")]
+    public TMP_Dropdown GenderDropdown;
+    [Header("Game related")]
+    public Camera MainCamera;
+
+    private Vector3 _OldCameraPosition;
+    private Vector3 _TargetPosition;
+    private bool _IsCameraFocused = false;
+    private bool _IsCameraMoving = false;
+    private float _StartTime;
+    
+    bool _escapeButton = false;
+
+    public GameObject _CurrentTarget;
+    public String _CurrentRace;
+    public bool simulatePress = false;
+
+    //[Header("Dropdowns")]
+    public void Start()
+    {
+        Avatar = UMAPlayer.GetComponent<DynamicCharacterAvatar>();
+        AvatarUmaData = UMAPlayer.GetComponent<UMAData>();
+        MenuStack.Push(DefaultMenu);
+        RaceName[0] = "HumanMale";
+        RaceName[1] = "HumanFemale";
+        if (UseHighPolyModels)
+        {
+            RaceName[0] += "HighPoly";
+            RaceName[1] += "HighPoly";
+        }
+        _OldCameraPosition = MainCamera.transform.position;
+        for (int i = 0; i < AvatarUmaData.umaRecipe.sharedColors.Length; i++)
+        {
+
+            Debug.Log(AvatarUmaData.umaRecipe.sharedColors[i].name);
+            /*Debug.Log(AvatarUmaData.GetSlot(i).slotName);*/
+        }
+    }
+
+    public void RefocusCamera()
+    {
+        _TargetPosition = _OldCameraPosition;
+
+        GameObject Object = GameObject.Find("Main Camera");
+        _CurrentTarget = Object;
+
+        _IsCameraMoving = true;
+        _IsCameraFocused = false;
+        _StartTime = Time.time;
+        
+    }
+
+    public bool GetEscapePressed()
+    {
+        if (simulatePress)
+        {
+            return true;
+        }
+        else
+        {
+            return Input.GetKeyDown(KeyCode.Escape);
+        }
+    }
+
+    public void Update()
+    {
+        if(_IsCameraMoving) { 
+            if(Vector3.Distance(MainCamera.transform.position, _TargetPosition) > MinCamTargetDistance)
+            {
+                float t = (Time.time - _StartTime) * LerpFactor;
+                MainCamera.transform.position = Vector3.Lerp(MainCamera.transform.position, _TargetPosition, t);
+            }
+            else
+            {
+                _IsCameraMoving = false;
+
+            }
+        }
+
+
+        _escapeButton = GetEscapePressed();
+        if (_escapeButton && _IsCameraFocused)
+        {
+            if (GoBackward())
+            {
+                RefocusCamera();
+            }
+        }
+    }
+    public void Dropdown_Gender_OnChange(Int32 DropdownValue)
+    {
+        _CurrentRace = RaceName[GenderDropdown.value];
+        Avatar.activeRace.name = RaceName[GenderDropdown.value];
+        Avatar.ChangeRace(RaceName[GenderDropdown.value], true);
+    }
+    public void FocusCameraToBodyPart(GameObject target)
+    {
+        _StartTime = Time.time;
+        _IsCameraMoving = true;
+        _IsCameraFocused = true;
+        _CurrentTarget = target;
+        _TargetPosition = _CurrentTarget.transform.position;
+        
+    }
+    public bool GoBackward()
+    {
+        MenuStack.Pop().SetActive(false);
+        MenuStack.Peek().SetActive(true);
+        if (MenuStack.Count > 1)
+        {
+            
+            return false;
+        }
+        DeactivateBackButton();
+        return true;
+    }
+    public void GoForward(GameObject target)
+    {
+        MenuStack.Peek().SetActive(false);
+        target.SetActive(true);
+        MenuStack.Push(target);
+    }
+    public void ActivateBackButton()
+    {
+        if (!BackButtonMenu.activeSelf)
+        {
+            BackButtonMenu.SetActive(true);
+        }
+    }
+    public void DeactivateBackButton()
+    {
+        if (BackButtonMenu.activeSelf)
+        {
+            BackButtonMenu.SetActive(false);
+        }
+    }
+    public void SetActiveBodyPart(String BodyPartName)
+    {
+        EdittingBodyPart = BodyPartName;
+    }
+    public void ActivateColorPicker()
+    {
+        Input_ColorR.text = ((byte)(Avatar.GetColor(EdittingBodyPart).color.r * 255)).ToString();
+        Input_ColorG.text = ((byte)(Avatar.GetColor(EdittingBodyPart).color.g * 255)).ToString();
+        Input_ColorB.text = ((byte)(Avatar.GetColor(EdittingBodyPart).color.b * 255)).ToString();
+    }
+    public void ChangeBodyPartColor()
+    {
+
+        byte r = 0, g = 0, b = 0;
+        if(Input_ColorR.text != "")
+        {
+            r = Byte.Parse(Input_ColorR.text);
+        }
+        if (Input_ColorG.text != "")
+        {
+            g = Byte.Parse(Input_ColorG.text);
+        }
+        if (Input_ColorB.text != "")
+        {
+            b = Byte.Parse(Input_ColorB.text);
+        }
+        Avatar.SetColor(EdittingBodyPart, new Color(r, g, b));
+        Avatar.BuildCharacter();
+                    
+    }
+    public void UpdateBodyPartColorFromColorPicker()
+    {
+
+    }
+    public GameObject GetCurrentTarget()
+    {
+        return _CurrentTarget;
+    }
+
+    public String GetRaceName()
+    {
+        return _CurrentRace;
+    }
+
+}

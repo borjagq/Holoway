@@ -34,7 +34,10 @@ public class AvatarModificationMenuLineRender : MonoBehaviour
     {
         Renderer.startWidth = lineWidth;
         Renderer.endWidth = lineWidth;
-        StartPosition.transform.position = TargetTransform.transform.position;
+        if (TargetTransform != null)
+        {
+            StartPosition.transform.position = TargetTransform.transform.position;
+        }
         Renderer.SetPosition(0, StartPosition.transform.position);
         Renderer.SetPosition(1, EndPosition.transform.position);
     }
