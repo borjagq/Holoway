@@ -54,6 +54,8 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public String _CurrentRace;
     public bool simulatePress = false;
 
+    public GameObject MenuColorPicker;
+
     //[Header("Dropdowns")]
     public void Start()
     {
@@ -157,8 +159,17 @@ public class AvatarModificationMenuScript : MonoBehaviour
     {
         MenuStack.Peek().SetActive(false);
         target.SetActive(true);
+        MenuColorPicker = target;
         MenuStack.Push(target);
     }
+
+    public void SetMenuLocation(GameObject obj)
+    {
+        GameObject Menu = GameObject.Find("Menus/Menu_ColorPicker");
+        Debug.Log(obj.transform.position);
+        Menu.transform.position = obj.transform.position;
+    }
+
     public void ActivateBackButton()
     {
         if (!BackButtonMenu.activeSelf)
@@ -189,17 +200,41 @@ public class AvatarModificationMenuScript : MonoBehaviour
         byte r = 0, g = 0, b = 0;
         if(Input_ColorR.text != "")
         {
-            r = Byte.Parse(Input_ColorR.text);
+            if (int.Parse(Input_ColorR.text) > 255)
+            {
+                r = Byte.Parse("255");
+                Input_ColorR.text = "255";
+            }
+            else if (int.Parse(Input_ColorR.text) <= 255)
+            {
+                r = Byte.Parse(Input_ColorR.text);
+            }
         }
         if (Input_ColorG.text != "")
         {
-            g = Byte.Parse(Input_ColorG.text);
+            if (int.Parse(Input_ColorG.text) > 255)
+            {
+                g = Byte.Parse("255");
+                Input_ColorG.text = "255";
+            }
+            else if (int.Parse(Input_ColorG.text) <= 255)
+            {
+                g = Byte.Parse(Input_ColorG.text);
+            }
         }
         if (Input_ColorB.text != "")
         {
-            b = Byte.Parse(Input_ColorB.text);
+            if (int.Parse(Input_ColorB.text) > 255)
+            {
+                b = Byte.Parse("255");
+                Input_ColorB.text = "255";
+            }
+            else if (int.Parse(Input_ColorB.text) <= 255)
+            {
+                b = Byte.Parse(Input_ColorB.text);
+            }
         }
-        Avatar.SetColor(EdittingBodyPart, new Color(r, g, b));
+        Avatar.SetColor(EdittingBodyPart, new Color((float)r/255.0f,(float)g/255.0f, (float)b /255.0f));
         Avatar.BuildCharacter();
                     
     }
