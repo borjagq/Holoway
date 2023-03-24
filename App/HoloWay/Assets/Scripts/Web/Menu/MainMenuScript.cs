@@ -37,6 +37,7 @@ public class MainMenuScript : MonoBehaviour
     public void BrowseRooms_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(3); 
     }
     public void Logout_OnClick()
     {
