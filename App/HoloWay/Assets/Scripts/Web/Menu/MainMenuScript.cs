@@ -24,24 +24,27 @@ public class MainMenuScript : MonoBehaviour
     public void PlayDemo_OnClick()
     {
         DoButtonDefaults(0);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
     public void Settings_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(4);
     }
     public void Avatar_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(6);
     }
     public void BrowseRooms_OnClick()
     {
         DoButtonDefaults(0);
-        SceneManager.LoadScene(3); 
+        SceneManager.LoadScene(2); 
     }
     public void Logout_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(0);
     }
     public void Quit_OnClick()
     {
@@ -55,7 +58,6 @@ public class MainMenuScript : MonoBehaviour
     public void OnButtonHover()
     {
         DoButtonDefaults(1); 
-       
     }
     
 
