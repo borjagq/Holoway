@@ -11,7 +11,7 @@ unit-test:
     - '& "C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" \
       -quit \
       -batchmode \
-      -projectPath . \
+      -projectPath ./App/HoloWay/ \
       -runTests \
       -testPlatform playmode \
       -logFile "test_output.txt" \
@@ -31,7 +31,7 @@ unity-build:
     - '& "C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" \
       -quit \
       -batchmode \
-      -projectPath ".\" \
+      -projectPath ./App/HoloWay/ \
       -logFile "build_output.txt" \
       -buildTarget WebGL \
       -outputPath ".\Builds\WebGL" \
