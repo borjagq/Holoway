@@ -8,7 +8,7 @@ unit-test:
   script:
     - 'echo "Running test cases"'
     # - /home/shenoys/Unity-2022.1.12f1/Editor/Unity -nographics -quit -batchmode -projectPath . -runTests -testPlatform playmode -testResults "./Results/TestResult.xml"
-    - '& "C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" \
+    - '& "C:\Program Files\Unity\Hub\Editor\2022.2.12f1\Editor\Unity.exe" \
       -quit \
       -batchmode \
       -projectPath ./App/HoloWay/ \
@@ -28,7 +28,7 @@ unity-build:
     - 'echo "Building..."'
     # - /home/shenoys/Unity-2022.1.12f1/Editor/Unity -nographics -quit -batchmode -projectPath . -runTests -testPlatform playmode -logFile "./Logs/[Log]_Build.txt" \
     #   buildTarget WebGL -outputPath ./Builds/WebGL -executeMethod CommandLineBuilder.BuildWebGLApplication -manualLicenseFile /home/shenoys/UnityLic.ulf
-    - '& "C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe" \
+    - '& "C:\Program Files\Unity\Hub\Editor\2022.2.12f1\Editor\Unity.exe" \
       -quit \
       -batchmode \
       -projectPath ./App/HoloWay/ \
