@@ -176,7 +176,7 @@ build-StandaloneOSX:
 
 build-StandaloneWindows64:
   <<: *build
-  image: $IMAGE:$UNITY_VERSION-windows-mono-$IMAGE_VERSION
+  image: unityci/editor:windows-2021.3.17f1-base-1.0.1
   variables:
     BUILD_TARGET: StandaloneWindows64
 
