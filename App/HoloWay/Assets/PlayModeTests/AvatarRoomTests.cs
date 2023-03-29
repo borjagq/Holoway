@@ -22,7 +22,7 @@ public class AvatarRoomTests : InputTestFixture
         DefaultKeyboard = InputSystem.AddDevice<Keyboard>();
 
         //DefaultKeyboard.Setup();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     [UnityTest]

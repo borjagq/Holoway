@@ -10,10 +10,12 @@ static class BuildCommand
     private const string KEY_ALIAS_NAME = "KEY_ALIAS_NAME";
     private const string KEYSTORE       = "keystore.keystore";
     private const string BUILD_OPTIONS_ENV_VAR = "BuildOptions";
-    private const string ANDROID_BUNDLE_VERSION_CODE = "BUNDLE_VERSION_CODE";
+    private const string ANDROID_BUNDLE_VERSION_CODE = "VERSION_BUILD_VAR";
     private const string ANDROID_APP_BUNDLE = "BUILD_APP_BUNDLE";
     private const string SCRIPTING_BACKEND_ENV_VAR = "SCRIPTING_BACKEND";
-
+    private const string VERSION_NUMBER_VAR = "VERSION_NUMBER_VAR";
+    private const string VERSION_iOS = "VERSION_BUILD_VAR";
+    
     static string GetArgument(string name)
     {
         string[] args = Environment.GetCommandLineArgs();
@@ -155,15 +157,24 @@ static class BuildCommand
             }
         } else {
             var defaultBackend = PlayerSettings.GetDefaultScriptingBackend(targetGroup);
-            Console.WriteLine($":: Using project's configured ScriptingBackend (should be {defaultBackend} for tagetGroup {targetGroup}");
+            Console.WriteLine($":: Using project's configured ScriptingBackend (should be {defaultBackend} for targetGroup {targetGroup}");
         }
     }
 
     static void PerformBuild()
     {
-        Console.WriteLine(":: Performing build");
-
         var buildTarget = GetBuildTarget();
+
+        Console.WriteLine(":: Performing build");
+        if (TryGetEnv(VERSION_NUMBER_VAR, out var bundleVersionNumber))
+        {
+            if (buildTarget == BuildTarget.iOS)
+            {
+                bundleVersionNumber = GetIosVersion();
+            }
+            Console.WriteLine($":: Setting bundleVersionNumber to '{bundleVersionNumber}' (Length: {bundleVersionNumber.Length})");
+            PlayerSettings.bundleVersion = bundleVersionNumber;
+        }
 
         if (buildTarget == BuildTarget.Android) {
             HandleAndroidAppBundle();
@@ -199,7 +210,6 @@ static class BuildCommand
             else
             {
                 Console.WriteLine($":: {ANDROID_APP_BUNDLE} env var detected but the value \"{value}\" is not a boolean.");
-
             }
 #else
             Console.WriteLine($":: {ANDROID_APP_BUNDLE} env var detected but does not work with lower Unity version than 2018.3");
@@ -219,6 +229,22 @@ static class BuildCommand
             else
                 Console.WriteLine($":: {ANDROID_BUNDLE_VERSION_CODE} env var detected but the version value \"{value}\" is not an integer.");
         }
+    }
+
+    private static string GetIosVersion()
+    {
+        if (TryGetEnv(VERSION_iOS, out string value))
+        {
+            if (int.TryParse(value, out int version))
+            {
+                Console.WriteLine($":: {VERSION_iOS} env var detected, set the version to {value}.");
+                return version.ToString();
+            }
+            else
+                Console.WriteLine($":: {VERSION_iOS} env var detected but the version value \"{value}\" is not an integer.");
+        }
+
+        throw new ArgumentNullException(nameof(value), $":: Error finding {VERSION_iOS} env var");
     }
 
     private static void HandleAndroidKeystore()

@@ -42,28 +42,28 @@ public class LoginScreenTests : InputTestFixture
     public IEnumerator Test_CheckCanvas()
     {
         yield return null;
-        GameObject Canvas = GameObject.Find("Canvas");
+        GameObject Canvas = GameObject.Find("UICanvas");
         Assert.IsNotNull(Canvas);
     }
     [UnityTest]
     public IEnumerator Test_CheckButton()
     {
         yield return null;
-        GameObject GUIElement = GameObject.Find("Canvas/LoginButton");
+        GameObject GUIElement = GameObject.Find("UICanvas/LoginWindowBackground/LoginButton");
         Assert.IsNotNull(GUIElement);
     }
     [UnityTest]
     public IEnumerator Test_CheckUsernameField()
     {
         yield return null;
-        GameObject GUIElement = GameObject.Find("Canvas/UsernameField");
+        GameObject GUIElement = GameObject.Find("UICanvas/LoginWindowBackground/UsernameField");
         Assert.IsNotNull(GUIElement);
     }
     [UnityTest]
     public IEnumerator Test_CheckPasswordField()
     {
         yield return null;
-        GameObject GUIElement = GameObject.Find("Canvas/PasswordField");
+        GameObject GUIElement = GameObject.Find("UICanvas/LoginWindowBackground/PasswordField");
         Assert.IsNotNull(GUIElement);
     }
 
@@ -71,7 +71,7 @@ public class LoginScreenTests : InputTestFixture
     public IEnumerator Test_CheckUsernamePlaceholderText()
     {
         yield return null;
-        GameObject GUIElement = GameObject.Find("Canvas/UsernameField/Text Area/Placeholder");
+        GameObject GUIElement = GameObject.Find("UICanvas/LoginWindowBackground/UsernameField/Text Area/Placeholder");
         TMP_Text PlaceHolderText = GUIElement.GetComponent<TMP_Text>();
         Assert.AreEqual("Username", PlaceHolderText.text);
     }
@@ -79,19 +79,19 @@ public class LoginScreenTests : InputTestFixture
     public IEnumerator Test_CheckPasswordPlaceholderText()
     {
         yield return null;
-        GameObject GUIElement = GameObject.Find("Canvas/PasswordField/Text Area/Placeholder");
+        GameObject GUIElement = GameObject.Find("UICanvas/LoginWindowBackground/PasswordField/Text Area/Placeholder");
         TMP_Text PlaceHolderText = GUIElement.GetComponent<TMP_Text>();
         Assert.AreEqual("Password", PlaceHolderText.text);
     }
     [UnityTest]
     public IEnumerator Test_CheckLogin()
     {
-        GameObject LoginButton = GameObject.Find("Canvas/LoginButton");
+        GameObject LoginButton = GameObject.Find("UICanvas/LoginWindowBackground/LoginButton");
         GameObject.Find("UsernameField").GetComponent<TMP_InputField>().text = "Sid";
         GameObject.Find("PasswordField").GetComponent<TMP_InputField>().text = "123456";
         
         LoginButton.GetComponent<Button>().onClick.Invoke();
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1.0f); //We need to wait for atleast some time in order to let the backend process our data
         LoginMenuScript Script = GameObject.Find("LoginMenuEventHandler").GetComponent<LoginMenuScript>();
         Assert.AreEqual(true, Script.HasStoredResponse());
         

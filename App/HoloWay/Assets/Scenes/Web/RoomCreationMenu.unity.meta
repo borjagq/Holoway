@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:App/HoloWay/Assets/Scenes/Web/RoomCreationMenu.unity.meta
 guid: e477801ee1ed5414da0a8830b9c400c5
+========
+guid: eb8fbf37dc40a31428f4724e9da1c7f6
+>>>>>>>> RoomCreationMenu:App/HoloWay/Assets/Scenes/Web/AvatarModificationRoom.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
