@@ -2,12 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
+using UnityEngine.TestTools;
+using UnityEngine.SceneManagement;
 
 public class WhiteboardTest : MonoBehaviour
 {
-    [Test]
-    public void WhiteboardBound_Test()
+    [SetUp]
+    public void Setup()
     {
+        SceneManager.LoadScene(7);
+    }
+
+    [UnityTest]
+    public IEnumerator CheckWhiteboard_Test()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("Whiteboard"));
+    }
+
+    [UnityTest]
+    public IEnumerator CheckMarkers_Test()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("Marker"));
+    }
+
+    [UnityTest]
+    public IEnumerator WhiteboardBound_Test()
+    {
+        yield return null; //Skip a frame
         var x = 10;
         var y = 10;
         var Whiteboard = new Whiteboard();
@@ -24,16 +47,16 @@ public class WhiteboardTest : MonoBehaviour
         Assert.That(result, Is.EqualTo(expectedResult));
     }
 
-    [Test]
-    public void Draw_Test()
+    [UnityTest]
+    public IEnumerator Draw_Test()
     {
+        yield return null; //Skip a frame
         var x = 10;
         var y = 10;
         var Whiteboard = new Whiteboard();
         Whiteboard.Draw(x, y);
         var expectedColor = Color.black;
         var color = Whiteboard.texture.GetPixel(x, y);
-        var comparer = new ColorEqualityComparer(10e-5f);
-        Assert.That(color, Is.EqualTo(expectedColor).Using(comparer));
+        Assert.That(color, Is.EqualTo(expectedColor));
     }
 }

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Web/AvatarModificationMenu.unity
     guid: 5f27bad1f4c7d77469621d6c39cb4f51
+  - enabled: 1
+    path: Assets/Scenes/Web/WhiteboardRoom.unity
+    guid: a1a9feead6179df489ab6ef7262e020d
   m_configObjects: {}
