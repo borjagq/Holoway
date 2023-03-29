@@ -141,7 +141,7 @@ test-editmode-with-junit-reports:
   stage: build_and_test
   <<: *unity_defaults
   script:
-    - chmod +x ./ci/build.sh && ./ci/build.sh
+    - chmod +x App/Holoway/ci/build.sh && ./ci/build.sh
   artifacts:
     paths:
       - $UNITY_DIR/Builds/
