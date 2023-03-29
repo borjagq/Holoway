@@ -150,16 +150,16 @@ test-editmode-with-junit-reports:
   tags:
     - gitlab-org
 
-build-StandaloneLinux64:
+build-StandaloneLinux86_64:
   <<: *build
   variables:
-    BUILD_TARGET: StandaloneLinux64
+    BUILD_TARGET: StandaloneLinux86_64
 
-build-StandaloneLinux64-il2cpp:
+build-StandaloneLinux86_64-il2cpp:
   <<: *build
   image: $IMAGE:$UNITY_VERSION-linux-il2cpp-$IMAGE_VERSION
   variables:
-    BUILD_TARGET: StandaloneLinux64
+    BUILD_TARGET: StandaloneLinux86_64
     SCRIPTING_BACKEND: IL2CPP
 
 build-StandaloneOSX:
@@ -176,7 +176,7 @@ build-StandaloneOSX:
 
 build-StandaloneWindows64:
   <<: *build
-  image: $IMAGE:$UNITY_VERSION-windows-mono-$IMAGE_VERSION
+  image: unityci/editor:windows-2021.3.17f1-base-1.0.1
   variables:
     BUILD_TARGET: StandaloneWindows64
 
