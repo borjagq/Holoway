@@ -24,11 +24,12 @@ public class MainMenuScript : MonoBehaviour
     public void PlayDemo_OnClick()
     {
         DoButtonDefaults(0);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
     public void Settings_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(4);
     }
     public void Avatar_OnClick()
     {
