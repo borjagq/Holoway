@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>2023/3/29 - 17:32:06</Generatedon>
+    <Generatedon>2023/3/30 - 16:15:19</Generatedon>
     <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>47</Classes>
     <Files>46</Files>
-    <Coveredlines>104</Coveredlines>
-    <Uncoveredlines>1282</Uncoveredlines>
+    <Coveredlines>117</Coveredlines>
+    <Uncoveredlines>1269</Uncoveredlines>
     <Coverablelines>1386</Coverablelines>
     <Totallines>2721</Totallines>
-    <Linecoverage>7.5</Linecoverage>
+    <Linecoverage>8.4</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>14</Coveredmethods>
+    <Coveredmethods>16</Coveredmethods>
     <Totalmethods>226</Totalmethods>
-    <Methodcoverage>6.1</Methodcoverage>
+    <Methodcoverage>7</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="PlaymodeTests" classes="11" coverage="1" coveredlines="6" coverablelines="556" totallines="1067" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="93" methodcoverage="2.1">
+    <Assembly name="PlaymodeTests" classes="11" coverage="1.6" coveredlines="9" coverablelines="556" totallines="1067" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="93" methodcoverage="2.1">
       <Class name="AvatarModificationRoomTests" coverage="0" coveredlines="0" coverablelines="38" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
       <Class name="AvatarRoomTests" coverage="0" coveredlines="0" coverablelines="165" totallines="259" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="22" methodcoverage="0" />
       <Class name="DatabasePlayModeTests" coverage="0" coveredlines="0" coverablelines="37" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
@@ -29,9 +29,9 @@
       <Class name="RoomCreationMenuTests" coverage="0" coveredlines="0" coverablelines="94" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
       <Class name="RoomSelectionMenuTests" coverage="0" coveredlines="0" coverablelines="55" totallines="92" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="SettingsMenuTests" coverage="0" coveredlines="0" coverablelines="52" totallines="92" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="13" methodcoverage="0" />
-      <Class name="WhiteboardTest" coverage="16.2" coveredlines="6" coverablelines="37" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="5" methodcoverage="40" />
+      <Class name="WhiteboardTest" coverage="24.3" coveredlines="9" coverablelines="37" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="5" methodcoverage="40" />
     </Assembly>
-    <Assembly name="Scripts" classes="36" coverage="11.8" coveredlines="98" coverablelines="830" totallines="1671" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="12" totalmethods="133" methodcoverage="9">
+    <Assembly name="Scripts" classes="36" coverage="13" coveredlines="108" coverablelines="830" totallines="1671" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="133" methodcoverage="10.5">
       <Class name="APIHelper" coverage="0" coveredlines="0" coverablelines="7" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="AudioDectection" coverage="0" coveredlines="0" coverablelines="26" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
       <Class name="AvatarModificationMenuScript" coverage="0" coveredlines="0" coverablelines="79" totallines="142" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="9" methodcoverage="0" />
@@ -66,7 +66,7 @@
       <Class name="StopWaving" coverage="0" coveredlines="0" coverablelines="3" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="TextCameraLookAt" coverage="0" coveredlines="0" coverablelines="5" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="User" coverage="0" coveredlines="0" coverablelines="5" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="Whiteboard" coverage="28.5" coveredlines="6" coverablelines="21" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
+      <Class name="Whiteboard" coverage="76.1" coveredlines="16" coverablelines="21" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
       <Class name="WhiteboardMarker" coverage="88.6" coveredlines="39" coverablelines="44" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
     </Assembly>
   </Coverage>

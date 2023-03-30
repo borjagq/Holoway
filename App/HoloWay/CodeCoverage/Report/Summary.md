@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023/3/29 - 17:32:06 |
+| Generated on: | 2023/3/30 - 16:15:19 |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 47 |
 | Files: | 46 |
-| Covered lines: | 104 |
-| Uncovered lines: | 1282 |
+| Covered lines: | 117 |
+| Uncovered lines: | 1269 |
 | Coverable lines: | 1386 |
 | Total lines: | 2721 |
-| Line coverage: | 7.5% (104 of 1386) |
+| Line coverage: | 8.4% (117 of 1386) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 14 |
+| Covered methods: | 16 |
 | Total methods: | 226 |
-| Method coverage: | 6.1% (14 of 226) |
+| Method coverage: | 7% (16 of 226) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**6**|**550**|**556**|**1067**|**1%**|**0**|**0**|****|**2**|**93**|**2.1%**|
+|**PlaymodeTests**|**9**|**547**|**556**|**1067**|**1.6%**|**0**|**0**|****|**2**|**93**|**2.1%**|
 |AvatarModificationRoomTests|0|38|38|66|0%|0|0||0|8|0%|
 |AvatarRoomTests|0|165|165|259|0%|0|0||0|22|0%|
 |DatabasePlayModeTests|0|37|37|79|0%|0|0||0|4|0%|
@@ -30,8 +30,8 @@
 |RoomCreationMenuTests|0|94|94|144|0%|0|0||0|17|0%|
 |RoomSelectionMenuTests|0|55|55|92|0%|0|0||0|10|0%|
 |SettingsMenuTests|0|52|52|92|0%|0|0||0|13|0%|
-|WhiteboardTest|6|31|37|62|16.2%|0|0||2|5|40%|
-|**Scripts**|**98**|**732**|**830**|**1671**|**11.8%**|**0**|**0**|****|**12**|**133**|**9%**|
+|WhiteboardTest|9|28|37|62|24.3%|0|0||2|5|40%|
+|**Scripts**|**108**|**722**|**830**|**1671**|**13%**|**0**|**0**|****|**14**|**133**|**10.5%**|
 |APIHelper|0|7|7|19|0%|0|0||0|1|0%|
 |AudioDectection|0|26|26|52|0%|0|0||0|6|0%|
 |AvatarModificationMenuScript|0|79|79|142|0%|0|0||0|9|0%|
@@ -66,5 +66,5 @@
 |StopWaving|0|3|3|11|0%|0|0||0|1|0%|
 |TextCameraLookAt|0|5|5|16|0%|0|0||0|1|0%|
 |User|0|5|5|11|0%|0|0||0|1|0%|
-|Whiteboard|6|15|21|38|28.5%|0|0||2|4|50%|
+|Whiteboard|16|5|21|38|76.1%|0|0||4|4|100%|
 |WhiteboardMarker|39|5|44|87|88.6%|0|0||4|4|100%|
