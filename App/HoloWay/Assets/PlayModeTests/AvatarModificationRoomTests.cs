@@ -15,6 +15,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public override void Setup()
     {
         SceneManager.LoadScene(6);
+        Debug.Log("Loading Test...");
     }
     [UnityTest]
     public IEnumerator Test_CheckMainCamera()

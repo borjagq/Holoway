@@ -10,6 +10,8 @@ using UnityEngine.UI;
 public class AvatarModificationMenuScript : MonoBehaviour
 {
     private String[] RaceName = new String[2];
+    private INIFile file = new INIFile();
+    
 
     //================================================================================
     //  STATIC VARIABLES
@@ -59,6 +61,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
     //[Header("Dropdowns")]
     public void Start()
     {
+        file.LoadFromFile("./Data.ini");
         Avatar = UMAPlayer.GetComponent<DynamicCharacterAvatar>();
         AvatarUmaData = UMAPlayer.GetComponent<UMAData>();
         MenuStack.Push(DefaultMenu);
@@ -70,12 +73,15 @@ public class AvatarModificationMenuScript : MonoBehaviour
             RaceName[1] += "HighPoly";
         }
         _OldCameraPosition = MainCamera.transform.position;
-        for (int i = 0; i < AvatarUmaData.umaRecipe.sharedColors.Length; i++)
-        {
+        /*        for (int i = 0; i < AvatarUmaData.umaRecipe.sharedColors.Length; i++)
+                {
 
-            Debug.Log(AvatarUmaData.umaRecipe.sharedColors[i].name);
-            /*Debug.Log(AvatarUmaData.GetSlot(i).slotName);*/
-        }
+                    Debug.Log(AvatarUmaData.umaRecipe.sharedColors[i].name);
+                    *//*Debug.Log(AvatarUmaData.GetSlot(i).slotName);*//*
+                }*/
+        string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
+        Debug.Log("Loaded recipe: " + recipe);
+        Avatar.LoadFromRecipeString(recipe);
     }
 
     public void RefocusCamera()
@@ -143,6 +149,14 @@ public class AvatarModificationMenuScript : MonoBehaviour
         _TargetPosition = _CurrentTarget.transform.position;
         
     }
+    public void GUIGoBackwards()
+    {
+        if (GoBackward())
+        {
+            RefocusCamera();
+        }
+    }
+
     public bool GoBackward()
     {
         MenuStack.Pop().SetActive(false);
@@ -166,6 +180,12 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public void SetMenuLocation(GameObject obj)
     {
         GameObject Menu = GameObject.Find("Menus/Menu_ColorPicker");
+        Debug.Log(obj.transform.position);
+        Menu.transform.position = obj.transform.position;
+    }
+    public void SetBackButtonLocation(GameObject obj)
+    {
+        GameObject Menu = GameObject.Find("Menus/Menu_BackButton");
         Debug.Log(obj.transform.position);
         Menu.transform.position = obj.transform.position;
     }
@@ -252,4 +272,9 @@ public class AvatarModificationMenuScript : MonoBehaviour
         return _CurrentRace;
     }
 
+    public void SaveCurrentModel()
+    {
+        
+        file.IniWriteValue("AvatarDetails","AvatarData",Avatar.GetCurrentRecipe());
+    }
 }
