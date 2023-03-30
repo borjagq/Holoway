@@ -87,6 +87,9 @@ public class AvatarModificationMenuScript : MonoBehaviour
         string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
         Debug.Log("Loaded recipe: " + recipe);
         Avatar.LoadFromRecipeString(recipe);
+        if (Avatar.activeRace.name == RaceName[0]) GenderDropdown.value = 0;
+        else if (Avatar.activeRace.name == RaceName[1]) GenderDropdown.value = 1;
+
     }
 
     public void RefocusCamera()
