@@ -8,7 +8,9 @@ public class SavingPanelBehaviour : MonoBehaviour
     public float RotationSpeedMultiplier = 360.0f;
     public Transform SavingIcon;
     public TMP_Text SavingIconText;
-
+    public float currentStartTime;
+    public float totalTimeToHide;
+    public bool shouldHidePanelAfterXSeconds = false;
     private bool IsShowingPanel = false;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,14 @@ public class SavingPanelBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(shouldHidePanelAfterXSeconds)
+        {
+            if(Time.time - currentStartTime > totalTimeToHide)
+            {
+                this.HidePanel();
+                shouldHidePanelAfterXSeconds = false;
+            }
+        }
         IsShowingPanel = this.gameObject.activeSelf;
         if (IsShowingPanel)
         {
@@ -32,6 +42,18 @@ public class SavingPanelBehaviour : MonoBehaviour
     }
     public void ShowPanel()
     {
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(true);
+    }
+    public void ShowPanel(float totalTimeToHide)
+    {
+        this.currentStartTime = Time.time;
+        this.shouldHidePanelAfterXSeconds = true;
+        this.totalTimeToHide = totalTimeToHide;
+        this.gameObject.SetActive(true);
+
+    }
+    public bool IsShown()
+    {
+        return this.gameObject.activeSelf;
     }
 }

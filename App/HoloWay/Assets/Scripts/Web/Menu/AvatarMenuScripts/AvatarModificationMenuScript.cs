@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,6 +6,7 @@ using TMPro;
 using UMA;
 using UMA.CharacterSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AvatarModificationMenuScript : MonoBehaviour
@@ -43,6 +45,9 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public TMP_Dropdown GenderDropdown;
     [Header("Game related")]
     public Camera MainCamera;
+
+    [Header("Aesthetics")]
+    public GameObject SavingPanel;
 
     private Vector3 _OldCameraPosition;
     private Vector3 _TargetPosition;
@@ -274,7 +279,25 @@ public class AvatarModificationMenuScript : MonoBehaviour
 
     public void SaveCurrentModel()
     {
-        
+        Debug.Log("Saving Model...");
         file.IniWriteValue("AvatarDetails","AvatarData",Avatar.GetCurrentRecipe());
+        SavingPanel.GetComponent<SavingPanelBehaviour>().ShowPanel(2.5f);
     }
+    public void ExitMenu()
+    {
+
+        SceneManager.LoadScene(1);
+    }
+ 
+    public void SaveAndExit()
+    {
+        this.SaveCurrentModel();
+        StartCoroutine(ExitMenuAfterSomeTime());
+    }
+    public IEnumerator ExitMenuAfterSomeTime()
+    {
+        yield return new WaitForSeconds(2.5f);
+        this.ExitMenu();
+    }
+
 }
