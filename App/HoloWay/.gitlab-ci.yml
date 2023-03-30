@@ -141,7 +141,7 @@ test-editmode-with-junit-reports:
   stage: build_and_test
   <<: *unity_defaults
   script:
-    - chmod +x ./App/Holoway/ci/build.sh && ./ci/build.sh
+    - chmod +x $UNITY_DIR/ci/build.sh && ./ci/build.sh
   artifacts:
     paths:
       - $UNITY_DIR/Builds/
@@ -217,11 +217,11 @@ build-android-il2cpp:
 #    - fastlane supply --aab "${BUILD_NAME}.aab" --track internal --package_name com.youcompany.yourgame --json_key ./gpc_token.json
 #  needs: ["build-android"]
 
-build-ios-xcode:
-  <<: *build
-  image: $IMAGE:$UNITY_VERSION-ios-$IMAGE_VERSION
-  variables:
-    BUILD_TARGET: iOS
+# build-ios-xcode:
+#   <<: *build
+#   image: $IMAGE:$UNITY_VERSION-ios-$IMAGE_VERSION
+#   variables:
+#     BUILD_TARGET: iOS
 
 #build-and-deploy-ios:
 #  stage: deploy
