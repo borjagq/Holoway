@@ -21,10 +21,17 @@ public class WhiteboardTest : MonoBehaviour
     }
 
     [UnityTest]
-    public IEnumerator CheckMarkers_Test()
+    public IEnumerator CheckBlueMarker_Test()
     {
         yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("Marker"));
+        Assert.NotNull(GameObject.Find("BlueMarker"));
+    }
+
+    [UnityTest]
+    public IEnumerator CheckRedMarker_Test()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("RedMarker"));
     }
 
     [UnityTest]
@@ -57,6 +64,6 @@ public class WhiteboardTest : MonoBehaviour
         Whiteboard.Draw(x, y);
         var expectedColor = Color.black;
         var color = Whiteboard.texture.GetPixel(x, y);
-        Assert.That(1, Is.EqualTo(1));
+        Assert.That(color, Is.EqualTo(expectedColor));
     }
 }
