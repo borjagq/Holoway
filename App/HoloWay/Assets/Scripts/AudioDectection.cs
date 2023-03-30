@@ -1,5 +1,9 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class AudioDectection : MonoBehaviour
@@ -10,15 +14,45 @@ public class AudioDectection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MicrophoneToAudioClip();
+        MicrophoneToAudioClipAsync();
     }
 
-    public void MicrophoneToAudioClip()
+    public async Task MicrophoneToAudioClipAsync()
     {
         string microphoneName = Microphone.devices[0];
         microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
-    }
 
+        SavWav.Save("J:/Unity_Project/ASE_Project/ase-team3-meeting_room/App/HoloWayAssets/audio/myaudio", microphoneClip);
+
+        using (HttpClient httpClient = new HttpClient())
+        {
+            httpClient.DefaultRequestHeaders.Add(
+              "Authorization",
+              "bdf62e371331482f8e5af4004590de54"
+            );
+
+            var json = new
+            {
+                audio_url = "J:/Unity_Project/ASE_Project/ase-team3-meeting_room/App/HoloWayAssets/audio/myaudio.wav"
+            };
+
+            StringContent payload = new StringContent(
+              JsonConvert.SerializeObject(json),
+              Encoding.UTF8,
+              "application/json"
+            );
+
+            HttpResponseMessage response = await httpClient.PostAsync(
+              "https://api.assemblyai.com/v2/transcript",
+              payload
+            );
+
+            response.EnsureSuccessStatusCode();
+            var responseJson = await response.Content.ReadAsStringAsync();
+            Debug.Log("hello" +responseJson.ToString());
+
+        }
+    }
     public float GetLoudnessFromMicrophone()
     {
         return GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[0]), microphoneClip);

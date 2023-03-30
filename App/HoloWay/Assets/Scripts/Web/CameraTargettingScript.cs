@@ -37,7 +37,7 @@ public class CameraTargettingScript : MonoBehaviour
         if (Physics.Raycast(ray, out hitInfo, 5.0f, 7))
         {
             //hitRay = new Ray(this.transform.position, hitInfo.transform.position - this.transform.position);
-            Debug.Log(hitInfo.transform.name);
+            //Debug.Log(hitInfo.transform.name);
             
             text.transform.position = hitInfo.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
             
