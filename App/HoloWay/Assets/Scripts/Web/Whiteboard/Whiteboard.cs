@@ -28,6 +28,7 @@ public class Whiteboard : MonoBehaviour
 
     public void Draw(int x, int y)
     {
+        texture = new Texture2D((int)textureSize.x, (int)textureSize.y);
         Color black = Color.black;
         if (InsideWhiteboard(x, y) == 1)
         {

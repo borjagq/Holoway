@@ -34,6 +34,7 @@ public class MainMenuScript : MonoBehaviour
     public void Avatar_OnClick()
     {
         DoButtonDefaults(0);
+        SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_AVATARMODIFICATIONROOM);
     }
     public void BrowseRooms_OnClick()
     {

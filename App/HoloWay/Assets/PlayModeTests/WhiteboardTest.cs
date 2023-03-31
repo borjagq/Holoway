@@ -21,10 +21,17 @@ public class WhiteboardTest : MonoBehaviour
     }
 
     [UnityTest]
-    public IEnumerator CheckMarkers_Test()
+    public IEnumerator CheckBlueMarker_Test()
     {
         yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("Marker"));
+        Assert.NotNull(GameObject.Find("BlueMarker"));
+    }
+
+    [UnityTest]
+    public IEnumerator CheckRedMarker_Test()
+    {
+        yield return null; //Skip a frame
+        Assert.NotNull(GameObject.Find("RedMarker"));
     }
 
     [UnityTest]
