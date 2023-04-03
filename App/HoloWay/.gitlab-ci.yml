@@ -11,7 +11,7 @@ variables:
   IMAGE: unityci/editor # https://hub.docker.com/r/unityci/editor
   IMAGE_VERSION: 1 # This will automatically use latest v1.x.x, see https://github.com/game-ci/docker/releases
   GIT_CLONE_PATH: $CI_BUILDS_DIR
-  UNITY_DIR: /home/gitlab-runner/Holoway # this needs to be an absolute path. Defaults to the root of your tree.
+  UNITY_DIR: /home/gitlab-runner/Holoway/.git # this needs to be an absolute path. Defaults to the root of your tree.
   # You can expose this in Unity via Application.version
   VERSION_NUMBER_VAR: $CI_COMMIT_REF_SLUG-$CI_PIPELINE_ID-$CI_JOB_ID
   VERSION_BUILD_VAR: $CI_PIPELINE_IID
