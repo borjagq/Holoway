@@ -777,9 +777,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SettingsMenuScript, Scripts
-        m_MethodName: Save_OnClick
+      - m_Target: {fileID: 1742534254}
+        m_TargetAssemblyTypeName: RoomSelectionMenuScript, Scripts
+        m_MethodName: SelectButtonOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

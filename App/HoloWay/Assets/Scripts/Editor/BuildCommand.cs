@@ -3,6 +3,7 @@ using System.Linq;
 using System;
 using System.IO;
 
+#if UNITY_EDITOR
 static class BuildCommand
 {
     private const string KEYSTORE_PASS  = "KEYSTORE_PASS";
@@ -286,3 +287,5 @@ static class BuildCommand
         PlayerSettings.Android.keyaliasPass = keystoreAliasPass;
     }
 }
+
+#endif
