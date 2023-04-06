@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://holoway-e983c-default-rtdb.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">412479265344</string>
+  <string name="google_storage_bucket" translatable="false">holoway-e983c.appspot.com</string>
+  <string name="project_id" translatable="false">holoway-e983c</string>
+  <string name="google_api_key" translatable="false">AIzaSyCA_cToSi_r4kh_27ZJatfCgriSQehZpew</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCA_cToSi_r4kh_27ZJatfCgriSQehZpew</string>
+  <string name="google_app_id" translatable="false">1:412479265344:android:8240a72aff68ed749fdda5</string>
+  <string name="default_web_client_id" translatable="false">412479265344-7mm0jpt7teodie2jb78j8hvo1mhdraqf.apps.googleusercontent.com</string>
+</resources>
