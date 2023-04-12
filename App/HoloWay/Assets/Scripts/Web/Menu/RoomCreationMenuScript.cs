@@ -24,5 +24,10 @@ public class RoomCreationMenuScript : MonoBehaviour
         else
             ConfirmButton.interactable= false;
     }
+    public void ConfirmOnClick()
+    {
+        GlobalNetworkDetails.gNetworkType = NetworkType.Client;
+        SceneManager.LoadScene(8);
+    }
 
 }

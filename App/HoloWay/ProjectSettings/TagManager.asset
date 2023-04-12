@@ -9,6 +9,7 @@ TagManager:
   - Marker
   - UMAIgnore
   - whiteBoard
+  - Room
   layers:
   - Default
   - TransparentFX

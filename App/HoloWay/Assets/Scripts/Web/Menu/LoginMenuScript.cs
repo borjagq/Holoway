@@ -4,6 +4,7 @@ using System.Net;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class LoginMenuScript : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class LoginMenuScript : MonoBehaviour
     public void LoginButtonClick()
     {
         StartCoroutine(DoLogin());
+        SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_MAINMENU);
     }
     public IEnumerator DoLogin()
     {

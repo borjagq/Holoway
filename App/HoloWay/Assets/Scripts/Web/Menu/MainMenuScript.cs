@@ -39,7 +39,11 @@ public class MainMenuScript : MonoBehaviour
     public void BrowseRooms_OnClick()
     {
         DoButtonDefaults(0);
+<<<<<<< HEAD
         SceneManager.LoadScene(2); 
+=======
+        SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_ROOMCREATIONMENU);
+>>>>>>> BasicMultiplayerIntegration
     }
     public void Logout_OnClick()
     {
