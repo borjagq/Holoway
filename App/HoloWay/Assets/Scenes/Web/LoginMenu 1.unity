@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -635,12 +635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7e7400786a7054193a8a0442b2816c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultCanvasPrefab: {fileID: 3826376763198906171, guid: 5c4cd1fd68f4c2341a429c2359d14f37, type: 3}
-  DefaultEventSystemPrefab: {fileID: 2815623445519161, guid: 5464bebb60aaf714da64fdf352dabebd, type: 3}
-  DefaultInputFieldPrefab: {fileID: 8460045362149160260, guid: 16096ba4347dc424a8929b75e3dd0e3a, type: 3}
-  DefaultButtonPrefab: {fileID: 5789553787253693946, guid: 5a1b286573ddac14dac14b3527ce3ba1, type: 3}
-  DefaultLoginMenuEventHandlerPrefab: {fileID: 7954551815186422548, guid: 25e9970c05ca75f408b959a72831a4e2, type: 3}
-  DefaultCameraPrefab: {fileID: 3433806138369372712, guid: dca2dfeac8b8d0f41b7eaeef4a205b4d, type: 3}
 --- !u!1 &1795709265
 GameObject:
   m_ObjectHideFlags: 0
