@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+  <Summary numSequencePoints="11" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="90.91" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="3" numClasses="3" visitedMethods="3" numMethods="3" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Scripts</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/APIHelper.cs" />
+        <File uid="2" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/AudioDectection.cs" />
+        <File uid="3" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/ChangeScene.cs" />
+        <File uid="4" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/FileSystem/INIFile.cs" />
+        <File uid="5" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalAudioSettings.cs" />
+        <File uid="6" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameSettings.cs" />
+        <File uid="7" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalGameStrings.cs" />
+        <File uid="8" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Globals/GlobalNetworkDetails.cs" />
+        <File uid="9" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/JsonResponse/LoginResponse.cs" />
+        <File uid="10" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Menu/CommonMenuScript.cs" />
+        <File uid="11" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Common/Menu/SavingPanelBehaviour.cs" />
+        <File uid="12" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/ConnectPlayer.cs" />
+        <File uid="13" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/DatabaseManager.cs" />
+        <File uid="14" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Editor/BuildCommand.cs" />
+        <File uid="15" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/GetExternalAPIData.cs" />
+        <File uid="16" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/SaveWAV.cs" />
+        <File uid="17" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/ScaleFromAudioClip.cs" />
+        <File uid="18" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/ScaleFromMicrophone.cs" />
+        <File uid="19" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/User.cs" />
+        <File uid="20" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Aesthetics/AvatarModificationMenuLineRender.cs" />
+        <File uid="21" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Aesthetics/TextCameraLookAt.cs" />
+        <File uid="22" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviour.cs" />
+        <File uid="23" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/FootstepBehaviourAnimator.cs" />
+        <File uid="24" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopShakingHands.cs" />
+        <File uid="25" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopSitToStand.cs" />
+        <File uid="26" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopStandToSit.cs" />
+        <File uid="27" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Animation/StopWaving.cs" />
+        <File uid="28" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Board/DrawPoints.cs" />
+        <File uid="29" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Board/MovePoint.cs" />
+        <File uid="30" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/CameraTargettingScript.cs" />
+        <File uid="31" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/AvatarMenuScripts/AvatarModificationButtonBehaviour.cs" />
+        <File uid="32" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/AvatarMenuScripts/AvatarModificationMenuScript.cs" />
+        <File uid="33" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/LoginMenuScript.cs" />
+        <File uid="34" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/MainMenuScript.cs" />
+        <File uid="35" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomCreationMenuScript.cs" />
+        <File uid="36" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Menu/RoomSelectionMenuScript.cs" />
+        <File uid="37" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/ModCameraScript.cs" />
+        <File uid="38" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Multiplayer/ClientNetworkAnimator.cs" />
+        <File uid="39" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Multiplayer/ClientNetworkTransform.cs" />
+        <File uid="40" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Multiplayer/NetworkManagerInitializer.cs" />
+        <File uid="41" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Player/MovementScript.cs" />
+        <File uid="42" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerEmoticonHandler.cs" />
+        <File uid="43" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/PlayerMovementScript.cs" />
+        <File uid="44" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Whiteboard/DragObject.cs" />
+        <File uid="45" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Whiteboard/Whiteboard.cs" />
+        <File uid="46" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/Scripts/Web/Whiteboard/WhiteboardMarker.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>LoginMenuScript</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663508</MetadataToken>
+              <Name>LoginMenuScript::LoginMenuScript()</Name>
+              <FileRef uid="33" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1095" ordinal="0" offset="0" sl="11" sc="5" el="11" ec="5" bec="0" bev="0" fileid="33" />
+                <SequencePoint vc="1" uspid="1096" ordinal="0" offset="11" sl="12" sc="5" el="12" ec="5" bec="0" bev="0" fileid="33" />
+                <SequencePoint vc="1" uspid="1097" ordinal="0" offset="22" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="33" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module>
+      <Summary numSequencePoints="8" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="87.50" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="2" numClasses="2" visitedMethods="2" numMethods="2" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>PlaymodeTests</ModuleName>
+      <Files>
+        <File uid="47" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/AvatarModificationRoomTests.cs" />
+        <File uid="48" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/AvatarRoomTests.cs" />
+        <File uid="49" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/DatabasePlayModeTests.cs" />
+        <File uid="50" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/LoginManagerTest.cs" />
+        <File uid="51" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/LoginScreenTests.cs" />
+        <File uid="52" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/MainMenuTests.cs" />
+        <File uid="53" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomCreationMenuTests.cs" />
+        <File uid="54" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/RoomSelectionMenuTests.cs" />
+        <File uid="55" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/SettingsMenuTests.cs" />
+        <File uid="56" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/WhiteboardTest.cs" />
+        <File uid="57" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/ExternalAPITests.cs" />
+        <File uid="58" fullPath="C:/Dev/ASE/ase-team3-meeting_room/App/HoloWay/Assets/PlayModeTests/MultiplayerTests.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>LoginManagerTest</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663354</MetadataToken>
+              <Name>System.Void LoginManagerTest::Setup()</Name>
+              <FileRef uid="50" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1487" ordinal="0" offset="0" sl="14" sc="5" el="14" ec="5" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="1" uspid="1488" ordinal="0" offset="1" sl="15" sc="9" el="15" ec="9" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="1" uspid="1489" ordinal="0" offset="9" sl="16" sc="5" el="16" ec="5" bec="0" bev="0" fileid="50" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="80.00" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>LoginManagerTest/&lt;MoveToScene&gt;d__1</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="80.00" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="80.00" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663737</MetadataToken>
+              <Name>System.Boolean LoginManagerTest/&lt;MoveToScene&gt;d__1::MoveNext()</Name>
+              <FileRef uid="50" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1890" ordinal="0" offset="42" sl="20" sc="5" el="20" ec="5" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="1" uspid="1891" ordinal="0" offset="43" sl="21" sc="9" el="21" ec="9" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="1" uspid="1892" ordinal="0" offset="66" sl="25" sc="9" el="25" ec="9" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="1" uspid="1893" ordinal="0" offset="98" sl="26" sc="9" el="26" ec="9" bec="0" bev="0" fileid="50" />
+                <SequencePoint vc="0" uspid="1894" ordinal="0" offset="128" sl="27" sc="5" el="27" ec="5" bec="0" bev="0" fileid="50" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
