@@ -54,11 +54,6 @@ public class MovementScript : NetworkBehaviour
             PlayerAvatarRecipe.Value = newRecipe;
             Avatar.LoadFromRecipeString(newRecipe.ToString());
         };
-        /*PlayerName.OnValueChanged += (FixedString128Bytes oldName, FixedString128Bytes newName) =>
-        {
-            PlayerName.Value = newName;
-        };*/
-        //PlayerRenderer = GetComponent<Renderer>();
         Debug.Log($"Connected with clientID: {OwnerClientId}");
 
         GameObject Room = GameObject.FindGameObjectWithTag("Room");
@@ -94,24 +89,7 @@ public class MovementScript : NetworkBehaviour
         if (!IsOwner) return;
         //PlayerRenderer.material.color = PlayerColor.Value;
         //PlayerText.text = PlayerName.Value.ToString();
-        Animator.Animator.SetFloat("Speed", Input.GetAxis("Vertical"));
-        Animator.Animator.SetFloat("Direction", Input.GetAxis("Horizontal"));
-        Animator.Animator.SetBool("Sprint", Input.GetKey(KeyCode.LeftShift));
-        float ForwardMultiplier = WalkSpeedMultiplier;
-        float DirectionMultiplier = WalkDirectionMultiplier;
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            ForwardMultiplier = SprintSpeedMultiplier;
-            DirectionMultiplier = SprintDirectionMultiplier;
-        }
-        else
-        {
-            ForwardMultiplier = WalkSpeedMultiplier;
-            DirectionMultiplier = WalkDirectionMultiplier;
-        }
-        this.transform.Rotate(new Vector3(0.0f, Input.GetAxis("Vertical") * Input.GetAxis("Horizontal") * Time.deltaTime * DirectionMultiplier, 0.0f));
-        Vector3 ForwardVector = ForwardObject.transform.position - this.transform.position;
-        this.transform.position += ForwardVector * Input.GetAxis("Vertical") * ForwardMultiplier * Time.deltaTime;
+
     }
     [ServerRpc(RequireOwnership = false)]
     public void OnSpawnServerRpc()
@@ -130,9 +108,4 @@ public class MovementScript : NetworkBehaviour
         PlayerAvatarRecipe.Value = avatarstring;
         
     }
-/*    [ServerRpc]
-    public void ChangeNameServerRpc(FixedString128Bytes NewName)
-    {
-        PlayerName.Value = NewName;
-    }*/
 }
