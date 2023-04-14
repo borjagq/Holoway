@@ -1729,7 +1729,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1481651409}
         m_TargetAssemblyTypeName: ChangeScene, Scripts
         m_MethodName: MoveToScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1788,6 +1788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b9a657ea3db384d8bc73e41d8d679f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenes: 7
 --- !u!1 &1742534249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2234,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2002133271}
         m_TargetAssemblyTypeName: ChangeScene, Scripts
         m_MethodName: MoveToScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2292,6 +2293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b9a657ea3db384d8bc73e41d8d679f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenes: 8
 --- !u!1 &2037789836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,7 +2428,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2037789842}
         m_TargetAssemblyTypeName: ChangeScene, Scripts
         m_MethodName: MoveToScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2485,3 +2487,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b9a657ea3db384d8bc73e41d8d679f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenes: 6
