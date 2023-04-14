@@ -12,7 +12,14 @@ public class MainMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(MenuAudioSource == null)
+        {
+            MenuAudioSource = Camera.main.GetComponent<AudioSource>();
+            if(MenuAudioSource == null)
+            {
+                MenuAudioSource = Camera.main.gameObject.AddComponent<AudioSource>();
+            }
+        }
     }
 
     // Update is called once per frame
@@ -39,7 +46,7 @@ public class MainMenuScript : MonoBehaviour
     public void BrowseRooms_OnClick()
     {
         DoButtonDefaults(0);
-        SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_ROOMCREATIONMENU);
+        //SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_ROOMCREATIONMENU);
     }
     public void Logout_OnClick()
     {

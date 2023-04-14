@@ -14,7 +14,7 @@ public class LoginMenuScript : MonoBehaviour
     public void LoginButtonClick()
     {
         StartCoroutine(DoLogin());
-        SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_MAINMENU);
+        //SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_MAINMENU);
     }
     public IEnumerator DoLogin()
     {
