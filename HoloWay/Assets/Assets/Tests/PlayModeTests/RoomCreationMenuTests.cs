@@ -12,7 +12,7 @@ public class RoomCreationMenuTests
     [SetUp]
     public void Setup()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
     [UnityTest]
     public IEnumerator Test_CheckCanvas()

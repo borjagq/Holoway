@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Assets/Level/Scenes/LoginMenu.unity
     guid: 83f557d9e5602a342bc3c41acc28fce7
   - enabled: 1
@@ -32,7 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Level/Scenes/LargeRoom.unity
     guid: 68a215ff11a63a5428e2908ab9c36c6c
+  - enabled: 1
+    path: Assets/Assets/Level/Scenes/MultiplayerRoom.unity
+    guid: 1498a1205f7e5f14398d72f2061cd8ce
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cb3bbfad1105b1345ba0d76cedd4c4a0, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 23c188a655ce9cf4e8bb0c025c8c0843, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 629b621875631614584404c35f294484, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 10650427f617d7c4ea0224b394fb0e09, type: 2}

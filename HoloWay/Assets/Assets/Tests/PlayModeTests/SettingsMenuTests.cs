@@ -11,7 +11,7 @@ public class SettingsMenuTests
     public void Setup()
     {
         Debug.Log("Loading settings menu tests...");
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
     // Check if the objects are loading properly...
     [UnityTest]

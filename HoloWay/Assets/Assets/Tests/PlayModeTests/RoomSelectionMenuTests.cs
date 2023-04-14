@@ -12,7 +12,7 @@ public class RoomSelectionMenuTests
     [SetUp]
     public void Setup()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
     [UnityTest]
