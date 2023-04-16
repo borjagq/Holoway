@@ -1,0 +1,122 @@
+* {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 1rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+html {
+    font-size: 20px;
+}
+
+#wrapper {
+    padding: 30px;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#wrapper::after {
+    content: "\00a9  2023 Group 3, CS7CS3, Trinity College Dublin";
+    color: #cdcdcd;
+    font-size: 0.75rem;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.box > form > * {
+    margin: 15px 0;
+}
+
+.box > form > *:first-child {
+    margin: 0;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+}
+
+input[type=text]:active,
+input[type=text]:focus {
+    border-color: #11c8a3;
+    outline: none;
+}
+
+button {
+    background-color: #11c8a3;
+    border: 2px solid #11c8a3;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #81e1cd;
+}
+
+.logo {
+    margin-bottom: 10vh !important;
+    display: block;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.login-with-google::before {
+    content: "\f1a0";
+    font-family: "Font Awesome 6 Brands";
+    margin-right: 10px;
+}
+
+.checkmark::after {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 150px;
+    color: #ebebeb;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #11c8a3;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    color: #8b8b8b;
+    text-align: center;
+}
