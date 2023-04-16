@@ -21,6 +21,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 
+/*
 [InitializeOnLoadAttribute]
 public class OculusSampleFrameworkUtil
 {
@@ -49,5 +50,6 @@ public class OculusSampleFrameworkUtil
   }
 #endif
 }
+*/
 
 #endif
