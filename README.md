@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://azure.borjagq.com/resources/logo/logo@2x.png" alt="Logo" width="240">
+  <img src="https://azure.borjagq.com/resources/logo/logo.png" alt="Logo" width="240">
 
   <br />
 
