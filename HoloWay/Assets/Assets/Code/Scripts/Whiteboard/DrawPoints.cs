@@ -14,6 +14,10 @@ public class DrawPoints : MonoBehaviour
         private GameObject Parent;
     [SerializeField]
         private Camera cam;
+        [SerializeField]
+        private Camera playerCam;
+        [SerializeField]
+        private GameObject camObj;
     [SerializeField]
         private int stepsPerCurve = 100;
     [SerializeField]
@@ -22,6 +26,8 @@ public class DrawPoints : MonoBehaviour
         private Vector3 trans_ControlPoints;
     [SerializeField]
         private Vector3 trans_LerpPoints;
+    [SerializeField]
+        private int display;
 
     List<GameObject> points = new List<GameObject>();
     List<List<GameObject>> splines = new List<List<GameObject>>();
@@ -60,6 +66,9 @@ public class DrawPoints : MonoBehaviour
   
         return result;
     }
+    void Start() {
+
+    }
 
     void Update () {
         if (Input.GetMouseButtonDown(0)) {
@@ -77,6 +86,10 @@ public class DrawPoints : MonoBehaviour
         if (Deletion) {
             DrawSplines();
             Deletion = false;
+        }
+        if (Input.GetKey ("escape")) {
+            camObj.SetActive(false);
+            playerCam.enabled  = true;
         }
         
     }
@@ -103,12 +116,13 @@ public class DrawPoints : MonoBehaviour
 
 
     void CastRay(bool delete) {
+        
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {   
             if (delete){
-                
+
                 if(hit.collider.name == "ControlPoint(Clone)") {
                     Debug.Log("delete castray");
                     foreach (List<GameObject> _spline in splines) {
@@ -126,9 +140,9 @@ public class DrawPoints : MonoBehaviour
                             }
                         }
                     }
-                    
+
                 }
-                
+
             }else {
                 if(hit.collider.name == board.name) {
                 GameObject _point = Instantiate (point, new Vector3(hit.point.x, hit.point.y,hit.point.z), Quaternion.identity);
@@ -142,8 +156,9 @@ public class DrawPoints : MonoBehaviour
                     crntPointMovedPosition = hit.transform.position;
                 }
             }
-            
+
         }
+        
     }
 
 }
