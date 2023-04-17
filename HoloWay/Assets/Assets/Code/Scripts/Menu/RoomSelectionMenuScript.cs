@@ -31,7 +31,8 @@ public class RoomSelectionMenuScript : MonoBehaviour
     }
     public void SelectButtonOnClick()
     {
-        GlobalNetworkDetails.gNetworkType = NetworkType.Host;
+        //GlobalNetworkDetails.gNetworkType = NetworkType.Host;
+        GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Host);
         SceneManager.LoadScene(8);          //Load the multiplayer room with the player as host
     }
 }

@@ -8,6 +8,7 @@ public class NetworkManagerInitializer : MonoBehaviour
 
     void Start()
     {
-        GlobalNetworkDetails.InitializeNetworkManager(NetworkManager.Singleton);   
+        GlobalGameSettings.Instance.NetworkSettings.InitializeNetworkManager(NetworkManager.Singleton);
+        //GlobalNetworkDetails.InitializeNetworkManager(NetworkManager.Singleton);   
     }
 }

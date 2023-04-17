@@ -26,7 +26,8 @@ public class RoomCreationMenuScript : MonoBehaviour
     }
     public void ConfirmOnClick()
     {
-        GlobalNetworkDetails.gNetworkType = NetworkType.Client;
+        //GlobalNetworkDetails.gNetworkType = NetworkType.Client;
+        GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Client);
         SceneManager.LoadScene(8);
     }
 
