@@ -10,7 +10,7 @@ public class MovePoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GameObject.FindWithTag("whiteBoard").GetComponent<Camera>();
+        cam = GameObject.FindWithTag("Whiteboard").GetComponent<Camera>();
     }
 
     // Update is called once per frame

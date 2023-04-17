@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1680240871560124653}
   - component: {fileID: 7026959193789822613}
   - component: {fileID: 4059730274888730982}
-  - component: {fileID: 7094621378698378486}
+  - component: {fileID: 1589589367400527625}
   m_Layer: 0
   m_Name: ControlPoint
   m_TagString: Untagged
@@ -27,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6588386208439450525}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -9.88, y: 1.89, z: 0.87}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &1680240871560124653
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93,21 +93,13 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6588386208439450525}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7094621378698378486
+--- !u!114 &1589589367400527625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

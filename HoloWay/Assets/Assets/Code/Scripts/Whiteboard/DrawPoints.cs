@@ -59,6 +59,7 @@ public class DrawPoints : MonoBehaviour
             CastRay(false);
         }       
         if (Input.GetMouseButtonDown(1)) {
+            Debug.Log("delete click");
             CastRay(true);
             DrawSplines();
         }
@@ -81,12 +82,11 @@ public class DrawPoints : MonoBehaviour
             interpolatedPoints.Clear();
             foreach (List<GameObject> Controlpoints in splines){
                 List<Vector3> spline = GenerateSpline(Controlpoints,stepsPerCurve);
-                Debug.Log(Controlpoints.Count);
                 foreach (Vector3 splinePoints in spline) {
                     GameObject interpolatedPoint = Instantiate(interpolatedPointObject, new Vector3(splinePoints.x,splinePoints.y,splinePoints.z), Quaternion.identity);
                     interpolatedPoint.transform.parent = Parent.transform;
-                    interpolatedPoint.transform.Translate(new Vector3(0.01f,0f,0f));
-                    interpolatedPoint.transform.Rotate(0,-90,0);
+                    interpolatedPoint.transform.Translate(new Vector3(0.001f,0f,0f));
+                    interpolatedPoint.transform.Rotate(0,90,0);
                     interpolatedPoints.Add(interpolatedPoint);
                 }
             }
@@ -97,13 +97,13 @@ public class DrawPoints : MonoBehaviour
 
     void CastRay(bool delete) {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        Debug.Log("Ray");
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {   
-            Debug.Log("hit");
             if (delete){
-                if(hit.collider.name == point.name) {
+                
+                if(hit.collider.name == "ControlPoint(Clone)") {
+                    Debug.Log("delete castray");
                     foreach (List<GameObject> _spline in splines) {
                         bool deleteSplinePoints = false;
                         foreach (GameObject _point in _spline) {
@@ -126,14 +126,13 @@ public class DrawPoints : MonoBehaviour
                 if(hit.collider.name == board.name) {
                 GameObject _point = Instantiate (point, new Vector3(hit.point.x, hit.point.y,hit.point.z), Quaternion.identity);
                 _point.transform.parent = Parent.transform;
-                _point.transform.Translate(new Vector3(0.03f,0.0f,0.0f));
-                _point.transform.Rotate(0,-90,0);
+                _point.transform.Translate(new Vector3(-0.003f,0.0f,0.0f));
+                _point.transform.Rotate(0,90,0);
                 points.Add(_point);
                 }
-                if(hit.collider.name == point.name) {
+                if(hit.collider.name == "ControlPoint(Clone)") {
                     crntPointMoved = hit.transform.gameObject;
                     crntPointMovedPosition = hit.transform.position;
-                    Debug.Log(crntPointMoved);
                 }
             }
             
