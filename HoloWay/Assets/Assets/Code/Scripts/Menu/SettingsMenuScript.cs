@@ -36,6 +36,7 @@ public class SettingsMenuScript : MonoBehaviour
     public void OnUIVolumeChange()
     {
         GlobalGameSettings.Instance.AudioSettings.SetUIVolume(UIVolumeSlider.value);
+        GlobalGameSettings.Instance.ChangeVolumeAccordingToState();
     }
     public void OnVolumeSliderChange()
     {

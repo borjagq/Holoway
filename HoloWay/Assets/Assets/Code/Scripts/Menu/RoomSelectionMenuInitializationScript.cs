@@ -9,4 +9,5 @@ public class RoomSelectionMenuInitializationScript : MonoBehaviour
     {
         GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Host);
     }
+
 }

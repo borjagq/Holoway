@@ -66,7 +66,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
     //[Header("Dropdowns")]
     public void Start()
     {
-        file.LoadFromFile("./Data.ini");
+        //file.LoadFromFile("./Data.ini");
         Avatar = UMAPlayer.GetComponent<DynamicCharacterAvatar>();
         AvatarUmaData = UMAPlayer.GetComponent<UMAData>();
         MenuStack.Push(DefaultMenu);
@@ -84,9 +84,18 @@ public class AvatarModificationMenuScript : MonoBehaviour
                     Debug.Log(AvatarUmaData.umaRecipe.sharedColors[i].name);
                     *//*Debug.Log(AvatarUmaData.GetSlot(i).slotName);*//*
                 }*/
-        string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
-        Debug.Log("Loaded recipe: " + recipe);
-        Avatar.LoadFromRecipeString(recipe);
+
+        string recipe = PlayerPrefs.GetString("AvatarData");
+        //string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
+       
+        if (recipe != null)
+        {
+            if (recipe != "" && recipe.Trim().Length > 0)
+            {
+                Debug.Log("Loaded recipe: " + recipe);
+                Avatar.LoadFromRecipeString(recipe);
+            }
+        }
         if (Avatar.activeRace.name == RaceName[0]) GenderDropdown.value = 0;
         else if (Avatar.activeRace.name == RaceName[1]) GenderDropdown.value = 1;
 
@@ -283,7 +292,8 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public void SaveCurrentModel()
     {
         Debug.Log("Saving Model...");
-        file.IniWriteValue("AvatarDetails","AvatarData",Avatar.GetCurrentRecipe());
+        //file.IniWriteValue("AvatarDetails","AvatarData",Avatar.GetCurrentRecipe());
+        PlayerPrefs.SetString("AvatarData", Avatar.GetCurrentRecipe());
         SavingPanel.GetComponent<SavingPanelBehaviour>().ShowPanel(2.5f);
     }
     public void ExitMenu()
