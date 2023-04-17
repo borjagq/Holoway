@@ -16,6 +16,13 @@ public class DrawPoints : MonoBehaviour
         private Camera cam;
     [SerializeField]
         private int stepsPerCurve = 100;
+    [SerializeField]
+        private Vector3 rotation;
+    [SerializeField]
+        private Vector3 trans_ControlPoints;
+    [SerializeField]
+        private Vector3 trans_LerpPoints;
+
     List<GameObject> points = new List<GameObject>();
     List<List<GameObject>> splines = new List<List<GameObject>>();
     List<GameObject> interpolatedPoints = new List<GameObject>();
@@ -24,7 +31,7 @@ public class DrawPoints : MonoBehaviour
     bool Deletion = false;
 
     // https://andrewhungblog.wordpress.com/2017/03/03/catmull-rom-splines-in-plain-english/
-    public static List<Vector3> GenerateSpline(List<GameObject> _points, int stepsPerCurve = 3, float tension = 1)
+    public List<Vector3> GenerateSpline(List<GameObject> _points, int stepsPerCurve = 3, float tension = 1)
     {
         List<Vector3> result = new List<Vector3>();
  
@@ -85,8 +92,8 @@ public class DrawPoints : MonoBehaviour
                 foreach (Vector3 splinePoints in spline) {
                     GameObject interpolatedPoint = Instantiate(interpolatedPointObject, new Vector3(splinePoints.x,splinePoints.y,splinePoints.z), Quaternion.identity);
                     interpolatedPoint.transform.parent = Parent.transform;
-                    interpolatedPoint.transform.Translate(new Vector3(0.001f,0f,0f));
-                    interpolatedPoint.transform.Rotate(0,90,0);
+                    interpolatedPoint.transform.Translate(new Vector3(trans_LerpPoints.x,trans_LerpPoints.y,trans_LerpPoints.z));
+                    interpolatedPoint.transform.Rotate(rotation.x,rotation.y,rotation.z);
                     interpolatedPoints.Add(interpolatedPoint);
                 }
             }
@@ -126,8 +133,8 @@ public class DrawPoints : MonoBehaviour
                 if(hit.collider.name == board.name) {
                 GameObject _point = Instantiate (point, new Vector3(hit.point.x, hit.point.y,hit.point.z), Quaternion.identity);
                 _point.transform.parent = Parent.transform;
-                _point.transform.Translate(new Vector3(-0.003f,0.0f,0.0f));
-                _point.transform.Rotate(0,90,0);
+                _point.transform.Translate(new Vector3(trans_ControlPoints.x,trans_ControlPoints.y,trans_ControlPoints.z));
+                _point.transform.Rotate(rotation.x,rotation.y,rotation.z);
                 points.Add(_point);
                 }
                 if(hit.collider.name == "ControlPoint(Clone)") {

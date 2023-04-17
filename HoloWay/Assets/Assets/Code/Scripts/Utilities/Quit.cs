@@ -7,6 +7,7 @@ public class Quit : MonoBehaviour
 {
     public void ReturnToDescktop()
     {
+        PlayerPrefs.DeleteKey("player_token");
         Application.Quit();
     }
 }
