@@ -121,7 +121,7 @@ public class LoginManager : MonoBehaviour
 
             CancelInvoke("RepeatCheck");
 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
 
         }
 
@@ -147,7 +147,7 @@ public class LoginManager : MonoBehaviour
             LoginSession.token = token;
             LoginSession.user_id = user_id;
 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
 
         } else {
 
