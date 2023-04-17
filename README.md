@@ -126,7 +126,7 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] General refactoring (ALL)
 - [x] Review tests (ALL)
 - [x] Login linked with menu (NB+BGQ)
-- [ ] Reset cookies when logout 
+- [x] Reset cookies when logout 
 - [ ] Whiteboard complex algorithm (NB+BGQ)
 - [ ] Voice implementation (SJ+JL)
 - [ ] Multiplayer in VR (HG+SS)
