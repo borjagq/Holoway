@@ -127,7 +127,7 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] Review tests (ALL)
 - [x] Login linked with menu (NB+BGQ)
 - [x] Reset cookies when logout 
-- [ ] Whiteboard complex algorithm (NB+BGQ)
+- [x] Whiteboard complex algorithm (NB+BGQ)
 - [ ] Voice implementation (SJ+JL)
 - [ ] Multiplayer in VR (HG+SS)
 - [ ] All functionalities in VR (SCIT)
