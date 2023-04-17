@@ -2984,8 +2984,8 @@ MonoBehaviour:
   camObj: {fileID: 1251283737}
   stepsPerCurve: 100
   rotation: {x: 180, y: 0, z: 0}
-  trans_ControlPoints: {x: 0, y: 0, z: 0.001}
-  trans_LerpPoints: {x: 0, y: 0, z: 0.0001}
+  trans_ControlPoints: {x: 0, y: 0, z: 0.003}
+  trans_LerpPoints: {x: 0, y: 0, z: -0.001}
   display: 0
 --- !u!1 &1261642275
 GameObject:
