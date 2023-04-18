@@ -1,32 +1,32 @@
 {
   "summary": {
-    "generatedon": "2023-04-18T18:05:35Z",
+    "generatedon": "2023-04-18T18:49:36Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 2,
     "classes": 51,
     "files": 50,
-    "coveredlines": 1193,
-    "uncoveredlines": 926,
-    "coverablelines": 2119,
-    "totallines": 4196,
-    "linecoverage": 56.3,
+    "coveredlines": 1261,
+    "uncoveredlines": 903,
+    "coverablelines": 2164,
+    "totallines": 4265,
+    "linecoverage": 58.2,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 204,
-    "totalmethods": 310,
-    "methodcoverage": 65.8
+    "coveredmethods": 212,
+    "totalmethods": 312,
+    "methodcoverage": 67.9
  },
   "coverage": {
     "assemblies": [
-      { "name": "PlaymodeTests", "classes": 7, "coverage": 100, "coveredlines": 616, "coverablelines": 616, "totallines": 1221, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 106, "totalmethods": 106, "classesinassembly": [
+      { "name": "PlaymodeTests", "classes": 7, "coverage": 100, "coveredlines": 661, "coverablelines": 661, "totallines": 1290, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 108, "totalmethods": 108, "classesinassembly": [
         { "name": "AvatarModificationRoomTests", "coverage": 100, "coveredlines": 182, "coverablelines": 182, "totallines": 348, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 27, "totalmethods": 27 },
         { "name": "LoginMenuTests", "coverage": 100, "coveredlines": 58, "coverablelines": 58, "totallines": 105, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 12, "totalmethods": 12 },
         { "name": "MainMenuTests", "coverage": 100, "coveredlines": 100, "coverablelines": 100, "totallines": 275, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 18, "totalmethods": 18 },
         { "name": "RoomCreationMenuTests", "coverage": 100, "coveredlines": 31, "coverablelines": 31, "totallines": 60, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
         { "name": "RoomSelectionMenuTests", "coverage": 100, "coveredlines": 89, "coverablelines": 89, "totallines": 153, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 16, "totalmethods": 16 },
-        { "name": "SettingsMenuTests", "coverage": 100, "coveredlines": 114, "coverablelines": 114, "totallines": 198, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 18, "totalmethods": 18 },
+        { "name": "SettingsMenuTests", "coverage": 100, "coveredlines": 159, "coverablelines": 159, "totallines": 267, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 20, "totalmethods": 20 },
         { "name": "SplashScreenTests", "coverage": 100, "coveredlines": 42, "coverablelines": 42, "totallines": 82, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 9, "totalmethods": 9 } ] },
-      { "name": "Scripts", "classes": 44, "coverage": 38.3, "coveredlines": 577, "coverablelines": 1503, "totallines": 3382, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 48, "coveredmethods": 98, "totalmethods": 204, "classesinassembly": [
+      { "name": "Scripts", "classes": 44, "coverage": 39.9, "coveredlines": 600, "coverablelines": 1503, "totallines": 3382, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50.9, "coveredmethods": 104, "totalmethods": 204, "classesinassembly": [
         { "name": "AvatarModificationMenuLineRender", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 44, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "AvatarModificationMenuScript", "coverage": 33.8, "coveredlines": 67, "coverablelines": 198, "totallines": 316, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 36, "coveredmethods": 9, "totalmethods": 25 },
         { "name": "ChangeCameraVIew", "coverage": 15.7, "coveredlines": 3, "coverablelines": 19, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
@@ -39,7 +39,7 @@
         { "name": "DragObject", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "DrawPoints", "coverage": 5.6, "coveredlines": 6, "coverablelines": 106, "totallines": 162, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 16.6, "coveredmethods": 1, "totalmethods": 6 },
         { "name": "GlobalAudioSettings", "coverage": 100, "coveredlines": 22, "coverablelines": 22, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
-        { "name": "GlobalGameSettings", "coverage": 64.1, "coveredlines": 25, "coverablelines": 39, "totallines": 61, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 4, "totalmethods": 6 },
+        { "name": "GlobalGameSettings", "coverage": 82, "coveredlines": 32, "coverablelines": 39, "totallines": 61, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 83.3, "coveredmethods": 5, "totalmethods": 6 },
         { "name": "GlobalGameStates", "coverage": 100, "coveredlines": 10, "coverablelines": 10, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "GlobalGameStrings", "coverage": 57.1, "coveredlines": 4, "coverablelines": 7, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
         { "name": "GlobalNetworkSettings", "coverage": 70, "coveredlines": 21, "coverablelines": 30, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 85.7, "coveredmethods": 6, "totalmethods": 7 },
@@ -64,7 +64,7 @@
         { "name": "SavingPanelBehaviour", "coverage": 8.1, "coveredlines": 3, "coverablelines": 37, "totallines": 59, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 14.2, "coveredmethods": 1, "totalmethods": 7 },
         { "name": "ServerSideScript", "coverage": 29.7, "coveredlines": 11, "coverablelines": 37, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 60, "coveredmethods": 3, "totalmethods": 5 },
         { "name": "SetCursorVisible", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "SettingsMenuScript", "coverage": 50, "coveredlines": 16, "coverablelines": 32, "totallines": 57, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 28.5, "coveredmethods": 2, "totalmethods": 7 },
+        { "name": "SettingsMenuScript", "coverage": 100, "coveredlines": 32, "coverablelines": 32, "totallines": 57, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
         { "name": "SplashScreen", "coverage": 100, "coveredlines": 53, "coverablelines": 53, "totallines": 112, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
         { "name": "TextCameraLookAt", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "UserEventHandler", "coverage": 44.4, "coveredlines": 12, "coverablelines": 27, "totallines": 57, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 37.5, "coveredmethods": 3, "totalmethods": 8 },

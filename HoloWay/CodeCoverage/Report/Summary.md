@@ -1,33 +1,33 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 18/04/2023 - 19:05:35 |
+| Generated on: | 18/04/2023 - 19:49:36 |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 51 |
 | Files: | 50 |
-| Covered lines: | 1193 |
-| Uncovered lines: | 926 |
-| Coverable lines: | 2119 |
-| Total lines: | 4196 |
-| Line coverage: | 56.3% (1193 of 2119) |
+| Covered lines: | 1261 |
+| Uncovered lines: | 903 |
+| Coverable lines: | 2164 |
+| Total lines: | 4265 |
+| Line coverage: | 58.2% (1261 of 2164) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 204 |
-| Total methods: | 310 |
-| Method coverage: | 65.8% (204 of 310) |
+| Covered methods: | 212 |
+| Total methods: | 312 |
+| Method coverage: | 67.9% (212 of 312) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**616**|**0**|**616**|**1221**|**100%**|**0**|**0**|****|**106**|**106**|**100%**|
+|**PlaymodeTests**|**661**|**0**|**661**|**1290**|**100%**|**0**|**0**|****|**108**|**108**|**100%**|
 |AvatarModificationRoomTests|182|0|182|348|100%|0|0||27|27|100%|
 |LoginMenuTests|58|0|58|105|100%|0|0||12|12|100%|
 |MainMenuTests|100|0|100|275|100%|0|0||18|18|100%|
 |RoomCreationMenuTests|31|0|31|60|100%|0|0||6|6|100%|
 |RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
-|SettingsMenuTests|114|0|114|198|100%|0|0||18|18|100%|
+|SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**577**|**926**|**1503**|**3382**|**38.3%**|**0**|**0**|****|**98**|**204**|**48%**|
+|**Scripts**|**600**|**903**|**1503**|**3382**|**39.9%**|**0**|**0**|****|**104**|**204**|**50.9%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
 |AvatarModificationMenuScript|67|131|198|316|33.8%|0|0||9|25|36%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
@@ -40,7 +40,7 @@
 |DragObject|0|12|12|27|0%|0|0||0|3|0%|
 |DrawPoints|6|100|106|162|5.6%|0|0||1|6|16.6%|
 |GlobalAudioSettings|22|0|22|36|100%|0|0||7|7|100%|
-|GlobalGameSettings|25|14|39|61|64.1%|0|0||4|6|66.6%|
+|GlobalGameSettings|32|7|39|61|82%|0|0||5|6|83.3%|
 |GlobalGameStates|10|0|10|27|100%|0|0||3|3|100%|
 |GlobalGameStrings|4|3|7|16|57.1%|0|0||1|2|50%|
 |GlobalNetworkSettings|21|9|30|68|70%|0|0||6|7|85.7%|
@@ -65,7 +65,7 @@
 |SavingPanelBehaviour|3|34|37|59|8.1%|0|0||1|7|14.2%|
 |ServerSideScript|11|26|37|63|29.7%|0|0||3|5|60%|
 |SetCursorVisible|0|4|4|13|0%|0|0||0|1|0%|
-|SettingsMenuScript|16|16|32|57|50%|0|0||2|7|28.5%|
+|SettingsMenuScript|32|0|32|57|100%|0|0||7|7|100%|
 |SplashScreen|53|0|53|112|100%|0|0||5|5|100%|
 |TextCameraLookAt|0|5|5|16|0%|0|0||0|1|0%|
 |UserEventHandler|12|15|27|57|44.4%|0|0||3|8|37.5%|
