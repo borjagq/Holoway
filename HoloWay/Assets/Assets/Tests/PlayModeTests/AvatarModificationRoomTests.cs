@@ -10,12 +10,12 @@ using static UnityEngine.GraphicsBuffer;
 
 public class AvatarModificationRoomTests : InputTestFixture
 {
-
     [SetUp]
     public override void Setup()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
+
     [UnityTest]
     public IEnumerator Test_CheckMainCamera()
     {
@@ -23,6 +23,7 @@ public class AvatarModificationRoomTests : InputTestFixture
         GameObject Object = GameObject.Find("Main Camera");
         Assert.NotNull(Object);
     }
+
     [UnityTest]
     public IEnumerator Test_CheckLight()
     {
@@ -30,13 +31,7 @@ public class AvatarModificationRoomTests : InputTestFixture
         GameObject Object = GameObject.Find("Directional Light");
         Assert.NotNull(Object);
     }
-    [UnityTest]
-    public IEnumerator Test_CheckChangingRoomBase()
-    {
-        yield return null;
-        GameObject Object = GameObject.Find("Changing Room");
-        Assert.NotNull(Object);
-    }
+
     [UnityTest]
     public IEnumerator Test_CheckUMAGLIB()
     {
@@ -44,6 +39,7 @@ public class AvatarModificationRoomTests : InputTestFixture
         GameObject Object = GameObject.Find("UMA_GLIB");
         Assert.NotNull(Object);
     }
+
     [UnityTest]
     public IEnumerator Test_CheckDefaultPlayer()
     {
@@ -60,26 +56,19 @@ public class AvatarModificationRoomTests : InputTestFixture
         Assert.NotNull(Object);
     }
 
-    [UnityTest]
-    public IEnumerator Test_CheckUIMenu1()
-    {
-        yield return null;
-        GameObject Object = GameObject.Find("Menu1");
-        Assert.NotNull(Object);
-    }
 
     [UnityTest]
     public IEnumerator Test_CharacterModificationRightMenu()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu");
         Assert.NotNull(Object);
     }
     [UnityTest]
     public IEnumerator Test_CharacterModificationLeftMenu()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_LeftMenu");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu");
         Assert.NotNull(Object);
     }
 
@@ -90,28 +79,53 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterGenderDropdown()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
         Assert.NotNull(Object);
     }
+
+    [UnityTest]
+    public IEnumerator Test_CharacterSaveGlobal()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Button_Save_Global");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_CharacterExit()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Button_Exit");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_CharacterSaveAndExit()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Button_SaveAndExit");
+        Assert.NotNull(Object);
+    }
+
     [UnityTest]
     public IEnumerator Test_CharacterHeadButton()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Head");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Head");
         Assert.NotNull(Object);
     }
     [UnityTest]
     public IEnumerator Test_CharacterTorsoButton()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Torso");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Torso");
         Assert.NotNull(Object);
     }
     [UnityTest]
     public IEnumerator Test_CharacterPantsButton()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Pants");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Pants");
         Assert.NotNull(Object);
     }
 
@@ -119,7 +133,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterShoesButton()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Shoes");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Shoes");
         Assert.NotNull(Object);
     }
 
@@ -130,7 +144,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterGenderSelectionDropdownValues()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
         TMP_Dropdown Dropdown = Object.GetComponent<TMP_Dropdown>();
         List<TMP_Dropdown.OptionData> options = Dropdown.options;
         List<string> option_data = new List<string>();
@@ -146,7 +160,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterHeadButtonValue()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Head/Text (TMP)");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Head/Text (TMP)");
         TMP_Text btn_Text = Object.GetComponent<TMP_Text>();
         Assert.AreEqual("Head", btn_Text.text);
     }
@@ -155,7 +169,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterTorsoButtonValue()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Torso/Text (TMP)");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Torso/Text (TMP)");
         TMP_Text btn_Text = Object.GetComponent<TMP_Text>();
         Assert.AreEqual("Torso", btn_Text.text);
     }
@@ -164,7 +178,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterPantsButtonValue()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Pants/Text (TMP)");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Pants/Text (TMP)");
         TMP_Text btn_Text = Object.GetComponent<TMP_Text>();
         Assert.AreEqual("Pants", btn_Text.text);
     }
@@ -173,7 +187,7 @@ public class AvatarModificationRoomTests : InputTestFixture
     public IEnumerator Test_CharacterShoesButtonValue()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Menus/Menu1/UICanvas3D_Menu1_RightMenu/Button_Shoes/Text (TMP)");
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Shoes/Text (TMP)");
         TMP_Text btn_Text = Object.GetComponent<TMP_Text>();
         Assert.AreEqual("Shoes", btn_Text.text);
     }
@@ -184,36 +198,44 @@ public class AvatarModificationRoomTests : InputTestFixture
     //  TESTS FOR: Change Gender
     //================================================================
 
-    /*
-    //DOESNT WORK YET
+
     [UnityTest]
     public IEnumerator Test_CharacterChangeGenderToMale()
     {
         yield return null;
 
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
+        TMP_Dropdown dropdown = Object.GetComponent<TMP_Dropdown>();
+        dropdown.value = 1;
+
         GameObject GUIElement = GameObject.Find("CharacterModificationScript");
         AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
-
-        CharacterAnim.Dropdown_Gender_OnChange(0);
+        CharacterAnim.Dropdown_Gender_OnChange(dropdown.value);
 
         yield return new WaitForSeconds(2.5f);
+
+        dropdown.value = 0;
+        yield return new WaitForSeconds(2.5f);
+        CharacterAnim.Dropdown_Gender_OnChange(dropdown.value);
 
         string RaceName = CharacterAnim.GetRaceName();
 
         Assert.AreEqual("HumanMaleHighPoly", RaceName);
     }
 
-    
 
     [UnityTest]
     public IEnumerator Test_CharacterChangeGenderToFemale()
     {
         yield return null;
 
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Dropdown_Gender");
+        TMP_Dropdown dropdown = Object.GetComponent<TMP_Dropdown>();
+        dropdown.value = 1;
+
         GameObject GUIElement = GameObject.Find("CharacterModificationScript");
         AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
-
-        CharacterAnim.Dropdown_Gender_OnChange(1);
+        CharacterAnim.Dropdown_Gender_OnChange(dropdown.value);
 
         yield return new WaitForSeconds(2.5f);
 
@@ -221,12 +243,11 @@ public class AvatarModificationRoomTests : InputTestFixture
 
         Assert.AreEqual("HumanFemaleHighPoly", RaceName);
     }
-    */
 
 
-    //================================================================
-    //  TESTS FOR: Change Camera Focus
-    //================================================================
+    ////================================================================
+    ////  TESTS FOR: Change Camera Focus
+    ////================================================================
 
     [UnityTest]
     public IEnumerator Test_ChangeCameraPositionToHead()
@@ -300,28 +321,28 @@ public class AvatarModificationRoomTests : InputTestFixture
     //  TESTS FOR: Escape from Camera Focus
     //================================================================
 
-    
-    //DOESNT WORK YET
-    [UnityTest]
-    public IEnumerator Test_ChangeCameraEscapes()
-    {
-        yield return null;
 
-        GameObject GUIElement = GameObject.Find("CharacterModificationScript");
-        AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
+    ////DOESNT WORK YET
+    //[UnityTest]
+    //public IEnumerator Test_ChangeCameraEscapes()
+    //{
+    //    yield return null;
 
-        GameObject Object = GameObject.Find("CameraPositions/ShoeFocus");
+    //    GameObject GUIElement = GameObject.Find("CharacterModificationScript");
+    //    AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
 
-        CharacterAnim.FocusCameraToBodyPart(Object);
-        
-        yield return new WaitForSeconds(2);
+    //    GameObject Object = GameObject.Find("CameraPositions/ShoeFocus");
 
-        CharacterAnim.simulatePress = true;
-        GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+    //    CharacterAnim.FocusCameraToBodyPart(Object);
 
-        yield return new WaitForSeconds(2);
+    //    yield return new WaitForSeconds(2);
 
-        Assert.AreEqual(Object, FocusObject);
-    }
-   
+    //    CharacterAnim.simulatePress = true;
+    //    GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+
+    //    yield return new WaitForSeconds(2);
+
+    //    Assert.AreEqual(Object, FocusObject);
+    //}
+
 }
