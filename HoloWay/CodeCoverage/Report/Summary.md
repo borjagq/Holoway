@@ -1,74 +1,74 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 18/04/2023 - 21:58:35 |
-| Parser: | MultiReportParser (4x OpenCoverParser) |
+| Generated on: | 18/04/2023 - 23:33:18 |
+| Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 51 |
 | Files: | 50 |
-| Covered lines: | 267 |
-| Uncovered lines: | 2015 |
-| Coverable lines: | 2282 |
-| Total lines: | 4403 |
-| Line coverage: | 11.7% (267 of 2282) |
+| Covered lines: | 1543 |
+| Uncovered lines: | 777 |
+| Coverable lines: | 2320 |
+| Total lines: | 4426 |
+| Line coverage: | 66.5% (1543 of 2320) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 41 |
-| Total methods: | 328 |
-| Method coverage: | 12.5% (41 of 328) |
+| Covered methods: | 251 |
+| Total methods: | 334 |
+| Method coverage: | 75.1% (251 of 334) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**74**|**702**|**776**|**1423**|**9.5%**|**0**|**0**|****|**14**|**123**|**11.3%**|
-|AvatarModificationRoomTests|74|223|297|481|24.9%|0|0||14|42|33.3%|
-|LoginMenuTests|0|58|58|105|0%|0|0||0|12|0%|
-|MainMenuTests|0|100|100|275|0%|0|0||0|18|0%|
-|RoomCreationMenuTests|0|31|31|60|0%|0|0||0|6|0%|
-|RoomSelectionMenuTests|0|89|89|153|0%|0|0||0|16|0%|
-|SettingsMenuTests|0|159|159|267|0%|0|0||0|20|0%|
-|SplashScreenTests|0|42|42|82|0%|0|0||0|9|0%|
-|**Scripts**|**193**|**1313**|**1506**|**3387**|**12.8%**|**0**|**0**|****|**27**|**205**|**13.1%**|
+|**PlaymodeTests**|**813**|**1**|**814**|**1446**|**99.8%**|**0**|**0**|****|**129**|**129**|**100%**|
+|AvatarModificationRoomTests|334|1|335|504|99.7%|0|0||48|48|100%|
+|LoginMenuTests|58|0|58|105|100%|0|0||12|12|100%|
+|MainMenuTests|100|0|100|275|100%|0|0||18|18|100%|
+|RoomCreationMenuTests|31|0|31|60|100%|0|0||6|6|100%|
+|RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
+|SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
+|SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
+|**Scripts**|**730**|**776**|**1506**|**3387**|**48.4%**|**0**|**0**|****|**122**|**205**|**59.5%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
-|AvatarModificationMenuScript|148|53|201|321|73.6%|0|0||18|26|69.2%|
-|ChangeCameraVIew|0|19|19|38|0%|0|0||0|2|0%|
-|ChangeScene|0|22|22|57|0%|0|0||0|2|0%|
-|CharacterMovementScript|0|57|57|94|0%|0|0||0|3|0%|
-|CharacterNetworkScript|0|51|51|111|0%|0|0||0|7|0%|
-|ClientNetworkAnimator|0|3|3|14|0%|0|0||0|1|0%|
-|ClientNetworkTransform|0|3|3|14|0%|0|0||0|1|0%|
-|CommonMenuUtilities|0|12|12|21|0%|0|0||0|2|0%|
+|AvatarModificationMenuScript|184|17|201|321|91.5%|0|0||24|26|92.3%|
+|ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
+|ChangeScene|20|2|22|57|90.9%|0|0||2|2|100%|
+|CharacterMovementScript|37|20|57|94|64.9%|0|0||3|3|100%|
+|CharacterNetworkScript|15|36|51|111|29.4%|0|0||4|7|57.1%|
+|ClientNetworkAnimator|3|0|3|14|100%|0|0||1|1|100%|
+|ClientNetworkTransform|3|0|3|14|100%|0|0||1|1|100%|
+|CommonMenuUtilities|12|0|12|21|100%|0|0||2|2|100%|
 |DragObject|0|12|12|27|0%|0|0||0|3|0%|
-|DrawPoints|0|106|106|162|0%|0|0||0|6|0%|
-|GlobalAudioSettings|0|22|22|36|0%|0|0||0|7|0%|
-|GlobalGameSettings|0|39|39|61|0%|0|0||0|6|0%|
-|GlobalGameStates|0|10|10|27|0%|0|0||0|3|0%|
-|GlobalGameStrings|0|7|7|16|0%|0|0||0|2|0%|
-|GlobalNetworkSettings|0|30|30|68|0%|0|0||0|7|0%|
-|holowayapi.GetQueryCreator|0|34|34|86|0%|0|0||0|3|0%|
+|DrawPoints|6|100|106|162|5.6%|0|0||1|6|16.6%|
+|GlobalAudioSettings|22|0|22|36|100%|0|0||7|7|100%|
+|GlobalGameSettings|32|7|39|61|82%|0|0||5|6|83.3%|
+|GlobalGameStates|10|0|10|27|100%|0|0||3|3|100%|
+|GlobalGameStrings|4|3|7|16|57.1%|0|0||1|2|50%|
+|GlobalNetworkSettings|21|9|30|68|70%|0|0||6|7|85.7%|
+|holowayapi.GetQueryCreator|25|9|34|86|73.5%|0|0||3|3|100%|
 |holowayapi.HoloFile|0|9|9|407|0%|0|0||0|8|0%|
-|holowayapi.HolowayAPI|0|174|174|407|0%|0|0||0|8|0%|
+|holowayapi.HolowayAPI|37|137|174|407|21.2%|0|0||4|8|50%|
 |INIFile|4|15|19|39|21%|0|0||2|5|40%|
 |JoinRoom|0|16|16|36|0%|0|0||0|1|0%|
-|LoginManager|0|63|63|167|0%|0|0||0|6|0%|
-|LoginMenuScript|0|26|26|50|0%|0|0||0|4|0%|
+|LoginManager|12|51|63|167|19%|0|0||2|6|33.3%|
+|LoginMenuScript|2|24|26|50|7.6%|0|0||1|4|25%|
 |LoginSession|0|2|2|12|0%|0|0||0|1|0%|
-|Logout|0|4|4|13|0%|0|0||0|1|0%|
-|MainMenuScript|0|50|50|87|0%|0|0||0|11|0%|
+|Logout|4|0|4|13|100%|0|0||1|1|100%|
+|MainMenuScript|21|29|50|87|42%|0|0||4|11|36.3%|
 |ModCameraScript|12|19|31|51|38.7%|0|0||3|3|100%|
-|MovementScript|0|51|51|111|0%|0|0||0|7|0%|
+|MovementScript|10|41|51|111|19.6%|0|0||2|7|28.5%|
 |MovePoint|0|9|9|27|0%|0|0||0|3|0%|
-|NetworkManagerInitializer|0|3|3|14|0%|0|0||0|1|0%|
+|NetworkManagerInitializer|3|0|3|14|100%|0|0||1|1|100%|
 |PauseMenuScript|0|15|15|31|0%|0|0||0|1|0%|
-|PlatformCameraInitializer|0|13|13|26|0%|0|0||0|1|0%|
+|PlatformCameraInitializer|9|4|13|26|69.2%|0|0||1|1|100%|
 |Quit|0|4|4|13|0%|0|0||0|1|0%|
-|RoomSelectionMenuScript|0|3|3|11|0%|0|0||0|1|0%|
-|SavingPanelBehaviour|3|34|37|59|8.1%|0|0||1|7|14.2%|
-|ServerSideScript|0|37|37|63|0%|0|0||0|5|0%|
+|RoomSelectionMenuScript|3|0|3|11|100%|0|0||1|1|100%|
+|SavingPanelBehaviour|16|21|37|59|43.2%|0|0||4|7|57.1%|
+|ServerSideScript|11|26|37|63|29.7%|0|0||3|5|60%|
 |SetCursorVisible|0|4|4|13|0%|0|0||0|1|0%|
-|SettingsMenuScript|0|32|32|57|0%|0|0||0|7|0%|
-|SplashScreen|0|53|53|112|0%|0|0||0|5|0%|
+|SettingsMenuScript|32|0|32|57|100%|0|0||7|7|100%|
+|SplashScreen|53|0|53|112|100%|0|0||5|5|100%|
 |TextCameraLookAt|0|5|5|16|0%|0|0||0|1|0%|
-|UserEventHandler|0|27|27|57|0%|0|0||0|8|0%|
-|VoiceHandler|0|99|99|185|0%|0|0||0|16|0%|
+|UserEventHandler|12|15|27|57|44.4%|0|0||3|8|37.5%|
+|VoiceHandler|66|33|99|185|66.6%|0|0||11|16|68.7%|
 |Whiteboard|0|22|22|39|0%|0|0||0|4|0%|
 |WhiteboardMarker|0|44|44|87|0%|0|0||0|4|0%|

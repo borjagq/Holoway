@@ -385,14 +385,24 @@ public class AvatarModificationRoomTests
     public IEnumerator Test_SaveHairColorsClick()
     {
         yield return Test_HairButtonClick();
+     
+        GameObject RedColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorRed");
+        GameObject GreenColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorGreen");
+        GameObject BlueColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorBlue");
+
+        TMP_InputField RedInput = RedColor.GetComponent<TMP_InputField>();
+        TMP_InputField GreenInput = GreenColor.GetComponent<TMP_InputField>();
+        TMP_InputField BlueInput = BlueColor.GetComponent<TMP_InputField>();
+
+        RedInput.text = "290";
+        GreenInput.text = "290";
+        BlueInput.text = "290";
 
         GameObject Object = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Button_Save");
         Button HeadButton = Object.GetComponent<Button>();
         HeadButton.onClick.Invoke();
 
         yield return new WaitForSeconds(2.5f);
-
-        Debug.Log(PlayerPrefs.GetString("AvatarData"));
 
         Assert.IsNotNull(PlayerPrefs.GetString("AvatarData"));
     }
@@ -476,6 +486,19 @@ public class AvatarModificationRoomTests
         GameObject HeadMenu = GameObject.Find("Menus/Menu_Shoes");
 
         Assert.IsTrue(HeadMenu.activeInHierarchy);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_SaveAndExit()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Button_SaveAndExit");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(3f);
+
+        Assert.AreEqual(1, SceneManager.GetActiveScene().buildIndex);
     }
 
 }
