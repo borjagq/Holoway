@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>18/04/2023 - 14:09:21</Generatedon>
+    <Generatedon>18/04/2023 - 14:19:43</Generatedon>
     <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>51</Classes>
     <Files>50</Files>
-    <Coveredlines>132</Coveredlines>
-    <Uncoveredlines>1824</Uncoveredlines>
-    <Coverablelines>1956</Coverablelines>
-    <Totallines>4033</Totallines>
-    <Linecoverage>6.7</Linecoverage>
+    <Coveredlines>361</Coveredlines>
+    <Uncoveredlines>1619</Uncoveredlines>
+    <Coverablelines>1980</Coverablelines>
+    <Totallines>4066</Totallines>
+    <Linecoverage>18.2</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>22</Coveredmethods>
-    <Totalmethods>290</Totalmethods>
-    <Methodcoverage>7.5</Methodcoverage>
+    <Coveredmethods>65</Coveredmethods>
+    <Totalmethods>293</Totalmethods>
+    <Methodcoverage>22.1</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="PlaymodeTests" classes="9" coverage="10.2" coveredlines="58" coverablelines="564" totallines="1262" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="12" totalmethods="107" methodcoverage="11.2">
+    <Assembly name="PlaymodeTests" classes="9" coverage="17" coveredlines="100" coverablelines="588" totallines="1295" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="18" totalmethods="110" methodcoverage="16.3">
       <Class name="AvatarModificationRoomTests" coverage="0" coveredlines="0" coverablelines="162" totallines="327" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="25" methodcoverage="0" />
       <Class name="LoginManagerTest" coverage="0" coveredlines="0" coverablelines="8" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="LoginMenuTests" coverage="100" coveredlines="58" coverablelines="58" totallines="105" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="12" totalmethods="12" methodcoverage="100" />
+      <Class name="LoginMenuTests" coverage="0" coveredlines="0" coverablelines="58" totallines="105" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="LoginScreenTests" coverage="0" coveredlines="0" coverablelines="57" totallines="204" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
-      <Class name="MainMenuTests" coverage="0" coveredlines="0" coverablelines="76" totallines="242" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="15" methodcoverage="0" />
+      <Class name="MainMenuTests" coverage="100" coveredlines="100" coverablelines="100" totallines="275" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="18" totalmethods="18" methodcoverage="100" />
       <Class name="RoomCreationMenuTests" coverage="0" coveredlines="0" coverablelines="94" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
       <Class name="RoomSelectionMenuTests" coverage="0" coveredlines="0" coverablelines="19" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="SettingsMenuTests" coverage="0" coveredlines="0" coverablelines="52" totallines="92" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="13" methodcoverage="0" />
       <Class name="SplashScreenTests" coverage="0" coveredlines="0" coverablelines="38" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
     </Assembly>
-    <Assembly name="Scripts" classes="42" coverage="5.3" coveredlines="74" coverablelines="1392" totallines="3178" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="183" methodcoverage="5.4">
-      <Class name="AvatarModificationMenuLineRender" coverage="0" coveredlines="0" coverablelines="26" totallines="44" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="AvatarModificationMenuScript" coverage="0" coveredlines="0" coverablelines="198" totallines="316" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="25" methodcoverage="0" />
+    <Assembly name="Scripts" classes="42" coverage="18.7" coveredlines="261" coverablelines="1392" totallines="3178" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="47" totalmethods="183" methodcoverage="25.6">
+      <Class name="AvatarModificationMenuLineRender" coverage="100" coveredlines="26" coverablelines="26" totallines="44" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="AvatarModificationMenuScript" coverage="20.2" coveredlines="40" coverablelines="198" totallines="316" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="25" methodcoverage="20" />
       <Class name="ChangeCameraVIew" coverage="0" coveredlines="0" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="ChangeScene" coverage="0" coveredlines="0" coverablelines="24" totallines="64" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="ChangeScene" coverage="41.6" coveredlines="10" coverablelines="24" totallines="64" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="CharacterMovementScript" coverage="0" coveredlines="0" coverablelines="59" totallines="104" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="CharacterNetworkScript" coverage="0" coveredlines="0" coverablelines="51" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="ClientNetworkAnimator" coverage="0" coveredlines="0" coverablelines="3" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
@@ -41,22 +41,22 @@
       <Class name="CommonMenuUtilities" coverage="0" coveredlines="0" coverablelines="14" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="DragObject" coverage="0" coveredlines="0" coverablelines="12" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="DrawPoints" coverage="0" coveredlines="0" coverablelines="105" totallines="164" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
-      <Class name="GlobalAudioSettings" coverage="0" coveredlines="0" coverablelines="22" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="GlobalGameSettings" coverage="0" coveredlines="0" coverablelines="39" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
-      <Class name="GlobalGameStates" coverage="0" coveredlines="0" coverablelines="10" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="GlobalAudioSettings" coverage="100" coveredlines="22" coverablelines="22" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
+      <Class name="GlobalGameSettings" coverage="64.1" coveredlines="25" coverablelines="39" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="6" methodcoverage="66.6" />
+      <Class name="GlobalGameStates" coverage="100" coveredlines="10" coverablelines="10" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="GlobalGameStrings" coverage="0" coveredlines="0" coverablelines="6" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="GlobalNetworkSettings" coverage="0" coveredlines="0" coverablelines="30" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="holowayapi.GetQueryCreator" coverage="73.5" coveredlines="25" coverablelines="34" totallines="86" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="GlobalNetworkSettings" coverage="40" coveredlines="12" coverablelines="30" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="holowayapi.GetQueryCreator" coverage="0" coveredlines="0" coverablelines="34" totallines="86" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="holowayapi.HoloFile" coverage="0" coveredlines="0" coverablelines="9" totallines="407" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
-      <Class name="holowayapi.HolowayAPI" coverage="20.1" coveredlines="35" coverablelines="174" totallines="407" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="8" methodcoverage="50" />
-      <Class name="INIFile" coverage="0" coveredlines="0" coverablelines="19" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="holowayapi.HolowayAPI" coverage="0" coveredlines="0" coverablelines="174" totallines="407" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="INIFile" coverage="21" coveredlines="4" coverablelines="19" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="5" methodcoverage="40" />
       <Class name="JoinRoom" coverage="0" coveredlines="0" coverablelines="16" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="LoginManager" coverage="19" coveredlines="12" coverablelines="63" totallines="167" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="6" methodcoverage="33.3" />
-      <Class name="LoginMenuScript" coverage="7.6" coveredlines="2" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="4" methodcoverage="25" />
+      <Class name="LoginManager" coverage="0" coveredlines="0" coverablelines="63" totallines="167" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="LoginMenuScript" coverage="0" coveredlines="0" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="LoginSession" coverage="0" coveredlines="0" coverablelines="2" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="Logout" coverage="0" coveredlines="0" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="MainMenuScript" coverage="0" coveredlines="0" coverablelines="50" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="11" methodcoverage="0" />
-      <Class name="ModCameraScript" coverage="0" coveredlines="0" coverablelines="31" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="Logout" coverage="100" coveredlines="4" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="MainMenuScript" coverage="54" coveredlines="27" coverablelines="50" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="11" methodcoverage="45.4" />
+      <Class name="ModCameraScript" coverage="38.7" coveredlines="12" coverablelines="31" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="MovementScript" coverage="0" coveredlines="0" coverablelines="51" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="MovePoint" coverage="0" coveredlines="0" coverablelines="9" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="NetworkManagerInitializer" coverage="0" coveredlines="0" coverablelines="3" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
@@ -65,10 +65,10 @@
       <Class name="Quit" coverage="0" coveredlines="0" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="RoomCreationMenuScript" coverage="0" coveredlines="0" coverablelines="15" totallines="34" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="RoomSelectionMenuScript" coverage="0" coveredlines="0" coverablelines="3" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="SavingPanelBehaviour" coverage="0" coveredlines="0" coverablelines="37" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
+      <Class name="SavingPanelBehaviour" coverage="8.1" coveredlines="3" coverablelines="37" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="7" methodcoverage="14.2" />
       <Class name="ServerSideScript" coverage="0" coveredlines="0" coverablelines="37" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="SettingsMenuScript" coverage="0" coveredlines="0" coverablelines="32" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="SplashScreen" coverage="0" coveredlines="0" coverablelines="53" totallines="112" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="SettingsMenuScript" coverage="50" coveredlines="16" coverablelines="32" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="7" methodcoverage="28.5" />
+      <Class name="SplashScreen" coverage="94.3" coveredlines="50" coverablelines="53" totallines="112" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
       <Class name="TextCameraLookAt" coverage="0" coveredlines="0" coverablelines="5" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="Whiteboard" coverage="0" coveredlines="0" coverablelines="22" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="WhiteboardMarker" coverage="0" coveredlines="0" coverablelines="44" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />

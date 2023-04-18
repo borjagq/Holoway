@@ -124,10 +124,43 @@ public class MainMenuTests
     public IEnumerator Test_ChangeSceneAccessRooms()
     {
         yield return null;
+        GameObject Object = GameObject.Find("UICanvas/MainMenu/MainMenuBackground/Body/Buttons/ButtonMenu Access Rooms");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(5, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneAvatarRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/MainMenu/MainMenuBackground/Body/Buttons/ButtonMenu Change your Avatar");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(4, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneSignout()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/MainMenu/MainMenuBackground/Body/Buttons/ButtonMenu Sign out");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(0, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneSettings()
+    {
+        yield return null;
         GameObject Object = GameObject.Find("UICanvas/MainMenu/MainMenuBackground/Body/Buttons/ButtonMenu Settings");
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         Assert.AreEqual(3, SceneManager.GetActiveScene().buildIndex);
     }
 
