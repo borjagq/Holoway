@@ -92,7 +92,7 @@ public class SplashScreen : MonoBehaviour
         }
     }
 
-    private void CheckIfVideoIsOver()
+    public void CheckIfVideoIsOver()
     {
         // Get the VidePlayer component.
         GameObject GamePlayer = GameObject.Find("VideoPlayer");
