@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Level/Scenes/LargeRoom.unity
     guid: 68a215ff11a63a5428e2908ab9c36c6c
+  - enabled: 1
+    path: Assets/Assets/Legacy/Scenes/TestAndTrail/CharacterMovementTest/CharacterMovementTest.unity
+    guid: defd98721a0908b42b244e608b88a88c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 23c188a655ce9cf4e8bb0c025c8c0843, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 629b621875631614584404c35f294484, type: 2}

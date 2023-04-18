@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
-using UnityEditor.Build;
-#if UNITY_2018_4_OR_NEWER
-using UnityEditor.Build.Reporting;
-#endif 
 using UnityEngine;
 namespace Agora_RTC_Plugin.API_Example.Editor
 {
     public class CommandBuild : MonoBehaviour
     {
+        /*
         private static string[] GetAllScenes()
         {
 
@@ -186,7 +183,7 @@ namespace Agora_RTC_Plugin.API_Example.Editor
             BuildWin32();
             BuildWin64();
         }
-
+        */
 
     }
 }

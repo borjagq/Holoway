@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
-using UnityEditor.Callbacks;
 
 #if UNITY_IOS
 using UnityEditor.iOS.Xcode;
@@ -14,7 +13,7 @@ namespace Agora_RTC_Plugin
 {
     public class BL_BuildPostProcess
     {
-        [PostProcessBuild]
+/*
         public static void OnPostprocessBuild(BuildTarget buildTarget, string path)
         {
             if (buildTarget == BuildTarget.iOS)
@@ -25,7 +24,7 @@ namespace Agora_RTC_Plugin
 #endif
             }
         }
-
+*/
         //public static void DisableBitcode(string projPath)
         //{
         //    PBXProject proj = new PBXProject();
