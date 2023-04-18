@@ -12,35 +12,138 @@ public class RoomSelectionMenuTests
     [SetUp]
     public void Setup()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 
     [UnityTest]
-    public IEnumerator Test_CheckCanvas()
+    public IEnumerator Test_UICanvas()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas"));
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas");
+        Assert.NotNull(Object);
     }
 
     [UnityTest]
-    public IEnumerator Test_Room1ButtonExistance()
+    public IEnumerator Test_RoomBrowse()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room01"));
-    }
-    [UnityTest]
-    public IEnumerator Test_Room2ButtonExistance()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room02"));
-    }
-    [UnityTest]
-    public IEnumerator Test_Room3ButtonExistance()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room03"));
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse");
+        Assert.NotNull(Object);
     }
 
-    // Unity Test to check if the id of the selected room is the correct one
-        
+    [UnityTest]
+    public IEnumerator Test_MenuBackground()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/MenuBackground");
+        Assert.NotNull(Object);
+    }
+
+
+
+    [UnityTest]
+    public IEnumerator Test_Buttons()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ButtonRoom01()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room01");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ButtonRoom02()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room02");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ButtonRoom03()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room03");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ButtonBack()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Back");
+        Assert.NotNull(Object);
+    }
+
+
+    [UnityTest]
+    public IEnumerator Test_TextBg()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/TextBg");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_MainCamera()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Main Camera");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_DirectionalLight()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Directional Light");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_EventSystem()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("EventSystem");
+        Assert.NotNull(Object);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneSmallRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room01");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneMediumRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room02");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(2f);
+        Assert.AreEqual(8, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneLargeRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room03");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(9, SceneManager.GetActiveScene().buildIndex);
+    }
 }

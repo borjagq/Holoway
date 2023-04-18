@@ -71,4 +71,12 @@ public class SplashScreenTests : InputTestFixture
         GameObject Object = GameObject.Find("ScriptGameObject");
         Assert.NotNull(Object);
     }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneLoginScreen()
+    {
+        yield return new WaitForSeconds(10f);
+
+        Assert.AreEqual(1, SceneManager.GetActiveScene().buildIndex);
+    }
 }
