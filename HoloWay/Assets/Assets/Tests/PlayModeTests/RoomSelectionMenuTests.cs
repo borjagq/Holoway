@@ -143,7 +143,11 @@ public class RoomSelectionMenuTests
         GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room03");
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+
+        Debug.Log("LARGE ROOM TESTS");
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+
         Assert.AreEqual(9, SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -12,133 +12,49 @@ public class RoomCreationMenuTests
     [SetUp]
     public void Setup()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
+
     [UnityTest]
-    public IEnumerator Test_CheckCanvas()
+    public IEnumerator Test_UICanvas()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas"));
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas");
+        Assert.NotNull(Object);
     }
+
     [UnityTest]
-    public IEnumerator Test_CheckCanvasBackground()
+    public IEnumerator Test_MainCamera()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background"));
+        yield return null;
+        GameObject Object = GameObject.Find("Main Camera");
+        Assert.NotNull(Object);
     }
+
     [UnityTest]
-    public IEnumerator Test_CheckCanvasCreateRoom()
+    public IEnumerator Test_DirectionalLight()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/CreateRoomPanel"));
+        yield return null;
+        GameObject Object = GameObject.Find("Directional Light");
+        Assert.NotNull(Object);
     }
+
     [UnityTest]
-    public IEnumerator Test_CheckCanvasJoinRoom()
+    public IEnumerator Test_EventSystem()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/JoinRoomPanel"));
+        yield return null;
+        GameObject Object = GameObject.Find("EventSystem");
+        Assert.NotNull(Object);
     }
+
     [UnityTest]
-    public IEnumerator Test_CheckCanvasCreateRoomCreateEmptyRoomText()
+    public IEnumerator Test_ChangeSceneRoomSelection()
     {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/CreateRoomPanel/Text_CreateEmptyRoom"));
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasJoinRoomJoinExistingRoomText()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/JoinRoomPanel/Text_CreateEmptyRoom"));
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasRoomCodeTextField()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode"));
-    }
-    [UnityTest]
-    public IEnumerator Text_CheckConfirmButtonDisabled()
-    {
-        yield return null; //Skip a frame
-        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
-        Button button = ConfirmButton.GetComponent<Button>();
-        Assert.AreEqual(false, button.interactable);
-    }
-    [UnityTest]
-    public IEnumerator Text_CheckConfirmButtonOnInputEnable()
-    {
-        yield return null; //Skip a frame
-        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
-        GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
-        RoomCodeTextField.GetComponent<TMP_InputField>().text = "Test";
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
-        Button button = ConfirmButton.GetComponent<Button>();
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/GameObject/ButtonMenu");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
         yield return new WaitForSeconds(1f);
-        Assert.AreEqual(true, button.interactable);
+        Assert.AreEqual(6, SceneManager.GetActiveScene().buildIndex);
     }
-    [UnityTest]
-    public IEnumerator Text_CheckConfirmButtonOnInputRemoveDisable()
-    {
-        yield return null; //Skip a frame
-        GameObject ConfirmButton = GameObject.Find("UICanvas/Background/Button_Confirm");
-        GameObject RoomCodeTextField = GameObject.Find("UICanvas/Background/JoinRoomPanel/TextField_InsertRoomCode");
-        RoomCodeTextField.GetComponent<TMP_InputField>().text = "Test";
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
-        Button button = ConfirmButton.GetComponent<Button>();
-        yield return new WaitForSeconds(1f);
-        RoomCodeTextField.GetComponent<TMP_InputField>().text = "";
-        RoomCodeTextField.GetComponent<TMP_InputField>().onValueChanged.Invoke(RoomCodeTextField.GetComponent<TMP_InputField>().text);
-        yield return new WaitForSeconds(1f);
-        Assert.AreEqual(false, button.interactable);
-
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasCreateRoomCreateEmptyRoomButton()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/CreateRoomPanel/Button_EnterRoom"));
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasButtonBack()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/Button_Back"));
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasButtonConfirm()
-    {
-        yield return null; //Skip a frame
-        Assert.NotNull(GameObject.Find("UICanvas/Background/Button_Confirm"));
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasCheckScript()
-    {
-        yield return null; //Skip a frame
-        GameObject Canvas = GameObject.Find("UICanvas");
-        RoomCreationMenuScript script = Canvas.GetComponent<RoomCreationMenuScript>();
-        Assert.NotNull(script);
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasBackButtonOnClick()
-    {
-        yield return null; //Skip a frame
-        GameObject Canvas = GameObject.Find("UICanvas");
-        RoomCreationMenuScript script = Canvas.GetComponent<RoomCreationMenuScript>();
-        script.BackButtonOnClick();
-        yield return new WaitForSeconds(1.5f);
-        Assert.AreEqual(1, SceneManager.GetActiveScene().buildIndex);
-
-    }
-    [UnityTest]
-    public IEnumerator Test_CheckCanvasCreateRoomOnClick()
-    {
-        yield return null; //Skip a frame
-        GameObject Canvas = GameObject.Find("UICanvas");
-        RoomCreationMenuScript script = Canvas.GetComponent<RoomCreationMenuScript>();
-        script.CreateRoomButtonOnClick();
-        yield return new WaitForSeconds(1.5f);
-        Assert.AreEqual(3, SceneManager.GetActiveScene().buildIndex);
-
-    }
-
 }

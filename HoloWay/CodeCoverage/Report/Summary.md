@@ -1,38 +1,37 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 18/04/2023 - 15:48:14 |
+| Generated on: | 18/04/2023 - 16:31:17 |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 2 |
-| Classes: | 50 |
-| Files: | 49 |
-| Covered lines: | 1084 |
-| Uncovered lines: | 973 |
-| Coverable lines: | 2057 |
-| Total lines: | 4079 |
-| Line coverage: | 52.6% (1084 of 2057) |
+| Classes: | 49 |
+| Files: | 48 |
+| Covered lines: | 1145 |
+| Uncovered lines: | 863 |
+| Coverable lines: | 2008 |
+| Total lines: | 3992 |
+| Line coverage: | 57% (1145 of 2008) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 200 |
-| Total methods: | 300 |
-| Method coverage: | 66.6% (200 of 300) |
+| Covered methods: | 192 |
+| Total methods: | 289 |
+| Method coverage: | 66.4% (192 of 289) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**563**|**102**|**665**|**1308**|**84.6%**|**0**|**0**|****|**116**|**117**|**99.1%**|
-|AvatarModificationRoomTests|100|62|162|327|61.7%|0|0||25|25|100%|
-|LoginManagerTest|3|5|8|28|37.5%|0|0||1|2|50%|
+|**PlaymodeTests**|**616**|**0**|**616**|**1221**|**100%**|**0**|**0**|****|**106**|**106**|**100%**|
+|AvatarModificationRoomTests|182|0|182|348|100%|0|0||27|27|100%|
 |LoginMenuTests|58|0|58|105|100%|0|0||12|12|100%|
 |MainMenuTests|100|0|100|275|100%|0|0||18|18|100%|
-|RoomCreationMenuTests|59|35|94|144|62.7%|0|0||17|17|100%|
-|RoomSelectionMenuTests|87|0|87|149|100%|0|0||16|16|100%|
+|RoomCreationMenuTests|31|0|31|60|100%|0|0||6|6|100%|
+|RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
 |SettingsMenuTests|114|0|114|198|100%|0|0||18|18|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**521**|**871**|**1392**|**3178**|**37.4%**|**0**|**0**|****|**84**|**183**|**45.9%**|
+|**Scripts**|**529**|**863**|**1392**|**3178**|**38%**|**0**|**0**|****|**86**|**183**|**46.9%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
-|AvatarModificationMenuScript|40|158|198|316|20.2%|0|0||5|25|20%|
+|AvatarModificationMenuScript|67|131|198|316|33.8%|0|0||9|25|36%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
-|ChangeScene|18|6|24|64|75%|0|0||2|2|100%|
+|ChangeScene|20|4|24|64|83.3%|0|0||2|2|100%|
 |CharacterMovementScript|32|27|59|104|54.2%|0|0||3|3|100%|
 |CharacterNetworkScript|15|36|51|111|29.4%|0|0||4|7|57.1%|
 |ClientNetworkAnimator|3|0|3|14|100%|0|0||1|1|100%|
@@ -47,12 +46,12 @@
 |GlobalNetworkSettings|21|9|30|68|70%|0|0||6|7|85.7%|
 |holowayapi.GetQueryCreator|25|9|34|86|73.5%|0|0||3|3|100%|
 |holowayapi.HoloFile|0|9|9|407|0%|0|0||0|8|0%|
-|holowayapi.HolowayAPI|73|101|174|407|41.9%|0|0||5|8|62.5%|
+|holowayapi.HolowayAPI|61|113|174|407|35%|0|0||5|8|62.5%|
 |INIFile|4|15|19|39|21%|0|0||2|5|40%|
 |JoinRoom|0|16|16|36|0%|0|0||0|1|0%|
-|LoginManager|34|29|63|167|53.9%|0|0||5|6|83.3%|
+|LoginManager|27|36|63|167|42.8%|0|0||4|6|66.6%|
 |LoginMenuScript|2|24|26|50|7.6%|0|0||1|4|25%|
-|LoginSession|2|0|2|12|100%|0|0||1|1|100%|
+|LoginSession|0|2|2|12|0%|0|0||0|1|0%|
 |Logout|4|0|4|13|100%|0|0||1|1|100%|
 |MainMenuScript|21|29|50|87|42%|0|0||4|11|36.3%|
 |ModCameraScript|12|19|31|51|38.7%|0|0||3|3|100%|
