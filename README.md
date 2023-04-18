@@ -103,7 +103,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git remote add origin https://gitlab.scss.tcd.ie/boulahcn/ase-team3-meeting_room.git
+   git clone https://gitlab.scss.tcd.ie/cs7cs3-group-3/holoway
    ```
 2. Open the project in Unity.
 3. Build and run the project from Unity editor.
