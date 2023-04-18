@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     private enum Scenes {
-        SplashScreen,
+/*        SplashScreen,*/
         LoginMenu,
         MainMenu,
         SettingsMenu,
@@ -24,9 +24,9 @@ public class ChangeScene : MonoBehaviour
     
     public void MoveToScene() {
         switch (scenes) {
-            case Scenes.SplashScreen:
+            /*case Scenes.SplashScreen:
                 SceneManager.LoadScene(0);
-                break;
+                break;*/
             case Scenes.LoginMenu:
                 SceneManager.LoadScene(1);
                 break;

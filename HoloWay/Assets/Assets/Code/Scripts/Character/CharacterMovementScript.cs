@@ -8,14 +8,16 @@ public class CharacterMovementScript : NetworkBehaviour
     [Header("Helper Objects")]
     public GameObject ForwardObject;
     public GameObject PlayerCamera;
-    [Header("Camera Related Objects - First Person")]
-    public GameObject FirstPersonCameraSocket;
-    public GameObject FirstPersonCameraHolder;
 
-    [Header("Camera Related Objects - Third Person")]
-    public GameObject ThirdPersonCameraSocket;
-    public GameObject ThirdPersonCameraHolder;
-    public GameObject ThirdPersonCameraHolderPosition;
+    
+
+    [Header("Camera Related Objects - Common")]
+    public GameObject CameraSocket;
+    public GameObject CameraHolder;
+    public GameObject DummyCameraHolder;
+    public GameObject CameraDirectionVector;
+    public float DistanceFactor = 2.0f;
+    public float ScrollFactor = 3.0f;
 
     [Header("Animations")]
     public ClientNetworkAnimator Animator;
@@ -35,7 +37,7 @@ public class CharacterMovementScript : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (!IsOwner) return; // Only controlled by the client
+        if (!IsOwner) return; // Only controlled by the client
         Cursor.visible = false;
         Animator.Animator.SetFloat("Speed", Input.GetAxis("Vertical"));
         Animator.Animator.SetFloat("Direction", Input.GetAxis("Horizontal"));
@@ -64,41 +66,31 @@ public class CharacterMovementScript : NetworkBehaviour
             FirstPersonCameraEnabled = !FirstPersonCameraEnabled;
             if(FirstPersonCameraEnabled)
             {
-                Debug.Log("Enabled First Person Camera");
-                PlayerCamera.transform.position = FirstPersonCameraHolder.transform.position;
-                PlayerCamera.transform.parent = FirstPersonCameraHolder.transform;
+                PlayerCamera.transform.position = CameraHolder.transform.position;
             }
             else
             {
-                Debug.Log("Enabled Third Person Camera");
-                //PlayerCamera.transform.position = ThirdPersonCameraHolder.transform.position;
-                PlayerCamera.transform.position = ThirdPersonCameraHolderPosition.transform.position;
-                PlayerCamera.transform.parent = ThirdPersonCameraHolder.transform;
+                PlayerCamera.transform.position = CameraDirectionVector.transform.position;
             }
         }
         //================================================================================================
         //              CAMERA ROTATION SCRIPT
         //================================================================================================
-        if(FirstPersonCameraEnabled)
+        if (!FirstPersonCameraEnabled)
         {
-            // If the camera is first person then we rotate the player along with the camera or just rotate the player
-            // This will also rotate the camera
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            FirstPersonCameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
-            FirstPersonCameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
-
+            Vector3 CamVector = CameraSocket.transform.position - CameraDirectionVector.transform.position;
+            PlayerCamera.transform.position = CameraHolder.transform.position - DistanceFactor * CamVector;
+            DistanceFactor -= Input.mouseScrollDelta.y * ScrollFactor * Time.deltaTime;
         }
-        else
-        {
-            // If the camera is third person we will only rotate the camera, when we press W key it will automatically
-            // detect the direction camera is pointing and rotate the player...
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            ThirdPersonCameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
-            ThirdPersonCameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+        CameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
+        CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
 
-        }
-
+    }
+    public void OnDrawGizmos()
+    {
+        
+//        Gizmos.DrawRay(new Ray(CameraDirectionVector.transform.position, CamVector.normalized));
     }
 }
