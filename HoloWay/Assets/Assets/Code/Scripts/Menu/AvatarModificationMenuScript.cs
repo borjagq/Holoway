@@ -126,6 +126,14 @@ public class AvatarModificationMenuScript : MonoBehaviour
         }
     }
 
+    public void SetEscapedCamera()
+    {
+        if (GoBackward())
+        {
+            RefocusCamera();
+        }
+    }
+
     public void Update()
     {
         if(_IsCameraMoving) { 
@@ -145,10 +153,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
         _escapeButton = GetEscapePressed();
         if (_escapeButton && _IsCameraFocused)
         {
-            if (GoBackward())
-            {
-                RefocusCamera();
-            }
+            SetEscapedCamera();
         }
     }
     public void Dropdown_Gender_OnChange(Int32 DropdownValue)

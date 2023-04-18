@@ -321,28 +321,31 @@ public class AvatarModificationRoomTests : InputTestFixture
     //  TESTS FOR: Escape from Camera Focus
     //================================================================
 
+    [UnityTest]
+    public IEnumerator Test_ChangeCameraEscapes()
+    {
+        yield return null;
 
-    ////DOESNT WORK YET
-    //[UnityTest]
-    //public IEnumerator Test_ChangeCameraEscapes()
-    //{
-    //    yield return null;
+        GameObject GUIElement = GameObject.Find("CharacterModificationScript");
+        AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
 
-    //    GameObject GUIElement = GameObject.Find("CharacterModificationScript");
-    //    AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
+        GameObject Object = GameObject.Find("CameraPositions/HeadFocus");
 
-    //    GameObject Object = GameObject.Find("CameraPositions/ShoeFocus");
+        CharacterAnim.FocusCameraToBodyPart(Object);
+        CharacterAnim.GoForward(Object);
 
-    //    CharacterAnim.FocusCameraToBodyPart(Object);
+        yield return new WaitForSeconds(2.5f);
 
-    //    yield return new WaitForSeconds(2);
+        CharacterAnim.simulatePress = true;
+        CharacterAnim.SetEscapedCamera();
+        CharacterAnim.Update();
 
-    //    CharacterAnim.simulatePress = true;
-    //    GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+        GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+        GameObject MainCamera = GameObject.Find("Main Camera");
 
-    //    yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2.5f);
 
-    //    Assert.AreEqual(Object, FocusObject);
-    //}
+        Assert.AreEqual(MainCamera, FocusObject);
+    }
 
 }

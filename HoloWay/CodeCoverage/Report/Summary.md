@@ -1,35 +1,35 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 18/04/2023 - 19:49:36 |
-| Parser: | MultiReportParser (2x OpenCoverParser) |
+| Generated on: | 18/04/2023 - 20:15:40 |
+| Parser: | MultiReportParser (4x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 51 |
 | Files: | 50 |
-| Covered lines: | 1261 |
-| Uncovered lines: | 903 |
-| Coverable lines: | 2164 |
-| Total lines: | 4265 |
-| Line coverage: | 58.2% (1261 of 2164) |
+| Covered lines: | 1311 |
+| Uncovered lines: | 874 |
+| Coverable lines: | 2185 |
+| Total lines: | 4273 |
+| Line coverage: | 60% (1311 of 2185) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 212 |
-| Total methods: | 312 |
-| Method coverage: | 67.9% (212 of 312) |
+| Covered methods: | 218 |
+| Total methods: | 314 |
+| Method coverage: | 69.4% (218 of 314) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**661**|**0**|**661**|**1290**|**100%**|**0**|**0**|****|**108**|**108**|**100%**|
-|AvatarModificationRoomTests|182|0|182|348|100%|0|0||27|27|100%|
+|**PlaymodeTests**|**679**|**0**|**679**|**1293**|**100%**|**0**|**0**|****|**109**|**109**|**100%**|
+|AvatarModificationRoomTests|200|0|200|351|100%|0|0||28|28|100%|
 |LoginMenuTests|58|0|58|105|100%|0|0||12|12|100%|
 |MainMenuTests|100|0|100|275|100%|0|0||18|18|100%|
 |RoomCreationMenuTests|31|0|31|60|100%|0|0||6|6|100%|
 |RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
 |SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**600**|**903**|**1503**|**3382**|**39.9%**|**0**|**0**|****|**104**|**204**|**50.9%**|
+|**Scripts**|**632**|**874**|**1506**|**3387**|**41.9%**|**0**|**0**|****|**109**|**205**|**53.1%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
-|AvatarModificationMenuScript|67|131|198|316|33.8%|0|0||9|25|36%|
+|AvatarModificationMenuScript|99|102|201|321|49.2%|0|0||14|26|53.8%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
 |ChangeScene|20|2|22|57|90.9%|0|0||2|2|100%|
 |CharacterMovementScript|37|20|57|94|64.9%|0|0||3|3|100%|
