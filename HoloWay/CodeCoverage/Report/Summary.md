@@ -1,37 +1,37 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 18/04/2023 - 23:33:18 |
+| Generated on: | 19/04/2023 - 00:21:00 |
 | Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 51 |
 | Files: | 50 |
-| Covered lines: | 1543 |
-| Uncovered lines: | 777 |
-| Coverable lines: | 2320 |
-| Total lines: | 4426 |
-| Line coverage: | 66.5% (1543 of 2320) |
+| Covered lines: | 1561 |
+| Uncovered lines: | 769 |
+| Coverable lines: | 2330 |
+| Total lines: | 4327 |
+| Line coverage: | 66.9% (1561 of 2330) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 251 |
-| Total methods: | 334 |
-| Method coverage: | 75.1% (251 of 334) |
+| Covered methods: | 256 |
+| Total methods: | 337 |
+| Method coverage: | 75.9% (256 of 337) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**PlaymodeTests**|**813**|**1**|**814**|**1446**|**99.8%**|**0**|**0**|****|**129**|**129**|**100%**|
+|**PlaymodeTests**|**821**|**1**|**822**|**1350**|**99.8%**|**0**|**0**|****|**130**|**130**|**100%**|
 |AvatarModificationRoomTests|334|1|335|504|99.7%|0|0||48|48|100%|
 |LoginMenuTests|58|0|58|105|100%|0|0||12|12|100%|
-|MainMenuTests|100|0|100|275|100%|0|0||18|18|100%|
+|MainMenuTests|108|0|108|179|100%|0|0||19|19|100%|
 |RoomCreationMenuTests|31|0|31|60|100%|0|0||6|6|100%|
 |RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
 |SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**730**|**776**|**1506**|**3387**|**48.4%**|**0**|**0**|****|**122**|**205**|**59.5%**|
+|**Scripts**|**740**|**768**|**1508**|**3384**|**49%**|**0**|**0**|****|**126**|**207**|**60.8%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
-|AvatarModificationMenuScript|184|17|201|321|91.5%|0|0||24|26|92.3%|
+|AvatarModificationMenuScript|187|15|202|317|92.5%|0|0||27|28|96.4%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
-|ChangeScene|20|2|22|57|90.9%|0|0||2|2|100%|
+|ChangeScene|22|0|22|57|100%|0|0||2|2|100%|
 |CharacterMovementScript|37|20|57|94|64.9%|0|0||3|3|100%|
 |CharacterNetworkScript|15|36|51|111|29.4%|0|0||4|7|57.1%|
 |ClientNetworkAnimator|3|0|3|14|100%|0|0||1|1|100%|
@@ -60,13 +60,13 @@
 |NetworkManagerInitializer|3|0|3|14|100%|0|0||1|1|100%|
 |PauseMenuScript|0|15|15|31|0%|0|0||0|1|0%|
 |PlatformCameraInitializer|9|4|13|26|69.2%|0|0||1|1|100%|
-|Quit|0|4|4|13|0%|0|0||0|1|0%|
+|Quit|4|0|4|13|100%|0|0||1|1|100%|
 |RoomSelectionMenuScript|3|0|3|11|100%|0|0||1|1|100%|
 |SavingPanelBehaviour|16|21|37|59|43.2%|0|0||4|7|57.1%|
 |ServerSideScript|11|26|37|63|29.7%|0|0||3|5|60%|
 |SetCursorVisible|0|4|4|13|0%|0|0||0|1|0%|
 |SettingsMenuScript|32|0|32|57|100%|0|0||7|7|100%|
-|SplashScreen|53|0|53|112|100%|0|0||5|5|100%|
+|SplashScreen|54|0|54|113|100%|0|0||5|5|100%|
 |TextCameraLookAt|0|5|5|16|0%|0|0||0|1|0%|
 |UserEventHandler|12|15|27|57|44.4%|0|0||3|8|37.5%|
 |VoiceHandler|66|33|99|185|66.6%|0|0||11|16|68.7%|
