@@ -108,7 +108,7 @@ public class VoiceHandler : MonoBehaviour
     public void StartEchoTest()
     {
         RtcEngine.StartEchoTest(2);
-        Log.UpdateLog("StartEchoTest, speak now. You cannot conduct another echo test or join a channel before StopEchoTest");
+        Debug.Log("StartEchoTest, speak now. You cannot conduct another echo test or join a channel before StopEchoTest");
     }
 
     public void StopEchoTest()
@@ -131,7 +131,7 @@ public class VoiceHandler : MonoBehaviour
         var options = new ChannelMediaOptions();
         options.publishMicrophoneTrack.SetValue(false);
         var nRet = RtcEngine.UpdateChannelMediaOptions(options);
-        this.Log.UpdateLog("UpdateChannelMediaOptions: " + nRet);
+        Debug.Log("UpdateChannelMediaOptions: " + nRet);
     }
 
     public void StartPublishAudio()
@@ -139,7 +139,7 @@ public class VoiceHandler : MonoBehaviour
         var options = new ChannelMediaOptions();
         options.publishMicrophoneTrack.SetValue(true);
         var nRet = RtcEngine.UpdateChannelMediaOptions(options);
-        this.Log.UpdateLog("UpdateChannelMediaOptions: " + nRet);
+        Debug.Log("UpdateChannelMediaOptions: " + nRet);
     }
 
     public void GetAudioPlaybackDevice()
@@ -147,10 +147,10 @@ public class VoiceHandler : MonoBehaviour
         _audioDeviceSelect.ClearOptions();
         _audioDeviceManager = RtcEngine.GetAudioDeviceManager();
         _audioPlaybackDeviceInfos = _audioDeviceManager.EnumeratePlaybackDevices();
-        Log.UpdateLog(string.Format("AudioPlaybackDevice count: {0}", _audioPlaybackDeviceInfos.Length));
+        Debug.Log(string.Format("AudioPlaybackDevice count: {0}", _audioPlaybackDeviceInfos.Length));
         for (var i = 0; i < _audioPlaybackDeviceInfos.Length; i++)
         {
-            Log.UpdateLog(string.Format("AudioPlaybackDevice device index: {0}, name: {1}, id: {2}", i,
+            Debug.Log(string.Format("AudioPlaybackDevice device index: {0}, name: {1}, id: {2}", i,
                 _audioPlaybackDeviceInfos[i].deviceName, _audioPlaybackDeviceInfos[i].deviceId));
         }
 
@@ -168,7 +168,7 @@ public class VoiceHandler : MonoBehaviour
 
         var deviceId = option.Split(":".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)[1];
         var ret = _audioDeviceManager.SetPlaybackDevice(deviceId);
-        Log.UpdateLog("SelectAudioPlaybackDevice ret:" + ret + " , DeviceId: " + deviceId);
+        Debug.Log("SelectAudioPlaybackDevice ret:" + ret + " , DeviceId: " + deviceId);
     }
 
     #endregion
