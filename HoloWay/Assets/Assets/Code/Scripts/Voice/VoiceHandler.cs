@@ -19,7 +19,7 @@ public class VoiceHandler : MonoBehaviour
     [Header("_____________Basic Configuration_____________")]
     [FormerlySerializedAs("APP_ID")]
     [SerializeField]
-    private string _appID = "";
+    private string _appID = GlobalGameStrings.VOICE_APP_ID_STRING;
 
     [FormerlySerializedAs("TOKEN")]
     [SerializeField]
