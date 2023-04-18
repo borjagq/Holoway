@@ -31,7 +31,10 @@ public class CharacterMovementScript : NetworkBehaviour
 
     void Start()
     {
-        
+        if(!IsOwner)
+        {
+            PlayerCamera.SetActive(false);
+        }
     }
 
     // Update is called once per frame
