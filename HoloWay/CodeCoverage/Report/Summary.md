@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 19/04/2023 - 00:21:00 |
+| Generated on: | 19/04/2023 - 00:44:09 |
 | Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 51 |
 | Files: | 50 |
-| Covered lines: | 1561 |
-| Uncovered lines: | 769 |
-| Coverable lines: | 2330 |
-| Total lines: | 4327 |
-| Line coverage: | 66.9% (1561 of 2330) |
+| Covered lines: | 1569 |
+| Uncovered lines: | 744 |
+| Coverable lines: | 2313 |
+| Total lines: | 4321 |
+| Line coverage: | 67.8% (1569 of 2313) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 256 |
-| Total methods: | 337 |
-| Method coverage: | 75.9% (256 of 337) |
+| Covered methods: | 258 |
+| Total methods: | 332 |
+| Method coverage: | 77.7% (258 of 332) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -27,7 +27,7 @@
 |RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
 |SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**740**|**768**|**1508**|**3384**|**49%**|**0**|**0**|****|**126**|**207**|**60.8%**|
+|**Scripts**|**748**|**743**|**1491**|**3378**|**50.1%**|**0**|**0**|****|**128**|**202**|**63.3%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
 |AvatarModificationMenuScript|187|15|202|317|92.5%|0|0||27|28|96.4%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
@@ -53,7 +53,7 @@
 |LoginMenuScript|2|24|26|50|7.6%|0|0||1|4|25%|
 |LoginSession|0|2|2|12|0%|0|0||0|1|0%|
 |Logout|4|0|4|13|100%|0|0||1|1|100%|
-|MainMenuScript|21|29|50|87|42%|0|0||4|11|36.3%|
+|MainMenuScript|29|4|33|81|87.8%|0|0||6|6|100%|
 |ModCameraScript|12|19|31|51|38.7%|0|0||3|3|100%|
 |MovementScript|10|41|51|111|19.6%|0|0||2|7|28.5%|
 |MovePoint|0|9|9|27|0%|0|0||0|3|0%|

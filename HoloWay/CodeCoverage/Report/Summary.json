@@ -1,20 +1,20 @@
 {
   "summary": {
-    "generatedon": "2023-04-18T23:21:00Z",
+    "generatedon": "2023-04-18T23:44:09Z",
     "parser": "MultiReportParser (5x OpenCoverParser)",
     "assemblies": 2,
     "classes": 51,
     "files": 50,
-    "coveredlines": 1561,
-    "uncoveredlines": 769,
-    "coverablelines": 2330,
-    "totallines": 4327,
-    "linecoverage": 66.9,
+    "coveredlines": 1569,
+    "uncoveredlines": 744,
+    "coverablelines": 2313,
+    "totallines": 4321,
+    "linecoverage": 67.8,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 256,
-    "totalmethods": 337,
-    "methodcoverage": 75.9
+    "coveredmethods": 258,
+    "totalmethods": 332,
+    "methodcoverage": 77.7
  },
   "coverage": {
     "assemblies": [
@@ -26,7 +26,7 @@
         { "name": "RoomSelectionMenuTests", "coverage": 100, "coveredlines": 89, "coverablelines": 89, "totallines": 153, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 16, "totalmethods": 16 },
         { "name": "SettingsMenuTests", "coverage": 100, "coveredlines": 159, "coverablelines": 159, "totallines": 267, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 20, "totalmethods": 20 },
         { "name": "SplashScreenTests", "coverage": 100, "coveredlines": 42, "coverablelines": 42, "totallines": 82, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 9, "totalmethods": 9 } ] },
-      { "name": "Scripts", "classes": 44, "coverage": 49, "coveredlines": 740, "coverablelines": 1508, "totallines": 3384, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 60.8, "coveredmethods": 126, "totalmethods": 207, "classesinassembly": [
+      { "name": "Scripts", "classes": 44, "coverage": 50.1, "coveredlines": 748, "coverablelines": 1491, "totallines": 3378, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 63.3, "coveredmethods": 128, "totalmethods": 202, "classesinassembly": [
         { "name": "AvatarModificationMenuLineRender", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 44, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "AvatarModificationMenuScript", "coverage": 92.5, "coveredlines": 187, "coverablelines": 202, "totallines": 317, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 96.4, "coveredmethods": 27, "totalmethods": 28 },
         { "name": "ChangeCameraVIew", "coverage": 15.7, "coveredlines": 3, "coverablelines": 19, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
@@ -52,7 +52,7 @@
         { "name": "LoginMenuScript", "coverage": 7.6, "coveredlines": 2, "coverablelines": 26, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 25, "coveredmethods": 1, "totalmethods": 4 },
         { "name": "LoginSession", "coverage": 0, "coveredlines": 0, "coverablelines": 2, "totallines": 12, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Logout", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
-        { "name": "MainMenuScript", "coverage": 42, "coveredlines": 21, "coverablelines": 50, "totallines": 87, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 36.3, "coveredmethods": 4, "totalmethods": 11 },
+        { "name": "MainMenuScript", "coverage": 87.8, "coveredlines": 29, "coverablelines": 33, "totallines": 81, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
         { "name": "ModCameraScript", "coverage": 38.7, "coveredlines": 12, "coverablelines": 31, "totallines": 51, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "MovementScript", "coverage": 19.6, "coveredlines": 10, "coverablelines": 51, "totallines": 111, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 28.5, "coveredmethods": 2, "totalmethods": 7 },
         { "name": "MovePoint", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>19/04/2023 - 00:21:00</Generatedon>
+    <Generatedon>19/04/2023 - 00:44:09</Generatedon>
     <Parser>MultiReportParser (5x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>51</Classes>
     <Files>50</Files>
-    <Coveredlines>1561</Coveredlines>
-    <Uncoveredlines>769</Uncoveredlines>
-    <Coverablelines>2330</Coverablelines>
-    <Totallines>4327</Totallines>
-    <Linecoverage>66.9</Linecoverage>
+    <Coveredlines>1569</Coveredlines>
+    <Uncoveredlines>744</Uncoveredlines>
+    <Coverablelines>2313</Coverablelines>
+    <Totallines>4321</Totallines>
+    <Linecoverage>67.8</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>256</Coveredmethods>
-    <Totalmethods>337</Totalmethods>
-    <Methodcoverage>75.9</Methodcoverage>
+    <Coveredmethods>258</Coveredmethods>
+    <Totalmethods>332</Totalmethods>
+    <Methodcoverage>77.7</Methodcoverage>
   </Summary>
   <Coverage>
     <Assembly name="PlaymodeTests" classes="7" coverage="99.8" coveredlines="821" coverablelines="822" totallines="1350" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="130" totalmethods="130" methodcoverage="100">
@@ -27,7 +27,7 @@
       <Class name="SettingsMenuTests" coverage="100" coveredlines="159" coverablelines="159" totallines="267" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="20" methodcoverage="100" />
       <Class name="SplashScreenTests" coverage="100" coveredlines="42" coverablelines="42" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="9" totalmethods="9" methodcoverage="100" />
     </Assembly>
-    <Assembly name="Scripts" classes="44" coverage="49" coveredlines="740" coverablelines="1508" totallines="3384" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="126" totalmethods="207" methodcoverage="60.8">
+    <Assembly name="Scripts" classes="44" coverage="50.1" coveredlines="748" coverablelines="1491" totallines="3378" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="128" totalmethods="202" methodcoverage="63.3">
       <Class name="AvatarModificationMenuLineRender" coverage="100" coveredlines="26" coverablelines="26" totallines="44" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="AvatarModificationMenuScript" coverage="92.5" coveredlines="187" coverablelines="202" totallines="317" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="27" totalmethods="28" methodcoverage="96.4" />
       <Class name="ChangeCameraVIew" coverage="15.7" coveredlines="3" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
@@ -53,7 +53,7 @@
       <Class name="LoginMenuScript" coverage="7.6" coveredlines="2" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="4" methodcoverage="25" />
       <Class name="LoginSession" coverage="0" coveredlines="0" coverablelines="2" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="Logout" coverage="100" coveredlines="4" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="MainMenuScript" coverage="42" coveredlines="21" coverablelines="50" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="11" methodcoverage="36.3" />
+      <Class name="MainMenuScript" coverage="87.8" coveredlines="29" coverablelines="33" totallines="81" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
       <Class name="ModCameraScript" coverage="38.7" coveredlines="12" coverablelines="31" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="MovementScript" coverage="19.6" coveredlines="10" coverablelines="51" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="7" methodcoverage="28.5" />
       <Class name="MovePoint" coverage="0" coveredlines="0" coverablelines="9" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
