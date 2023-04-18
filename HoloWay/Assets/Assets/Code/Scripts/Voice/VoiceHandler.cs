@@ -50,6 +50,7 @@ public class VoiceHandler : MonoBehaviour
             InitRtcEngine();
             SetBasicConfiguration();
         }
+        GetAudioPlaybackDevice();
         //Auto join the channel once you spawn the player....
         JoinChannel();
         //However, stop the player from publishing the audio
@@ -144,7 +145,7 @@ public class VoiceHandler : MonoBehaviour
 
     public void GetAudioPlaybackDevice()
     {
-        _audioDeviceSelect.ClearOptions();
+        //_audioDeviceSelect.ClearOptions();
         _audioDeviceManager = RtcEngine.GetAudioDeviceManager();
         _audioPlaybackDeviceInfos = _audioDeviceManager.EnumeratePlaybackDevices();
         Debug.Log(string.Format("AudioPlaybackDevice count: {0}", _audioPlaybackDeviceInfos.Length));
@@ -154,10 +155,10 @@ public class VoiceHandler : MonoBehaviour
                 _audioPlaybackDeviceInfos[i].deviceName, _audioPlaybackDeviceInfos[i].deviceId));
         }
 
-        _audioDeviceSelect.AddOptions(_audioPlaybackDeviceInfos.Select(w =>
+       /* _audioDeviceSelect.AddOptions(_audioPlaybackDeviceInfos.Select(w =>
                 new Dropdown.OptionData(
                     string.Format("{0} :{1}", w.deviceName, w.deviceId)))
-            .ToList());
+            .ToList());*/
     }
 
     public void SelectAudioPlaybackDevice()
