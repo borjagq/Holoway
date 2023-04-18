@@ -91,9 +91,4 @@ public class CharacterMovementScript : NetworkBehaviour
         CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
 
     }
-//    public void OnDrawGizmos()
-//    {
-        
-////        Gizmos.DrawRay(new Ray(CameraDirectionVector.transform.position, CamVector.normalized));
-//    }
 }
