@@ -36,7 +36,7 @@ public class CharacterMovementScript : NetworkBehaviour
     void Update()
     {
         if (!IsOwner) return; // Only controlled by the client
-        Cursor.visible = false;
+        //Cursor.visible = false;
         Animator.Animator.SetFloat("Speed", Input.GetAxis("Vertical"));
         Animator.Animator.SetFloat("Direction", Input.GetAxis("Horizontal"));
         Animator.Animator.SetBool("Sprint", Input.GetKey(KeyCode.LeftShift));

@@ -15,8 +15,6 @@ public class DrawPoints : MonoBehaviour
     [SerializeField]
         private Camera cam;
         [SerializeField]
-        private Camera playerCam;
-        [SerializeField]
         private GameObject camObj;
     [SerializeField]
         private int stepsPerCurve = 100;
@@ -67,7 +65,6 @@ public class DrawPoints : MonoBehaviour
         return result;
     }
     void Start() {
-
     }
 
     void Update () {
@@ -88,8 +85,9 @@ public class DrawPoints : MonoBehaviour
             Deletion = false;
         }
         if (Input.GetKey ("escape")) {
+            Camera Maincam = GameObject.Find("WindowsCamera").GetComponent<Camera>();
             camObj.SetActive(false);
-            playerCam.enabled  = true;
+            Maincam.enabled  = true;
         }
         
     }
