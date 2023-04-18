@@ -35,7 +35,7 @@ public class CharacterMovementScript : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (!IsOwner) return; // Only controlled by the client
+        if (!IsOwner) return; // Only controlled by the client
         Cursor.visible = false;
         Animator.Animator.SetFloat("Speed", Input.GetAxis("Vertical"));
         Animator.Animator.SetFloat("Direction", Input.GetAxis("Horizontal"));

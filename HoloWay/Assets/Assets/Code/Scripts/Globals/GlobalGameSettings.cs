@@ -53,7 +53,7 @@ public class GlobalGameSettings
             case global::GameState.InGame:
                 {
                     AudioListener.volume = AudioSettings.GetAudioVolume();
-                    Debug.Log("Changing volumne to UI volume: " + AudioSettings.GetAudioVolume());
+                    Debug.Log("Changing volumne to game volume: " + AudioSettings.GetAudioVolume());
                     break;
                 }
         }

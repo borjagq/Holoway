@@ -8170,10 +8170,7 @@ MonoBehaviour:
   WalkDirectionMultiplier: 300
   SprintSpeedMultiplier: 5
   SprintDirectionMultiplier: 40
-  TotalSetCount: 1
-  CurrentSetCount: 0
-  CameraDirectionVector: {x: 0, y: 0, z: 0}
-  FirstPersonCameraEnabled: 0
+  FirstPersonCameraEnabled: 1
 --- !u!114 &4173089733378081462
 MonoBehaviour:
   m_ObjectHideFlags: 0
