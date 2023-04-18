@@ -280,10 +280,6 @@ public class AvatarModificationMenuScript : MonoBehaviour
         Avatar.BuildCharacter();
                     
     }
-    public void UpdateBodyPartColorFromColorPicker()
-    {
-
-    }
     public GameObject GetCurrentTarget()
     {
         return _CurrentTarget;
