@@ -1,11 +1,15 @@
-stages:
+stages: 
   - test
   - build
 
-unit-test:
+unit-test: 
+  script: "echo 'Testing...'"
   stage: test
-  script: echo 'Testing...'
-
-unity-build:
+  tags: 
+    - unity
+  
+unity-build: 
+  script: "echo 'Building...'"
   stage: build
-  script: echo 'Building...'
+  tags: 
+    - unity
