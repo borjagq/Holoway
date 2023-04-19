@@ -9,7 +9,9 @@ public class CharacterMovementScript : NetworkBehaviour
     public GameObject ForwardObject;
     public GameObject PlayerCamera;
 
-    
+    [Header("Pause Menu")]
+    public GameObject PauseMenuObject;
+    public bool IsInPauseMenu = false;
 
     [Header("Camera Related Objects - Common")]
     public GameObject CameraSocket;
@@ -35,36 +37,16 @@ public class CharacterMovementScript : NetworkBehaviour
         {
             PlayerCamera.SetActive(false);
         }
+        GlobalGameSettings.Instance.GameState.SetGameState(GameState.InGame);
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!IsOwner) return; // Only controlled by the client
-        //Cursor.visible = false;
-        Animator.Animator.SetFloat("Speed", Input.GetAxis("Vertical"));
-        Animator.Animator.SetFloat("Direction", Input.GetAxis("Horizontal"));
-        Animator.Animator.SetBool("Sprint", Input.GetKey(KeyCode.LeftShift));
-
-        float ForwardMultiplier = WalkSpeedMultiplier;
-        float DirectionMultiplier = WalkDirectionMultiplier;
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            ForwardMultiplier = SprintSpeedMultiplier;
-            DirectionMultiplier = SprintDirectionMultiplier;
-        }
-        else
-        {
-            ForwardMultiplier = WalkSpeedMultiplier;
-            DirectionMultiplier = WalkDirectionMultiplier;
-        }
-        this.transform.Rotate(new Vector3(0.0f, Input.GetAxis("Vertical") * Input.GetAxis("Horizontal") * Time.deltaTime * DirectionMultiplier, 0.0f));
-        Vector3 ForwardVector = ForwardObject.transform.position - this.transform.position;
-        if (Input.GetAxis("Vertical") > 0)
-        {
-            this.transform.position += ForwardVector * Input.GetAxis("Vertical") * ForwardMultiplier * Time.deltaTime;
-        }
-        if(Input.GetKeyDown(KeyCode.C))
+        MovePlayer(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetKey(KeyCode.LeftShift));
+        if (Input.GetKeyDown(KeyCode.C))
         {
             FirstPersonCameraEnabled = !FirstPersonCameraEnabled;
             if(FirstPersonCameraEnabled)
@@ -76,6 +58,60 @@ public class CharacterMovementScript : NetworkBehaviour
                 PlayerCamera.transform.position = CameraDirectionVector.transform.position;
             }
         }
+        RotateCamera(
+            Input.GetAxis("Mouse X"),
+            Input.GetAxis("Mouse Y")
+            );
+        //================================================================================================
+        //             KEY PRESS SCRIPT
+        //================================================================================================
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (GlobalGameSettings.Instance.GameState.GetGameState() == GameState.InGame)
+            {
+                Cursor.visible = !Cursor.visible;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            IsInPauseMenu = !IsInPauseMenu;
+            Cursor.visible = IsInPauseMenu;
+            PauseMenuObject.SetActive(IsInPauseMenu);
+        }
+    }
+
+    public void MovePlayer(float InputX, float InputY, bool Sprint)
+    {
+        float ForwardMultiplier = WalkSpeedMultiplier;
+        float DirectionMultiplier = WalkDirectionMultiplier;
+        if (Sprint)
+        {
+            ForwardMultiplier = SprintSpeedMultiplier;
+            DirectionMultiplier = SprintDirectionMultiplier;
+        }
+        else
+        {
+            ForwardMultiplier = WalkSpeedMultiplier;
+            DirectionMultiplier = WalkDirectionMultiplier;
+        }
+        Animator.Animator.SetFloat("Speed", InputY);
+        Animator.Animator.SetFloat("Direction", InputX);
+        Animator.Animator.SetBool("Sprint", Sprint);
+        if (!Cursor.visible)
+        {
+            if (InputY > 0.0f)
+            {
+                this.transform.Rotate(new Vector3(0.0f, InputY * InputX * Time.deltaTime * DirectionMultiplier, 0.0f));
+            }
+            Vector3 ForwardVector = ForwardObject.transform.position - this.transform.position;
+            if (InputY > 0)
+            {
+                this.transform.position += ForwardVector * InputY* ForwardMultiplier * Time.deltaTime;
+            }
+        }
+    }
+    public void RotateCamera(float mouseX, float mouseY)
+    {
         //================================================================================================
         //              CAMERA ROTATION SCRIPT
         //================================================================================================
@@ -85,15 +121,15 @@ public class CharacterMovementScript : NetworkBehaviour
             PlayerCamera.transform.position = CameraHolder.transform.position - DistanceFactor * CamVector;
             DistanceFactor -= Input.mouseScrollDelta.y * ScrollFactor * Time.deltaTime;
         }
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
-        CameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
-        CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
-
+        if (!Cursor.visible)
+        {
+            /*float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");*/
+            CameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
+            CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
+        }
     }
-//    public void OnDrawGizmos()
-//    {
-        
-////        Gizmos.DrawRay(new Ray(CameraDirectionVector.transform.position, CamVector.normalized));
-//    }
+    public void DetectKeyPresses()
+    {
+    }
 }

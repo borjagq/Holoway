@@ -10,4 +10,9 @@ public class Logout : MonoBehaviour
         PlayerPrefs.DeleteKey("player_token");
         SceneManager.LoadScene(0);
     }
+    public void DeletePlayerTokenAndLogout()
+    {
+        PlayerPrefs.DeleteKey("player_token");
+        //SceneManager.LoadScene(0);
+    }
 }
