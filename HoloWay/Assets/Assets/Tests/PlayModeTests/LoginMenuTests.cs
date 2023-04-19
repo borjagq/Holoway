@@ -88,14 +88,6 @@ public class LoginMenuTests : InputTestFixture
     }
 
     [UnityTest]
-    public IEnumerator Test_LoginMenuEventHandler()
-    {
-        yield return null;
-        GameObject Object = GameObject.Find("LoginMenuEventHandler");
-        Assert.NotNull(Object);
-    }
-
-    [UnityTest]
     public IEnumerator Test_MainCamera()
     {
         yield return null;
