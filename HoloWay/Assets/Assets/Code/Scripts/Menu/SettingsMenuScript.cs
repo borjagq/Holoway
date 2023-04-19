@@ -14,6 +14,11 @@ public class SettingsMenuScript : MonoBehaviour
     [Header("Menu - Network Controls")]
     public TMP_InputField IPAddressField;
     public TMP_InputField PortField;
+    [Header("Menu - InGame Controls")]
+    public Slider MouseSensitivityXSlider;
+    public TMP_Text MouseSensitivityXPreviewText;
+    public Slider MouseSensitivityYSlider;
+    public TMP_Text MouseSensitivityYPreviewText;
     void Start()
     {
         GlobalGameSettings.Instance.LoadSettings();
@@ -27,7 +32,21 @@ public class SettingsMenuScript : MonoBehaviour
             IPAddressField.text = GlobalGameSettings.Instance.NetworkSettings.GetIPAddress();
         if (PortField != null)
             PortField.text = GlobalGameSettings.Instance.NetworkSettings.GetPort().ToString();
+        if (MouseSensitivityXSlider != null)
+            MouseSensitivityXSlider.value = GlobalGameSettings.Instance.ControlSettings.MouseSensitivityX;
+        if (MouseSensitivityYSlider != null)
+            MouseSensitivityYSlider.value = GlobalGameSettings.Instance.ControlSettings.MouseSensitivityY;
 
+    }
+    public void OnMouseSensitivityXChange()
+    {
+        MouseSensitivityXPreviewText.text = MouseSensitivityXSlider.value.ToString();
+        GlobalGameSettings.Instance.ControlSettings.MouseSensitivityX = MouseSensitivityXSlider.value;
+    }
+    public void OnMouseSensitivityYChange()
+    {
+        MouseSensitivityYPreviewText.text = MouseSensitivityYSlider.value.ToString();
+        GlobalGameSettings.Instance.ControlSettings.MouseSensitivityY = MouseSensitivityYSlider.value;
     }
     public void OnMicrophoneVolumeChange()
     {

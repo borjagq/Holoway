@@ -86,7 +86,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
 
         string recipe = PlayerPrefs.GetString("AvatarData");
         //string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
-       
+        
         if (recipe != null)
         {
             if (recipe != "" && recipe.Trim().Length > 0)
@@ -299,7 +299,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public void ExitMenu()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
  
     public void SaveAndExit()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -13,6 +14,10 @@ public class CharacterMovementScript : NetworkBehaviour
     public GameObject PauseMenuObject;
     public bool IsInPauseMenu = false;
 
+    [Header("HUD Menu")]
+    public GameObject HudObject;
+    public TMP_Text Microphone_Text;
+
     [Header("Camera Related Objects - Common")]
     public GameObject CameraSocket;
     public GameObject CameraHolder;
@@ -20,6 +25,10 @@ public class CharacterMovementScript : NetworkBehaviour
     public GameObject CameraDirectionVector;
     public float DistanceFactor = 2.0f;
     public float ScrollFactor = 3.0f;
+
+    [Header("Controls - Mouse Related Settings")]
+    public float MouseSensitivityX;
+    public float MouseSensitivityY;
 
     [Header("Animations")]
     public ClientNetworkAnimator Animator;
@@ -31,12 +40,19 @@ public class CharacterMovementScript : NetworkBehaviour
 
     public bool FirstPersonCameraEnabled = false;
 
+    [Header("Reference Scripts")]
+    public VoiceHandler VoiceHandlerScript;
+
     void Start()
     {
         if(!IsOwner)
         {
             PlayerCamera.SetActive(false);
         }
+        VoiceHandlerScript = this.GetComponent<VoiceHandler>();
+
+        GlobalGameSettings.Instance.LoadSettings();
+        
         GlobalGameSettings.Instance.GameState.SetGameState(GameState.InGame);
         Cursor.visible = false;
     }
@@ -44,7 +60,21 @@ public class CharacterMovementScript : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!IsOwner) return; // Only controlled by the client
+        if(this.VoiceHandlerScript != null)
+        {
+            if(this.VoiceHandlerScript.PublishingMode)
+            {
+                Microphone_Text.text = "Microphone: On";
+            }
+            else
+            {
+                Microphone_Text.text = "Microphone: Off";
+            }
+        }
+        MouseSensitivityX = GlobalGameSettings.Instance.ControlSettings.MouseSensitivityX;
+        MouseSensitivityY = GlobalGameSettings.Instance.ControlSettings.MouseSensitivityY;
         MovePlayer(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetKey(KeyCode.LeftShift));
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -77,6 +107,16 @@ public class CharacterMovementScript : NetworkBehaviour
             IsInPauseMenu = !IsInPauseMenu;
             Cursor.visible = IsInPauseMenu;
             PauseMenuObject.SetActive(IsInPauseMenu);
+            if (IsInPauseMenu)
+            {
+                GlobalGameSettings.Instance.GameState.SetGameState(GameState.InMenu);
+                HudObject.SetActive(false);
+            }
+            else
+            {
+                GlobalGameSettings.Instance.GameState.SetGameState(GameState.InGame);
+                HudObject.SetActive(true);
+            }
         }
     }
 
@@ -125,8 +165,8 @@ public class CharacterMovementScript : NetworkBehaviour
         {
             /*float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");*/
-            CameraHolder.transform.Rotate(new Vector3(mouseY, 0.0f, 0.0f));
-            CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX, 0.0f));
+            CameraHolder.transform.Rotate(new Vector3(mouseY * MouseSensitivityY / 50.0f, 0.0f, 0.0f));
+            CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX * MouseSensitivityX / 50.0f, 0.0f));
         }
     }
     public void DetectKeyPresses()

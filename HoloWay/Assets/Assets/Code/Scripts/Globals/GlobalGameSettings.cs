@@ -7,6 +7,7 @@ public class GlobalGameSettings
     public GlobalAudioSettings AudioSettings = new GlobalAudioSettings();
     public GlobalNetworkSettings NetworkSettings = new GlobalNetworkSettings();
     public GlobalGameStates GameState = new GlobalGameStates();
+    public GlobalControlSettings ControlSettings = new GlobalControlSettings();
 
     public static GlobalGameSettings Instance = new GlobalGameSettings();
     public GlobalGameSettings()
@@ -25,8 +26,11 @@ public class GlobalGameSettings
         PlayerPrefs.SetFloat("AudioSettings_AudioVolume", AudioSettings.GetAudioVolume());
         PlayerPrefs.SetFloat("AudioSettings_MicrophoneVolume", AudioSettings.GetMicrophoneVolume());
         PlayerPrefs.SetFloat("AudioSettings_UIVolume", AudioSettings.GetUIVolume());
+        PlayerPrefs.SetFloat("ControlSettings_MouseSensitivityX", ControlSettings.MouseSensitivityX);
+        PlayerPrefs.SetFloat("ControlSettings_MouseSensitivityY", ControlSettings.MouseSensitivityY);
         PlayerPrefs.SetString("NetworkSettings_IPAddress", NetworkSettings.GetIPAddress());
         PlayerPrefs.SetInt("NetworkSettings_Port", NetworkSettings.GetPort());
+        PlayerPrefs.Save();
     }
     public void LoadSettings()
     {
@@ -36,6 +40,8 @@ public class GlobalGameSettings
         AudioSettings.SetUIVolume(PlayerPrefs.GetFloat("AudioSettings_UIVolume"));
         this.GameState.SetGameState(global::GameState.InMenu);
         this.ChangeVolumeAccordingToState();
+        ControlSettings.MouseSensitivityX = PlayerPrefs.GetFloat("ControlSettings_MouseSensitivityX");
+        ControlSettings.MouseSensitivityY = PlayerPrefs.GetFloat("ControlSettings_MouseSensitivityY");
         // Load the Network Settings
         NetworkSettings.SetIPAddress(PlayerPrefs.GetString("NetworkSettings_IPAddress"));
         NetworkSettings.SetPort(PlayerPrefs.GetInt("NetworkSettings_Port"));
