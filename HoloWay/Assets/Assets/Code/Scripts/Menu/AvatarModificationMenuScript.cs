@@ -12,7 +12,6 @@ using UnityEngine.UI;
 public class AvatarModificationMenuScript : MonoBehaviour
 {
     private String[] RaceName = new String[2];
-    private INIFile file = new INIFile();
     
 
     //================================================================================
