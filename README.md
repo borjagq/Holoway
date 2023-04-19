@@ -16,7 +16,7 @@
   </p>
   <span align="center"> 
   
-  [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)](https://unity3d.com)
+  [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)](https://unity3d.com) ![Code Coverage](https://img.shields.io/badge/coverage-67.8-yellow)
   
   </span>
 </div>
@@ -126,9 +126,9 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] General refactoring (ALL)
 - [x] Review tests (ALL)
 - [x] Login linked with menu (NB+BGQ)
-- [x] Reset cookies when logout 
+- [x] Reset cookies when logout (NB+BGQ)
 - [x] Whiteboard complex algorithm (NB+BGQ)
-- [ ] Voice implementation (SJ+JL)
+- [x] Voice implementation (SJ+JL)
 - [ ] Multiplayer in VR (HG+SS)
 - [ ] All functionalities in VR (SCIT)
 - [ ] Report writing (ALL)
