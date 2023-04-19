@@ -22,50 +22,44 @@ public class MainMenuScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void PlayDemo_OnClick()
-    {
-        DoButtonDefaults(0);
-        SceneManager.LoadScene(5);
-    }
-    public void Settings_OnClick()
-    {
-        DoButtonDefaults(0);
-        SceneManager.LoadScene(4);
-    }
-    public void Avatar_OnClick()
-    {
-        DoButtonDefaults(0);
-        SceneManager.LoadScene(6);
-    }
-    public void BrowseRooms_OnClick()
-    {
-        DoButtonDefaults(0);
-        //SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_ROOMCREATIONMENU);
-    }
-    public void Logout_OnClick()
-    {
-        DoButtonDefaults(0);
-        SceneManager.LoadScene(0);
-    }
-    public void Quit_OnClick()
-    {
-        DoButtonDefaults(0);
-        Application.Quit();
-    }
+    //public void PlayDemo_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    SceneManager.LoadScene(5);
+    //}
+    //public void Settings_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    SceneManager.LoadScene(4);
+    //}
+    //public void Avatar_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    SceneManager.LoadScene(6);
+    //}
+    //public void BrowseRooms_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    //SceneManager.LoadScene(GlobalGameSettings.SCENE_INDEX_ROOMCREATIONMENU);
+    //}
+    //public void Logout_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    SceneManager.LoadScene(0);
+    //}
+    //public void Quit_OnClick()
+    //{
+    //    DoButtonDefaults(0);
+    //    Application.Quit();
+    //}
     public void OnButtonClick()
     {
         DoButtonDefaults(0);
     }
-    public void OnButtonHover()
-    {
-        DoButtonDefaults(1); 
-    }
+    //public void OnButtonHover()
+    //{
+    //    DoButtonDefaults(1); 
+    //}
     
 
     public void DoButtonDefaults(int type)

@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
-using static UnityEngine.GraphicsBuffer;
 
-public class AvatarModificationRoomTests : InputTestFixture
+public class AvatarModificationRoomTests
 {
     [SetUp]
-    public override void Setup()
+    public void Setup()
     {
         SceneManager.LoadScene(4);
     }
@@ -321,28 +320,185 @@ public class AvatarModificationRoomTests : InputTestFixture
     //  TESTS FOR: Escape from Camera Focus
     //================================================================
 
+    [UnityTest]
+    public IEnumerator Test_ChangeCameraEscapes()
+    {
+        yield return null;
 
-    ////DOESNT WORK YET
-    //[UnityTest]
-    //public IEnumerator Test_ChangeCameraEscapes()
-    //{
-    //    yield return null;
+        GameObject GUIElement = GameObject.Find("CharacterModificationScript");
+        AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
 
-    //    GameObject GUIElement = GameObject.Find("CharacterModificationScript");
-    //    AvatarModificationMenuScript CharacterAnim = GUIElement.GetComponent<AvatarModificationMenuScript>();
+        GameObject Object = GameObject.Find("CameraPositions/HeadFocus");
 
-    //    GameObject Object = GameObject.Find("CameraPositions/ShoeFocus");
+        CharacterAnim.FocusCameraToBodyPart(Object);
+        CharacterAnim.GoForward(Object);
 
-    //    CharacterAnim.FocusCameraToBodyPart(Object);
+        yield return new WaitForSeconds(2.5f);
 
-    //    yield return new WaitForSeconds(2);
+        CharacterAnim.simulatePress = true;
+        CharacterAnim.SetEscapedCamera();
+        CharacterAnim.Update();
 
-    //    CharacterAnim.simulatePress = true;
-    //    GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+        GameObject FocusObject = CharacterAnim.GetCurrentTarget();
+        GameObject MainCamera = GameObject.Find("Main Camera");
 
-    //    yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2.5f);
 
-    //    Assert.AreEqual(Object, FocusObject);
-    //}
+        Assert.AreEqual(MainCamera, FocusObject);
+    }
+
+    //================================================================
+    //  TESTS FOR: Button Clicks
+    //================================================================
+    [UnityTest]
+    public IEnumerator Test_HeadButtonClick()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Head");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject HeadMenu = GameObject.Find("Menus/Menu_Head");
+        
+        Assert.IsTrue(HeadMenu.activeInHierarchy);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_HairButtonClick()
+    {
+        yield return Test_HeadButtonClick();
+
+        GameObject Object = GameObject.Find("Menus/Menu_Head/UICanvas3D_Menu2_RightMenu/Button_Hair");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject ColorPicker = GameObject.Find("Menus/Menu_ColorPicker");
+
+        Assert.IsTrue(ColorPicker.activeInHierarchy);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_SaveHairColorsClick()
+    {
+        yield return Test_HairButtonClick();
+     
+        GameObject RedColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorRed");
+        GameObject GreenColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorGreen");
+        GameObject BlueColor = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Input_ColorBlue");
+
+        TMP_InputField RedInput = RedColor.GetComponent<TMP_InputField>();
+        TMP_InputField GreenInput = GreenColor.GetComponent<TMP_InputField>();
+        TMP_InputField BlueInput = BlueColor.GetComponent<TMP_InputField>();
+
+        RedInput.text = "290";
+        GreenInput.text = "290";
+        BlueInput.text = "290";
+
+        GameObject Object = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Button_Save");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        Assert.IsNotNull(PlayerPrefs.GetString("AvatarData"));
+    }
+
+
+    [UnityTest]
+    public IEnumerator Test_EyeButtonClick()
+    {
+        yield return Test_HeadButtonClick();
+
+        GameObject Object = GameObject.Find("Menus/Menu_Head/UICanvas3D_Menu2_RightMenu/Button_Eyes");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject ColorPicker = GameObject.Find("Menus/Menu_ColorPicker");
+
+        Assert.IsTrue(ColorPicker.activeInHierarchy);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_SaveEyeColorsClick()
+    {
+        yield return Test_EyeButtonClick();
+
+        GameObject Object = GameObject.Find("Menus/Menu_ColorPicker/UICanvas3D_MenuHair_RightMenu/Button_Save");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        Debug.Log(PlayerPrefs.GetString("AvatarData"));
+
+        Assert.IsNotNull(PlayerPrefs.GetString("AvatarData"));
+    }
+
+
+    [UnityTest]
+    public IEnumerator Test_TorsoButtonClick()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Torso");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject HeadMenu = GameObject.Find("Menus/Menu_Torso");
+
+        Assert.IsTrue(HeadMenu.activeInHierarchy);
+    }
+
+
+    [UnityTest]
+    public IEnumerator Test_PantsButtonClick()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Pants");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject HeadMenu = GameObject.Find("Menus/Menu_Pants");
+
+        Assert.IsTrue(HeadMenu.activeInHierarchy);
+    }
+
+
+    [UnityTest]
+    public IEnumerator Test_ShoesButtonClick()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_RightMenu/Button_Shoes");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(2.5f);
+
+        GameObject HeadMenu = GameObject.Find("Menus/Menu_Shoes");
+
+        Assert.IsTrue(HeadMenu.activeInHierarchy);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_SaveAndExit()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("Menus/Menu_Main/UICanvas3D_Menu1_LeftMenu/Button_SaveAndExit");
+        Button HeadButton = Object.GetComponent<Button>();
+        HeadButton.onClick.Invoke();
+
+        yield return new WaitForSeconds(3f);
+
+        Assert.AreEqual(1, SceneManager.GetActiveScene().buildIndex);
+    }
 
 }

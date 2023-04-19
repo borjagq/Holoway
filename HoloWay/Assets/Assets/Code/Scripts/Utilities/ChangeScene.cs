@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    private enum Scenes {
+    public enum Scenes {
         LoginMenu,
         MainMenu,
         SettingsMenu,

@@ -10,7 +10,6 @@ public class CommonMenuUtilities : MonoBehaviour
         {
             MenuItem.SetActive(false);
         }
-        else Debug.LogError($"Menu object ${MenuItem.name} is already hidden!");
     }
     public void ShowMenuItem(GameObject MenuItem)
     {
@@ -18,6 +17,5 @@ public class CommonMenuUtilities : MonoBehaviour
         {
             MenuItem.SetActive(true);
         }
-        else Debug.LogError($"Menu object ${MenuItem.name} is already visible!");
     }
 }
