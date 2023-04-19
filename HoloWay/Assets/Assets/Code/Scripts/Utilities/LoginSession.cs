@@ -8,5 +8,6 @@ public static class LoginSession
 
     public static string token = "";
     public static string user_id = "";
+    public static string user_name = "";
 
 }

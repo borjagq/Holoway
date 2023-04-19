@@ -28,6 +28,7 @@ REDIRECT_URL = 'https://azure.borjagq.com/login_callback/'
 
 # CONSTANTS FOR TESTS
 TEST_EMAIL_NULL = 'test@test.com'
+TEST_NAMES_NULL = 'name'
 TEST_TOKEN_NULL = "gAAAAABkPv2wa93e_omfYYz2t6h9qsnVchPD-vGs8DZTh3pYmjtf7FTC8-tpnIRCwcP7ZvTt8BXYJLKXtaucY5-AWFq1ys6HHmM6BMjvOjVBbo0s19Li_OE="
 TEST_CHECK_NULL = {"client_id": '000000'}
 TEST_FILES_NULL = [{"id": '000', "type": 'fake/file', "name": 'fakefile.txt'}]
@@ -36,6 +37,7 @@ TEST_EMAIL = TEST_EMAIL_NULL
 TEST_TOKEN = TEST_TOKEN_NULL
 TEST_FILES = TEST_FILES_NULL
 TEST_INDIR = TEST_FILES_NULL
+TEST_NAMES = TEST_NAMES_NULL
 TEST_DIREC = 'asdfghasdfghs'
 TEST_SHARE = 'not@gmail.com'
 
@@ -170,7 +172,7 @@ def get_user_info(token):
         token: The google API credentials object.
 
     Returns:
-        Returns a the email.
+        Returns the email and the name.
     '''
 
     try:
@@ -182,23 +184,24 @@ def get_user_info(token):
 
         # Add a check for the tests.
         if token == TEST_CHECK_NULL:
-            return TEST_EMAIL
+            return TEST_EMAIL, TEST_NAMES
 
         creds = Credentials.from_authorized_user_info(token, SCOPES)
 
         # Build the API connection.
         service = build('drive', 'v3', credentials=creds)
 
-        about = service.about().get(fields='user(emailAddress),storageQuota(usage,usageInDrive,usageInDriveTrash)').execute()
+        about = service.about().get(fields='user(emailAddress,displayName),storageQuota(usage,usageInDrive,usageInDriveTrash)').execute()
 
         # Retrieve the email.
         email = about['user']['emailAddress']
+        name = about['user']['displayName']
 
-        return email
+        return email, name
     
     except Exception as e:
 
-        return None
+        return None, None
     
 def list_files_in_drive(token, dir_id):
 
@@ -279,7 +282,7 @@ def login_done(login_code, google_code):
         token = symmetric_encrypt(key, token)
 
         # Get the email.
-        email = get_user_info(token)
+        email, name = get_user_info(token)
 
         # Encrypt the email.
         email = symmetric_encrypt(key, email)
@@ -293,7 +296,7 @@ def login_done(login_code, google_code):
         )
 
         # Update this login code.
-        update_login_code(mydb, login_code, email, token)
+        update_login_code(mydb, login_code, email, token, name)
 
         print("Status: 303 See Other")
         print("Location: https://azure.borjagq.com/success/", end="\n\n")
@@ -365,22 +368,22 @@ def retrieve_token_email_from_code(mydb, code):
     '''
 
     if not check_if_code_exists(mydb, code):
-        return None, None
+        return None, None, None
 
     # get the cursor.
     mycursor = mydb.cursor()
 
     # Build the values.
-    sql = "SELECT email, token FROM login_codes WHERE (code = %s);"
+    sql = "SELECT email, token, user_name FROM login_codes WHERE (code = %s);"
     val = (code, )
     
     # Execute the query.
     mycursor.execute(sql, val)
 
     # Fetch that result. It's one cause code is unique.
-    email, token = mycursor.fetchall()[0]
+    email, token, name = mycursor.fetchall()[0]
 
-    return email, token
+    return email, token, name
 
 def share_file(token, file_id, emails):
 
@@ -413,14 +416,14 @@ def share_file(token, file_id, emails):
 
         return False, str(e)
 
-def update_login_code(mydb, code, email, token):
+def update_login_code(mydb, code, email, token, name):
 
     # Get the reference.
     mycursor = mydb.cursor()
 
     # Get the reference.
-    sql = "UPDATE login_codes SET email = %s, token = %s WHERE code = %s"
-    val = (email, token, code)
+    sql = "UPDATE login_codes SET email = %s, token = %s, user_name = %s WHERE code = %s"
+    val = (email, token, name, code)
 
     # Run the query.
     mycursor.execute(sql, val)

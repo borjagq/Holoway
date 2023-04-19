@@ -196,7 +196,7 @@ Content-Type: text/plain;charset=utf-8
         new_code = create_new_login_code(mydb)
     
         # Update those values.
-        update_login_code(mydb, new_code, 'email@email.com', 'token')
+        update_login_code(mydb, new_code, 'email@email.com', 'token', 'name')
 
         # Generate a new key in a random file.
         api_key = generate_random_code(10)
@@ -238,7 +238,7 @@ Content-Type: text/plain;charset=utf-8
         self.assertRegex(printed.getvalue(), r'''^Status: 200 OK
 Content-Type: text/plain;charset=utf-8
 
-{"status": "success", "email": "email@email.com", "token": "token"}$''')
+{"status": "success", "email": "email@email.com", "name": "name", "token": "token"}$''')
                          
     def test_share_files(self):
 
@@ -574,14 +574,15 @@ Content-Type: text/plain;charset=utf-8
             new_code = create_new_login_code(mydb)
         
             # Update those values.
-            update_login_code(mydb, new_code, 'email@email.com', 'token')
+            update_login_code(mydb, new_code, 'email@email.com', 'token', 'name')
 
             # Retrieve the information.
-            email, token = retrieve_token_email_from_code(mydb, new_code)
+            email, token, name = retrieve_token_email_from_code(mydb, new_code)
 
             # Make sure these are the same.
             self.assertEqual(email, 'email@email.com')
             self.assertEqual(token, 'token')
+            self.assertEqual(name, 'name')
 
             # Now delete it.
             delete_login_code(mydb, new_code)
@@ -595,11 +596,12 @@ Content-Type: text/plain;charset=utf-8
             fake_code = generate_random_code(4)
 
             # Retrieve the information.
-            email, token = retrieve_token_email_from_code(mydb, fake_code)
+            email, token, name = retrieve_token_email_from_code(mydb, fake_code)
 
             # Make sure these are the same.
             self.assertEqual(email, None)
             self.assertEqual(token, None)
+            self.assertEqual(name, None)
 
     def test_sign_check(self):
         
@@ -710,7 +712,7 @@ $""".format(code))
             mycursor.execute(sql, (code, ))
             email_org, token_org = mycursor.fetchall()[0]
 
-            update_login_code(mydb, code, 'new email', 'new token')
+            update_login_code(mydb, code, 'new email', 'new token', 'name')
 
             # Get all the new values.
             mycursor = mydb.cursor()
@@ -736,7 +738,7 @@ $""".format(code))
         status, token, creds = check_credentials_are_valid(token)
 
         self.assertTrue(status)
-        self.assertEqual(get_user_info(token), TEST_EMAIL)
+        self.assertEqual(get_user_info(token), (TEST_EMAIL, TEST_NAMES))
 
     def test_share_file(self):
         

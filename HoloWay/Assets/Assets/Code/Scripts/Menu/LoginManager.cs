@@ -10,8 +10,8 @@ using holowayapi;
 public class LoginManager : MonoBehaviour
 {
 
-    private const string api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
-    private const string priv_key = "Assets/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
+    private string api_key;
+    private string priv_key;
 
     private string api_code;
 
@@ -20,6 +20,11 @@ public class LoginManager : MonoBehaviour
      */
     void Start()
     {
+
+        this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
+        this.priv_key = Application.dataPath + "/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
+
+        Debug.Log(priv_key);
 
         GameObject LoginCodeText = GameObject.Find("LoginCode");
         HolowayAPI api = LoginCodeText.AddComponent<HolowayAPI>();
@@ -109,7 +114,7 @@ public class LoginManager : MonoBehaviour
      * Checks if the login has been retrieved or not, and if it is, stores the
      * login data and changes the page.
      */
-    void CheckIfLoggedIn(string status, string user_id, string token, string msg)
+    void CheckIfLoggedIn(string status, string user_id, string name, string token, string msg)
     {
 
         if (status == "success" && token != "") {
@@ -118,6 +123,7 @@ public class LoginManager : MonoBehaviour
 
             LoginSession.token = token;
             LoginSession.user_id = user_id;
+            LoginSession.user_name = name;
 
             CancelInvoke("RepeatCheck");
 
@@ -127,6 +133,7 @@ public class LoginManager : MonoBehaviour
 
         Debug.Log("Status: " + status);
         Debug.Log("email: " + user_id);
+        Debug.Log("name: " + name);
         Debug.Log("token: " + token);
         Debug.Log("msg: " + msg);
 
@@ -137,7 +144,7 @@ public class LoginManager : MonoBehaviour
      * Checks if the login has been retrieved or not, and if it is, stores the
      * login data and changes the page. Otherwise, it shows a code login.
      */
-    void CheckedLogin(string status, string user_id, string token, string msg)
+    void CheckedLogin(string status, string user_id, string name, string token, string msg)
     {
 
         if (status == "success") {
@@ -146,6 +153,7 @@ public class LoginManager : MonoBehaviour
 
             LoginSession.token = token;
             LoginSession.user_id = user_id;
+            LoginSession.user_name = name;
 
             SceneManager.LoadScene(2);
 
@@ -159,6 +167,7 @@ public class LoginManager : MonoBehaviour
 
         Debug.Log("Status: " + status);
         Debug.Log("email: " + user_id);
+        Debug.Log("name: " + name);
         Debug.Log("token: " + token);
         Debug.Log("msg: " + msg);
 

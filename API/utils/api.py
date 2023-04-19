@@ -82,7 +82,7 @@ def api_check_credentials(token, api_key, timestamp, signature):
 
         # Init these.
         email = None
-        email = get_user_info(token)
+        email, name = get_user_info(token)
 
         if email is None:
 
@@ -108,6 +108,7 @@ def api_check_credentials(token, api_key, timestamp, signature):
         print(json.dumps({
             "status": "success",
             "email": email,
+            "name": name,
             "refreshed_token": token
         }))
 
@@ -424,7 +425,7 @@ def api_retrieve_login(api_key, code, timestamp, signature):
         return
 
     # Check if the token is valid and refresh it.
-    email, token = retrieve_token_email_from_code(mydb, code)
+    email, token, name = retrieve_token_email_from_code(mydb, code)
 
     # If these values are not empty, delete this.
     if email != "" and token != "":
@@ -438,6 +439,7 @@ def api_retrieve_login(api_key, code, timestamp, signature):
     print(json.dumps({
         "status": "success",
         "email": email,
+        "name": name,
         "token": token
     }))
 
