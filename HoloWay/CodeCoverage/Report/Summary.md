@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 19/04/2023 - 14:47:25 |
+| Generated on: | 19/04/2023 - 15:02:28 |
 | Parser: | MultiReportParser (112x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 43 |
 | Files: | 42 |
-| Covered lines: | 1480 |
-| Uncovered lines: | 575 |
-| Coverable lines: | 2055 |
-| Total lines: | 3923 |
-| Line coverage: | 72% (1480 of 2055) |
+| Covered lines: | 1540 |
+| Uncovered lines: | 513 |
+| Coverable lines: | 2053 |
+| Total lines: | 3918 |
+| Line coverage: | 75% (1540 of 2053) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 234 |
-| Total methods: | 285 |
-| Method coverage: | 82.1% (234 of 285) |
+| Covered methods: | 239 |
+| Total methods: | 284 |
+| Method coverage: | 84.1% (239 of 284) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -27,7 +27,7 @@
 |RoomSelectionMenuTests|89|0|89|153|100%|0|0||16|16|100%|
 |SettingsMenuTests|159|0|159|267|100%|0|0||20|20|100%|
 |SplashScreenTests|42|0|42|82|100%|0|0||9|9|100%|
-|**Scripts**|**712**|**575**|**1287**|**2988**|**55.3%**|**0**|**0**|****|**116**|**167**|**69.4%**|
+|**Scripts**|**772**|**513**|**1285**|**2983**|**60%**|**0**|**0**|****|**121**|**166**|**72.8%**|
 |AvatarModificationMenuLineRender|26|0|26|44|100%|0|0||3|3|100%|
 |AvatarModificationMenuScript|183|15|198|316|92.4%|0|0||24|25|96%|
 |ChangeCameraVIew|3|16|19|38|15.7%|0|0||1|2|50%|
@@ -45,14 +45,14 @@
 |GlobalNetworkSettings|21|9|30|68|70%|0|0||6|7|85.7%|
 |holowayapi.GetQueryCreator|25|9|34|86|73.5%|0|0||3|3|100%|
 |holowayapi.HoloFile|0|9|9|407|0%|0|0||0|8|0%|
-|holowayapi.HolowayAPI|37|137|174|407|21.2%|0|0||4|8|50%|
+|holowayapi.HolowayAPI|73|101|174|407|41.9%|0|0||5|8|62.5%|
 |JoinRoom|0|16|16|36|0%|0|0||0|1|0%|
-|LoginManager|12|51|63|167|19%|0|0||2|6|33.3%|
-|LoginSession|0|2|2|12|0%|0|0||0|1|0%|
+|LoginManager|34|29|63|167|53.9%|0|0||5|6|83.3%|
+|LoginSession|2|0|2|12|100%|0|0||1|1|100%|
 |Logout|4|0|4|13|100%|0|0||1|1|100%|
 |MainMenuScript|19|3|22|81|86.3%|0|0||3|3|100%|
 |ModCameraScript|12|19|31|51|38.7%|0|0||3|3|100%|
-|MovePoint|0|9|9|27|0%|0|0||0|3|0%|
+|MovePoint|0|7|7|22|0%|0|0||0|2|0%|
 |NetworkManagerInitializer|3|0|3|14|100%|0|0||1|1|100%|
 |PauseMenuScript|0|15|15|31|0%|0|0||0|1|0%|
 |PlatformCameraInitializer|9|4|13|26|69.2%|0|0||1|1|100%|
