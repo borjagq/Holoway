@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7026959193789822613}
   - component: {fileID: 4059730274888730982}
   - component: {fileID: 1589589367400527625}
+  - component: {fileID: 1815022480950221809}
   m_Layer: 0
   m_Name: ControlPoint
   m_TagString: Untagged
@@ -111,3 +112,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e383f30b8777d944a8a5763a20eb606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1815022480950221809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6588386208439450525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5b7457d6b162c45a3ea9cc999b24d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  InLocalSpace: 0
+  Interpolate: 1
