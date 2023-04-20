@@ -4,7 +4,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "IncludeAssemblies",
-                "value": "{\"m_Value\":\"Addressable_Editor,PlaymodeTests,Scripts,UMA_Content,UMA_Core,UMA_Core_Editor,UMA_Examples,UMA_Examples_Editor\"}"
+                "value": "{\"m_Value\":\"Addressable_Editor,AgoraAssembly,Assembly-CSharp,Assembly-CSharp-Editor,AssetUsageDetector.Editor,AssistantCoreSDKEditor,AssistantCoreSDKRuntime,Facebook.Wit.Dictation,Facebook.Wit.Dictation.Editor,Meta.VoiceSDK.Mic.Common,Meta.VoiceSDK.Mic.Other,Meta.WitAi,Meta.WitAi.Conduit,Meta.WitAi.Conduit.Editor,Meta.WitAi.Editor,Meta.WitAi.Lib,Meta.WitAI.Lib.Editor,Meta.WitAi.TTS,Meta.WitAi.TTS.Editor,Meta.WitAi.TTS.Samples,Oculus.AudioManager,Oculus.AudioManager.Audio.Editor,Oculus.AudioManager.Utils.Editor,Oculus.Interaction,Oculus.Interaction.Editor,Oculus.Interaction.InterfaceSupport,Oculus.Interaction.OVR,Oculus.Interaction.OVR.Editor,Oculus.Interaction.OVR.Samples,Oculus.Interaction.Samples.Editor,Oculus.LipSync,Oculus.LipSync.Editor,Oculus.Platform,Oculus.Platform.Editor,Oculus.Spatializer,Oculus.Spatializer.Editor,Oculus.Voice.Demo,Oculus.VR,Oculus.VR.Editor,Oculus.VR.Scripts.Editor,PlaymodeTests,Scripts,UMA_Content,UMA_Core,UMA_Core_Editor,UMA_Examples,UMA_Examples_Editor,VoiceSDK.Dictation.Editor,VoiceSDK.Dictation.Runtime,VoiceSDK.Editor,VoiceSDK.Runtime\"}"
             },
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -18,8 +18,13 @@
             },
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "PathsToInclude",
+                "value": "{\"m_Value\":\"{ProjectPath}/Assets/Assets/**\"}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "PathsToExclude",
-                "value": "{\"m_Value\":\"{ProjectPath}/Assets/UMA/**\"}"
+                "value": "{\"m_Value\":\"{ProjectPath}/Assets/Assets/ThirdParty/**,{ProjectPath}/Assets/Assets/Legacy/**,{ProjectPath}/Assets/Assets/Code/Scripts/RayTracing/**,{ProjectPath}/Assets/Assets/Code/Scripts/Whiteboard/**\"}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -28,8 +33,23 @@
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "OpenReportWhenGenerated",
+                "key": "GenerateAdditionalReports",
                 "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "GenerateAdditionalMetrics",
+                "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "GenerateTestReferences",
+                "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "VerbosityLevel",
+                "value": "{\"m_Value\":0}"
             }
         ]
     }
