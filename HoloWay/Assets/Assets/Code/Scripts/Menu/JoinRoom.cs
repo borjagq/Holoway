@@ -16,17 +16,13 @@ public class JoinRoom : MonoBehaviour
         switch (name) {
             case "small":
                 GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Client);
-                SceneManager.LoadScene(6);
+                SceneManager.LoadScene(7);
                 break;
             case "medium":
                 GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Client);
-                SceneManager.LoadScene(7);
-                break;
-            case "large":
-                GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Client);
                 SceneManager.LoadScene(8);
                 break;
-            case "multiplayer":
+            case "large":
                 GlobalGameSettings.Instance.NetworkSettings.SetNetworkType(NetworkType.Client);
                 SceneManager.LoadScene(9);
                 break;

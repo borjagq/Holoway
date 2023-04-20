@@ -12,7 +12,6 @@ using UnityEngine.UI;
 public class AvatarModificationMenuScript : MonoBehaviour
 {
     private String[] RaceName = new String[2];
-    private INIFile file = new INIFile();
     
 
     //================================================================================
@@ -87,7 +86,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
 
         string recipe = PlayerPrefs.GetString("AvatarData");
         //string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
-       
+        
         if (recipe != null)
         {
             if (recipe != "" && recipe.Trim().Length > 0)
@@ -126,6 +125,14 @@ public class AvatarModificationMenuScript : MonoBehaviour
         }
     }
 
+    public void SetEscapedCamera()
+    {
+        if (GoBackward())
+        {
+            RefocusCamera();
+        }
+    }
+
     public void Update()
     {
         if(_IsCameraMoving) { 
@@ -145,10 +152,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
         _escapeButton = GetEscapePressed();
         if (_escapeButton && _IsCameraFocused)
         {
-            if (GoBackward())
-            {
-                RefocusCamera();
-            }
+            SetEscapedCamera();
         }
     }
     public void Dropdown_Gender_OnChange(Int32 DropdownValue)
@@ -275,10 +279,6 @@ public class AvatarModificationMenuScript : MonoBehaviour
         Avatar.BuildCharacter();
                     
     }
-    public void UpdateBodyPartColorFromColorPicker()
-    {
-
-    }
     public GameObject GetCurrentTarget()
     {
         return _CurrentTarget;
@@ -299,7 +299,7 @@ public class AvatarModificationMenuScript : MonoBehaviour
     public void ExitMenu()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
  
     public void SaveAndExit()

@@ -106,7 +106,8 @@ public class SplashScreen : MonoBehaviour
         
         if(playerCurrentFrame >= (playerFrameCount - 1))
         {
-            SceneManager.LoadScene(1);
+            ChangeScene SceneChange = GetComponent<ChangeScene>();            
+            SceneChange.MoveToScene();
         }
     }
 }

@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:HoloWay/Assets/Assets/Code/Scripts/FileSharing.meta
 guid: e308c01a7ad2c374ebab2743da7161ba
 folderAsset: yes
+========
+guid: 80f4d50e7ee524f90bd0d75a89abe388
+>>>>>>>> fd5a7ad4f177c0e920471c7a27a5afd5ce600ed6:HoloWay/Assets/InitTestScene638174437135513310.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
