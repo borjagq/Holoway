@@ -20,7 +20,7 @@ public class LoginManager : MonoBehaviour
      */
     void Start()
     {
-
+        //GlobalGameSettings.CreateInstance();
         this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
         this.priv_key = Application.dataPath + "/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
 
@@ -126,7 +126,14 @@ public class LoginManager : MonoBehaviour
             LoginSession.user_name = name;
 
             CancelInvoke("RepeatCheck");
-
+            if (name != null)
+            {
+                if (name != "")
+                {
+                    if (name.Length > 0)
+                        GlobalGameSettings.Instance.SessionSettings.SetSessionName(name);
+                }
+            }
             SceneManager.LoadScene(2);
 
         }
@@ -154,6 +161,15 @@ public class LoginManager : MonoBehaviour
             LoginSession.token = token;
             LoginSession.user_id = user_id;
             LoginSession.user_name = name;
+
+            if (name != null)
+            {
+                if (name != "")
+                {
+                    if (name.Length > 0)
+                        GlobalGameSettings.Instance.SessionSettings.SetSessionName(name);
+                }
+            }
 
             SceneManager.LoadScene(2);
 

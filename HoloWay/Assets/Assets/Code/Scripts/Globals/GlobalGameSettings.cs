@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class GlobalGameSettings 
@@ -8,6 +9,7 @@ public class GlobalGameSettings
     public GlobalNetworkSettings NetworkSettings = new GlobalNetworkSettings();
     public GlobalGameStates GameState = new GlobalGameStates();
     public GlobalControlSettings ControlSettings = new GlobalControlSettings();
+    public GlobalSessionSettings SessionSettings = new GlobalSessionSettings();
 
     public static GlobalGameSettings Instance = new GlobalGameSettings();
     public GlobalGameSettings()
@@ -16,6 +18,10 @@ public class GlobalGameSettings
         
         this.LoadSettings();
         
+    }
+    public static void CreateInstance()
+    {
+        GlobalGameSettings.Instance = new GlobalGameSettings();
     }
     public static GlobalGameSettings GetInstance()
     {
@@ -34,6 +40,7 @@ public class GlobalGameSettings
     }
     public void LoadSettings()
     {
+        Debug.Log("Loading settings called..");
         // Load the Audio Settings
         AudioSettings.SetAudioVolume(PlayerPrefs.GetFloat("AudioSettings_AudioVolume"));
         AudioSettings.SetMicrophoneVolume(PlayerPrefs.GetFloat("AudioSettings_MicrophoneVolume"));
