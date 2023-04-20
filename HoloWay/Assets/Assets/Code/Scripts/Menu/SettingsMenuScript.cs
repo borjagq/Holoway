@@ -51,6 +51,7 @@ public class SettingsMenuScript : MonoBehaviour
     public void OnMicrophoneVolumeChange()
     {
         GlobalGameSettings.Instance.AudioSettings.SetMicrophoneVolume(MicrophoneVolumeSlider.value);
+        GlobalGameSettings.Instance.ChangeVolumeAccordingToState();
     }
     public void OnUIVolumeChange()
     {
@@ -60,6 +61,7 @@ public class SettingsMenuScript : MonoBehaviour
     public void OnVolumeSliderChange()
     {
         GlobalGameSettings.Instance.AudioSettings.SetAudioVolume(VolumeSlider.value);
+        GlobalGameSettings.Instance.ChangeVolumeAccordingToState();
     }
     public void IPAddressField_OnChange()
     {

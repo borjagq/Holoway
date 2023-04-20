@@ -21,12 +21,7 @@ public class CharacterNetworkScript : NetworkBehaviour
     public Transform ForwardObject;
     [SerializeField]
     public DynamicCharacterAvatar Avatar;
-    [Header("Variables")]
-    public float WalkSpeedMultiplier = 1.0f;
-    public float WalkDirectionMultiplier = 20.0f;
-    public float SprintSpeedMultiplier = 5.0f;
-    public float SprintDirectionMultiplier = 40.0f;
-
+    
     public bool HasLoadedOnce = false;
 
     public NetworkVariable<FixedString4096Bytes> PlayerAvatarRecipe = new NetworkVariable<FixedString4096Bytes>();
