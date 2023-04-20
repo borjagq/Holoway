@@ -154,7 +154,7 @@ public class SettingsMenuTests
         GameObject Port = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Network/MenuItem_Network_Port/InputField_Port");
 
         TMP_InputField IPInputField = IPAddress.GetComponent<TMP_InputField>();
-        IPInputField.text = "127.0.0";
+        IPInputField.text = "127.0.0.1";
 
 
         TMP_InputField PortInputField = Port.GetComponent<TMP_InputField>();

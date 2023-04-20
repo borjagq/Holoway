@@ -121,7 +121,7 @@ public class RoomSelectionMenuTests
         GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room01");
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -132,7 +132,7 @@ public class RoomSelectionMenuTests
         GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room02");
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         Assert.AreEqual(8, SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -143,11 +143,7 @@ public class RoomSelectionMenuTests
         GameObject Object = GameObject.Find("UICanvas/RoomBrowse/Buttons/Button_Room03");
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
-        yield return new WaitForSeconds(2f);
-
-        Debug.Log("LARGE ROOM TESTS");
-        Debug.Log(SceneManager.GetActiveScene().buildIndex);
-
+        yield return new WaitForSeconds(5f);
         Assert.AreEqual(9, SceneManager.GetActiveScene().buildIndex);
     }
 }

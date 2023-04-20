@@ -64,5 +64,9 @@ public class GlobalNetworkSettings
                 }
         }
     }
+    public void ShutdownNetworkManager()
+    {
+        NetworkManager.Singleton.Shutdown();
+    }
 
 }

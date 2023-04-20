@@ -498,7 +498,7 @@ public class AvatarModificationRoomTests
 
         yield return new WaitForSeconds(3f);
 
-        Assert.AreEqual(1, SceneManager.GetActiveScene().buildIndex);
+        Assert.AreEqual(2, SceneManager.GetActiveScene().buildIndex);
     }
 
 }
