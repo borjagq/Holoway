@@ -657,7 +657,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
 --- !u!1001 &748220152
 PrefabInstance:
@@ -1085,6 +1085,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1685728259996432039, guid: 72c2ddcf61bf6bc46ae615b407469668, type: 3}
+      propertyPath: NetworkConfig.NetworkPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685728259996432039, guid: 72c2ddcf61bf6bc46ae615b407469668, type: 3}
+      propertyPath: NetworkConfig.NetworkPrefabs.Array.data[0].Prefab
+      value: 
+      objectReference: {fileID: 1532058525}
+    - target: {fileID: 1685728259996432039, guid: 72c2ddcf61bf6bc46ae615b407469668, type: 3}
+      propertyPath: NetworkConfig.NetworkPrefabs.Array.data[1].Prefab
+      value: 
+      objectReference: {fileID: 1354201663}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72c2ddcf61bf6bc46ae615b407469668, type: 3}
 --- !u!1 &1350126824

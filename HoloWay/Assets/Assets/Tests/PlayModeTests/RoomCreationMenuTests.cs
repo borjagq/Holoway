@@ -57,4 +57,43 @@ public class RoomCreationMenuTests
         yield return new WaitForSeconds(1f);
         Assert.AreEqual(6, SceneManager.GetActiveScene().buildIndex);
     }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneToSmallRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/GameObject/InputField (TMP)");
+        TMP_InputField ButtonInput = Object.GetComponent<TMP_InputField>();
+        ButtonInput.text = "small";
+        ButtonInput.onEndEdit.Invoke(ButtonInput.text);
+
+        yield return new WaitForSeconds(5f);
+        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneToMediumRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/GameObject/InputField (TMP)");
+        TMP_InputField ButtonInput = Object.GetComponent<TMP_InputField>();
+        ButtonInput.text = "medium";
+        ButtonInput.onEndEdit.Invoke(ButtonInput.text);
+
+        yield return new WaitForSeconds(5f);
+        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [UnityTest]
+    public IEnumerator Test_ChangeSceneToLargeRoom()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/GameObject/InputField (TMP)");
+        TMP_InputField ButtonInput = Object.GetComponent<TMP_InputField>();
+        ButtonInput.text = "large";
+        ButtonInput.onEndEdit.Invoke(ButtonInput.text);
+
+        yield return new WaitForSeconds(5f);
+        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+    }
 }

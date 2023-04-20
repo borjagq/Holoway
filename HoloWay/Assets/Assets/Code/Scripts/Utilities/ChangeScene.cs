@@ -15,7 +15,10 @@ public class ChangeScene : MonoBehaviour
         SmallRoom,
         MediumRoom,
         LargeRoom,
-        MultiplayerRoom
+        MultiplayerRoom,
+        SmallRoomRaytracing,
+        MediumRoomRaytracing,
+        LargeRoomRaytracing
     };
 
     [SerializeField]
@@ -49,6 +52,15 @@ public class ChangeScene : MonoBehaviour
                 break;
             case Scenes.LargeRoom:
                 SceneManager.LoadScene(9);
+                break;
+            case Scenes.SmallRoomRaytracing:
+                SceneManager.LoadScene(11);
+                break;
+            case Scenes.MediumRoomRaytracing:
+                SceneManager.LoadScene(12);
+                break;
+            case Scenes.LargeRoomRaytracing:
+                SceneManager.LoadScene(13);
                 break;
         }
         
