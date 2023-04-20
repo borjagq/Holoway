@@ -8,6 +8,7 @@ variables:
   UNITY_ACTIVATION_FILE: /home/gitlab-runner/Unity/Keys//Unity_v2021.3.17f1.alf
   IMAGE: unityci/editor
   IMAGE_VERSION: 1
+  UNITY_VERSION: 2021.3.17f1
   UNITY_DIR: /home/gitlab-runner/Unity/Editor/Unity
   VERSION_NUMBER_VAR: $CI_COMMIT_REF_SLUG-$CI_PIPELINE_ID-$CI_JOB_ID
   VERSION_BUILD_VAR: $CI_PIPELINE_IID
