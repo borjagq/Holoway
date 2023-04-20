@@ -137,7 +137,76 @@ public class SettingsMenuTests
         Assert.IsTrue(NetworkMenu.activeInHierarchy);
     }
 
-    
+    [UnityTest]
+    public IEnumerator Test_SaveNetworkValues()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/SettingsMenu/MenuItem_SettingsMain/Button_Network");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+
+        GameObject NetworkMenu = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Network");
+
+        yield return new WaitForSeconds(1f);
+
+        
+        GameObject IPAddress = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Network/MenuItem_Network_IPAddress/InputField_IPAddress");
+        GameObject Port = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Network/MenuItem_Network_Port/InputField_Port");
+
+        TMP_InputField IPInputField = IPAddress.GetComponent<TMP_InputField>();
+        IPInputField.text = "127.0.0";
+
+
+        TMP_InputField PortInputField = Port.GetComponent<TMP_InputField>();
+        PortInputField.text = "7777";
+
+        GameObject NetworkSave = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Network/Button_NetworkSettings_Save");
+        Button SaveButton = NetworkSave.GetComponent<Button>();
+        SaveButton.onClick.Invoke();
+
+        Assert.AreEqual(PortInputField.text, GlobalGameSettings.Instance.NetworkSettings.GetPort().ToString());
+        Assert.AreEqual(IPInputField.text, GlobalGameSettings.Instance.NetworkSettings.GetIPAddress());
+    }
+
+    [UnityTest]
+    public IEnumerator Test_SaveVolumeValues()
+    {
+        yield return null;
+        GameObject Object = GameObject.Find("UICanvas/SettingsMenu/MenuItem_SettingsMain/Button_Audio");
+        Button button = Object.GetComponent<Button>();
+        button.onClick.Invoke();
+
+        GameObject NetworkMenu = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume");
+
+        yield return new WaitForSeconds(1f);
+
+        GameObject VolumeSlider = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume/MenuItem_Volume_VolumeSlider/Slider_Volume");
+        GameObject MicVolumeSlider = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume/MenuItem_Volume_MicVolumeSlider/Slider_MicrophoneVolume");
+        GameObject UIVolumeSlider = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume/MenuItem_Volume_UIVolumeSlider/Slider_UIVolume");
+        GameObject Checkbox = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume/MenuItem_Volume_Checkbox/Toggle_Sound");
+
+
+        Slider VolumeSliderValue = VolumeSlider.GetComponent<Slider>();
+        VolumeSliderValue.value = 0.5f;
+
+        Slider MicVolumeSliderValue = MicVolumeSlider.GetComponent<Slider>();
+        MicVolumeSliderValue.value = 0.5f;
+
+        Slider UIVolumeSliderValue = UIVolumeSlider.GetComponent<Slider>();
+        UIVolumeSliderValue.value = 0.5f;
+
+        Toggle CheckboxToggle = Checkbox.GetComponent<Toggle>();
+        CheckboxToggle.isOn = false;
+
+        GameObject NetworkSave = GameObject.Find("UICanvas/SettingsMenu/MenuItem_Volume/Button_NetworkSettings_Save");
+        Button SaveButton = NetworkSave.GetComponent<Button>();
+        SaveButton.onClick.Invoke();
+
+
+        Assert.AreEqual(VolumeSliderValue.value, GlobalGameSettings.Instance.AudioSettings.GetAudioVolume());
+        Assert.AreEqual(MicVolumeSliderValue.value, GlobalGameSettings.Instance.AudioSettings.GetMicrophoneVolume());
+        Assert.AreEqual(UIVolumeSliderValue.value, GlobalGameSettings.Instance.AudioSettings.GetUIVolume());
+    }
 
     [UnityTest]
     public IEnumerator Test_ShowVolumeMenu()

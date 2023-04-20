@@ -49,7 +49,7 @@ namespace holowayapi
             this.api_key = api_key;
         }
 
-        public IEnumerator check_credential(string token, Action<string, string, string, string> done)
+        public IEnumerator check_credential(string token, Action<string, string, string, string, string> done)
         {
 
             // Returns: status, user_id, name, refreshed_token, msg
@@ -101,10 +101,11 @@ namespace holowayapi
                 // Get those values.
                 string status = (values.ContainsKey("status")) ? values["status"] : "";
                 string email = (values.ContainsKey("email")) ? values["email"] : "";
+                string name = (values.ContainsKey("name")) ? values["name"] : "";
                 string refreshed_token = (values.ContainsKey("refreshed_token")) ? values["refreshed_token"] : "";
                 string msg = (values.ContainsKey("msg")) ? values["msg"] : "";
 
-                done(status, email, refreshed_token, msg);
+                done(status, email, name, refreshed_token, msg);
 
             }
             else
@@ -169,6 +170,13 @@ namespace holowayapi
                 string msg = (values.ContainsKey("msg")) ? values["msg"] : "";
 
                 done(status, code, msg);
+
+            }
+            else
+            {
+
+                Debug.Log("ERROR -> " + request.error);
+                Debug.Log(request.downloadHandler.text);
 
             }
 
@@ -239,7 +247,7 @@ namespace holowayapi
 
         }
 
-        public IEnumerator retrieve_login(string code, Action<string, string, string, string> done)
+        public IEnumerator retrieve_login(string code, Action<string, string, string, string, string> done)
         {
 
             // Return: status, user_id, token, msg
@@ -289,10 +297,11 @@ namespace holowayapi
                 // Get those values.
                 string status = (values.ContainsKey("status")) ? values["status"] : "";
                 string email = (values.ContainsKey("email")) ? values["email"] : "";
+                string name = (values.ContainsKey("name")) ? values["name"] : "";
                 string token = (values.ContainsKey("token")) ? values["token"] : "";
                 string msg = (values.ContainsKey("msg")) ? values["msg"] : "";
 
-                done(status, email, token, msg);
+                done(status, email, name, token, msg);
 
             }
 

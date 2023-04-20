@@ -13,11 +13,6 @@ public class MovePoint : MonoBehaviour
         cam = GameObject.FindWithTag("Whiteboard").GetComponent<Camera>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
      void OnMouseDrag()
      {
          float distance_to_screen = cam.WorldToScreenPoint(gameObject.transform.position).z;

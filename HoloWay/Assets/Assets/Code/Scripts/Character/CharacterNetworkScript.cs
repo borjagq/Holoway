@@ -9,9 +9,7 @@ using Unity.Netcode.Components;
 using UnityEngine;
 
 public class CharacterNetworkScript : NetworkBehaviour
-{
-    
-    private INIFile file = new INIFile();
+{    
     [SerializeField]
     public Renderer PlayerRenderer;
     [SerializeField]
@@ -64,11 +62,6 @@ public class CharacterNetworkScript : NetworkBehaviour
             this.transform.position = SpawnPosition.transform.position;
             Debug.Log("Spawning player at position " + SpawnPosition.transform.position);
         }
-        file.LoadFromFile("./Data.ini");
-        string recipe = file.IniReadValue("AvatarDetails", "AvatarData");
-        Debug.Log("Loaded recipe: " + recipe);
-        Avatar.LoadFromRecipeString(recipe);
-        PlayerAvatarRecipe.Value = recipe;
         OnSpawnServerRpc();
         
     }
