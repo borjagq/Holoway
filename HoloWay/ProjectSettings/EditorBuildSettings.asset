@@ -38,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Legacy/Scenes/TestAndTrail/CharacterMovementTest/CharacterMovementTest.unity
     guid: defd98721a0908b42b244e608b88a88c
+  - enabled: 1
+    path: Assets/Assets/Level/Scenes/SmallRoomRaytracing.unity
+    guid: 48b47932717234346bb2f4b5b64741e7
+  - enabled: 1
+    path: Assets/Assets/Level/Scenes/MediumRoomRayTracing.unity
+    guid: b0e87f4e32f1f284795772578210b0c5
+  - enabled: 1
+    path: Assets/Assets/Level/Scenes/LargeRoomRayTracing.unity
+    guid: 4bf2d2d9d3f4e0946a6a6e2b60888841
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 23c188a655ce9cf4e8bb0c025c8c0843, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 629b621875631614584404c35f294484, type: 2}
