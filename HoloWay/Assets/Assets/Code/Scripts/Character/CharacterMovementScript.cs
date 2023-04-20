@@ -9,7 +9,7 @@ public class CharacterMovementScript : NetworkBehaviour
     [Header("Helper Objects")]
     public GameObject ForwardObject;
     public GameObject PlayerCamera;
-
+    public GameObject UMARenderer;
     [Header("Pause Menu")]
     public GameObject PauseMenuObject;
     public bool IsInPauseMenu = false;
@@ -55,6 +55,16 @@ public class CharacterMovementScript : NetworkBehaviour
         
         GlobalGameSettings.Instance.GameState.SetGameState(GameState.InGame);
         Cursor.visible = false;
+
+        Transform[] children = this.gameObject.GetComponentsInChildren<Transform>();
+        foreach (Transform t in children)
+        {
+            if(t.name == "UMARenderer")
+            {
+                UMARenderer = t.gameObject;
+                break;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -82,10 +92,12 @@ public class CharacterMovementScript : NetworkBehaviour
             if(FirstPersonCameraEnabled)
             {
                 PlayerCamera.transform.position = CameraHolder.transform.position;
+                //UMARenderer.layer = LayerMask.NameToLayer("FPSCameraObject");
             }
             else
             {
                 PlayerCamera.transform.position = CameraDirectionVector.transform.position;
+                //UMARenderer.layer = LayerMask.NameToLayer("Default");
             }
         }
         RotateCamera(

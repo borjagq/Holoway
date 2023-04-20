@@ -10,10 +10,17 @@ public class CharacterNetworkInitializer : NetworkBehaviour
     void Start()
     {
         Debug.Log("Called On NetworkSpawn");
-        NetworkScript = this.gameObject.GetComponent<CharacterNetworkingScript>();
+        /*NetworkScript = this.gameObject.GetComponent<CharacterNetworkingScript>();*/
+        NetworkClient client = this.GetCurrentNetworkClient();
+        NetworkScript = this.GetNetworkingScript(client);
+        //Debug.Log("Network Script:");
+
+        
         if (NetworkScript != null)
         {
+            NetworkScript.Avatar.LoadFromRecipeString(PlayerPrefs.GetString("AvatarData"));
             NetworkScript.ChangePlayerNameServerRpc(GlobalGameSettings.Instance.SessionSettings.GetSessionName());
+            NetworkScript.AvatarRecipeChangeServerRpc(NetworkScript.Avatar.GetCurrentRecipe());
         }
     }
 
@@ -28,5 +35,27 @@ public class CharacterNetworkInitializer : NetworkBehaviour
         base.OnNetworkSpawn();
         Debug.ClearDeveloperConsole();
         
+    }
+    public NetworkClient GetCurrentNetworkClient()
+    {
+        ulong clientId = NetworkManager.Singleton.LocalClientId;
+        Debug.Log(clientId);
+        if(!NetworkManager.Singleton.ConnectedClients.TryGetValue(clientId, out NetworkClient client))
+        {
+            return null;
+        }
+        Debug.Log("Network Client: ");
+        Debug.Log(client);
+        return client;
+    }
+    public CharacterNetworkingScript GetNetworkingScript(NetworkClient client)
+    {
+        if (!client.PlayerObject.TryGetComponent<CharacterNetworkingScript>(out var networkingScript))
+        {
+            return null;
+        }
+        Debug.Log("Networking script:");
+        Debug.Log(networkingScript);
+        return networkingScript;
     }
 }

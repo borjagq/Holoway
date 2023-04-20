@@ -53,5 +53,9 @@ public class ChangeScene : MonoBehaviour
         }
         
     }
+    public void ShutdownNetworkManager()
+    {
+        GlobalGameSettings.Instance.NetworkSettings.ShutdownNetworkManager();
+    }
    
 }

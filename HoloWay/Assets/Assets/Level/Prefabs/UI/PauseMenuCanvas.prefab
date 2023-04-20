@@ -1166,8 +1166,16 @@ PrefabInstance:
       value: 'Micrphone: On'
       objectReference: {fileID: 0}
     - target: {fileID: 3815192047006751238, guid: f072394e30eadd64193b66e09a05dccd, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815192047006751238, guid: f072394e30eadd64193b66e09a05dccd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815192047006751238, guid: f072394e30eadd64193b66e09a05dccd, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f072394e30eadd64193b66e09a05dccd, type: 3}
@@ -4913,7 +4921,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4924,11 +4936,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6555833235008308385}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6555833235008308385}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnButtonClick
       objectReference: {fileID: 0}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShutdownNetworkManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: MoveToScene
       objectReference: {fileID: 0}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
@@ -4940,7 +4964,15 @@ PrefabInstance:
       value: ChangeScene, Scripts
       objectReference: {fileID: 0}
     - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ChangeScene, Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857879242509964786, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5041846373454129311, guid: 92b71368236a9d243925593e968fcfdd, type: 3}
