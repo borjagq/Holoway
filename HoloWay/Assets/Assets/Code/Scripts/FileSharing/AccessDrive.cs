@@ -14,7 +14,10 @@ public class AccessDrive : MonoBehaviour
     private Material InterfaceMaterial;
     [SerializeField]
     private GameObject ButtonPrefab;
-
+    [SerializeField]
+    private GameObject canvas;
+    [SerializeField]
+    private GameObject Content;
 
     public static string userSharingToken;
     public static string userSharingID;
@@ -29,7 +32,7 @@ public class AccessDrive : MonoBehaviour
     void Update()
     {
         // Check if the player has hit the magic sphere to share them all.
-        if (CastRay.hasHit("ShareFileInterface", Camera.main))
+        if (Input.GetMouseButtonDown(0) && CastRay.hasHit("ShareFileInterface", Camera.main))
         {
             // Get the API parameters.
             this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
@@ -48,7 +51,7 @@ public class AccessDrive : MonoBehaviour
             userSharingID = LoginSession.user_id;
 
             // Enable Canvas
-            GameObject.Find("Canvas").SetActive(true);
+            canvas.SetActive(true);
 
             // Change Material
             GameObject.Find("ShareFileInterface").GetComponent<MeshRenderer>().material = InterfaceMaterial;
@@ -73,18 +76,25 @@ public class AccessDrive : MonoBehaviour
 
         // Iterate through files.
         foreach (HoloFile file in files) 
-        {
+        {   
+            Debug.Log(file.id);
             ids.Add(file.id);
             names.Add(file.name);
         }
-
-        AddItemsToList(names, ids);
+        
+        for(int i = 0; i < names.Count; i++) {
+            GameObject fileButton = Instantiate(ButtonPrefab, new Vector3(0.0f,0.0f, 0.0f), Quaternion.identity);
+            fileButton.GetComponent<ID>().id = ids[i];
+            fileButton.transform.GetChild(0).GetComponent<TMP_Text>().text = names[i];
+            fileButton.transform.SetParent(Content.transform, false);
+        }
+        //AddItemsToList(names, ids);
     }
 
     private void AddItemsToList(List<string> _filesName, List<string> _filesID)
     {
         GameObject Content = GameObject.Find("Content");
-        for(int i = 0; i < filesName.Count; i++) {
+        for(int i = 0; i < _filesName.Count; i++) {
             GameObject fileButton = Instantiate(ButtonPrefab, new Vector3(0.0f,0.0f, 0.0f), Quaternion.identity);
             fileButton.GetComponent<ID>().id = _filesID[i];
             fileButton.transform.GetChild(0).GetComponent<TMP_Text>().text = _filesName[i];

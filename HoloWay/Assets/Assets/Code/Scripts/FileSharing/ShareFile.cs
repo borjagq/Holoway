@@ -9,13 +9,15 @@ public class ShareFile : MonoBehaviour
 {
     [SerializeField]
     private Material FileisReadyMaterial;
-    
+    [SerializeField]
+    private GameObject canvas;
     public static string SharedFileId;
     public static string SharedFileName;
     public static bool fileIsShared = false;
+    
     public void shareFile() {
         // Disable Canvas and empty objects
-        GameObject.Find("Canvas").SetActive(false);
+        canvas.SetActive(false);
         // Change Material of the other sphere
         GameObject.Find("GetFileInterface").GetComponent<MeshRenderer>().material = FileisReadyMaterial;
         // update Global variable with the file name/ID

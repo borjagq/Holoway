@@ -374,6 +374,8 @@ namespace holowayapi
 
                 done(status, msg);
 
+            }else {
+                Debug.Log("error");
             }
 
         }

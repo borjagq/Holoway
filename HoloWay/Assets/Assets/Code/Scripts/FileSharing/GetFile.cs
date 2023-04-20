@@ -20,7 +20,7 @@ public class GetFile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CastRay.hasHit("GetFileInterface", Camera.main) && ShareFile.fileIsShared) {
+        if (Input.GetMouseButtonDown(0) && CastRay.hasHit("GetFileInterface", Camera.main) && ShareFile.fileIsShared) {
             string userToken = LoginSession.token;
             string userID = LoginSession.user_id;
 
@@ -29,7 +29,7 @@ public class GetFile : MonoBehaviour
 
             string filesName = ShareFile.SharedFileName;
             string fileId = ShareFile.SharedFileId;
-
+            Debug.Log("Hi i'm here");
             // Get the API parameters.
             this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
             this.priv_key = Application.dataPath + "/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
@@ -46,6 +46,7 @@ public class GetFile : MonoBehaviour
 
     void SharedDone(string status, string msg)
     {
+        Debug.Log("Status shared " + status);
         if (status != "success")
             return;
         
