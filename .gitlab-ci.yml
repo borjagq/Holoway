@@ -8,7 +8,7 @@ variables:
   UNITY_ACTIVATION_FILE: /home/gitlab-runner/Unity/Keys//Unity_v2021.3.17f1.alf
   IMAGE: unityci/editor
   IMAGE_VERSION: 1
-  UNITY_DIR: /home/gitlab-runner/Unity/Editor/Unity
+  UNITY_DIR: ${CI_PROJECT_DIR}/HoloWay
   VERSION_NUMBER_VAR: $CI_COMMIT_REF_SLUG-$CI_PIPELINE_ID-$CI_JOB_ID
   VERSION_BUILD_VAR: $CI_PIPELINE_IID
 
@@ -20,7 +20,8 @@ get-unity-version:
   variables:
     GIT_DEPTH: 1
   script:
-    - echo $CI_PROJECT_DIR
+    - echo "${CI_PROJECT_DIR}/HoloWay"
+    - echo "$UNITY_DIR"
     - echo UNITY_VERSION=$(cat $UNITY_DIR/ProjectSettings/ProjectVersion.txt | grep "m_EditorVersion:.*" | awk '{ print $2}') | tee prepare.env
   artifacts:
     reports:
