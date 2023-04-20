@@ -22,7 +22,7 @@ public class LoginManager : MonoBehaviour
     {
         //GlobalGameSettings.CreateInstance();
         this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
-        this.priv_key = Application.dataPath + "/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
+        this.priv_key = Credentials.creds[api_key];
 
         GameObject LoginCodeText = GameObject.Find("LoginCode");
         HolowayAPI api = LoginCodeText.AddComponent<HolowayAPI>();

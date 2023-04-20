@@ -398,7 +398,7 @@ namespace holowayapi
             {
 
                 // Load the private key.
-                rsa.FromXmlString(File.ReadAllText(priv_key));
+                rsa.FromXmlString(priv_key);
                 sharedParameters = rsa.ExportParameters(false);
 
                 // Get the signer with the padding settings.

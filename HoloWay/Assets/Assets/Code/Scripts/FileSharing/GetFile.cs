@@ -32,7 +32,7 @@ public class GetFile : MonoBehaviour
             Debug.Log("Hi i'm here");
             // Get the API parameters.
             this.api_key = "N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8";
-            this.priv_key = Application.dataPath + "/Assets/Code/Scripts/HolowayAPI/N7e9vMq3BMmD84XxwUI4Vhq1snt7iBe8.xml";
+            this.priv_key = Credentials.creds[api_key];
 
             // Create the api instance and pass the parameters.
             GameObject APIManager = GameObject.Find("APIManager");
