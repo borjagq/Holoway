@@ -9,11 +9,12 @@ public class CharacterNetworkInitializer : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!IsOwner) return;
         Debug.Log("Called On NetworkSpawn");
-        /*NetworkScript = this.gameObject.GetComponent<CharacterNetworkingScript>();*/
-        NetworkClient client = this.GetCurrentNetworkClient();
-        NetworkScript = this.GetNetworkingScript(client);
-        //Debug.Log("Network Script:");
+        NetworkScript = this.gameObject.GetComponent<CharacterNetworkingScript>();
+        //NetworkClient client = this.GetCurrentNetworkClient();
+        //NetworkScript = this.GetNetworkingScript(client);
+        Debug.Log("Network Script:");
 
         
         if (NetworkScript != null)
@@ -33,7 +34,6 @@ public class CharacterNetworkInitializer : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
-        Debug.ClearDeveloperConsole();
         
     }
     public NetworkClient GetCurrentNetworkClient()

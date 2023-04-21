@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12729394, g: 0.1341429, b: 0.121147014, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c6eb1147470a4abcec9a8af2e264c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginCodeText: {fileID: 1813557661}
 --- !u!1 &746511587
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +720,7 @@ GameObject:
   - component: {fileID: 1813557660}
   - component: {fileID: 1813557662}
   - component: {fileID: 1813557661}
+  - component: {fileID: 1813557663}
   m_Layer: 5
   m_Name: LoginCode
   m_TagString: Untagged
@@ -843,6 +845,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813557659}
   m_CullTransparentMesh: 1
+--- !u!114 &1813557663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813557659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 444308159}
+          m_TargetAssemblyTypeName: LoginManager, Scripts
+          m_MethodName: OnMouseClickLoginCode
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &798884599549650323
 MonoBehaviour:
   m_ObjectHideFlags: 0

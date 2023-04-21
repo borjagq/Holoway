@@ -9,6 +9,7 @@ using holowayapi;
 
 public class LoginManager : MonoBehaviour
 {
+    public TMP_Text LoginCodeText;
 
     private string api_key;
     private string priv_key;
@@ -186,5 +187,15 @@ public class LoginManager : MonoBehaviour
         Debug.Log("msg: " + msg);
 
     }
-
+    public void OnMouseClickLoginCode()
+    {
+        Debug.Log("Clicked on the text!");
+        Debug.Log(LoginCodeText.text);
+        if (LoginCodeText != null) {
+            if (LoginCodeText.text != "" && LoginCodeText.text.Length > 0)
+            {
+                GUIUtility.systemCopyBuffer = LoginCodeText.text;
+            }
+        }
+    }
 }

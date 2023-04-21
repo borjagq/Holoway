@@ -19,6 +19,8 @@ public class CharacterNetworkingScript : NetworkBehaviour
     public TMP_Text NetworkPlayerNameText;
     public DynamicCharacterAvatar Avatar;
     public string AvatarRecipe = "";
+
+    public GameObject SpawnLocation;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,5 +70,11 @@ public class CharacterNetworkingScript : NetworkBehaviour
     public void AvatarRecipeChangeServerRpc(FixedString4096Bytes name)
     {
         Network_PlayerAvatarRecipe.Value = name;
+    }
+
+    [ClientRpc]
+    public void SpawnPlayerOnDefaultLocationClientRpc(Vector3 spawn_position)
+    {
+        this.transform.position = spawn_position;
     }
 }

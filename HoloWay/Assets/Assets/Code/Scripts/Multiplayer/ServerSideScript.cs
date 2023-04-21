@@ -32,9 +32,10 @@ public class ServerSideScript : NetworkBehaviour
             if(ClientPlayer != null)
             {
                 Debug.Log($"Spawning {obj} on default spawn location: " + DefaultSpawnPosition.transform.position);
-                if (ServerHasDefaultSpawnPosition) {
+                ClientPlayer.GetComponent<CharacterNetworkingScript>().SpawnPlayerOnDefaultLocationClientRpc(DefaultSpawnPosition.transform.position);
+                /*if (ServerHasDefaultSpawnPosition) {
                     ClientPlayer.transform.position = DefaultSpawnPosition.transform.position;
-                }
+                }*/
             }
         }
     }

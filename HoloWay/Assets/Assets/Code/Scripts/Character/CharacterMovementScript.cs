@@ -65,6 +65,7 @@ public class CharacterMovementScript : NetworkBehaviour
                 break;
             }
         }
+        GlobalGameSettings.Instance.GameState.SetGameState(GameState.InGame);
     }
 
     // Update is called once per frame
@@ -180,8 +181,5 @@ public class CharacterMovementScript : NetworkBehaviour
             CameraHolder.transform.Rotate(new Vector3(mouseY * MouseSensitivityY / 50.0f, 0.0f, 0.0f));
             CameraSocket.transform.Rotate(new Vector3(0.0f, mouseX * MouseSensitivityX / 50.0f, 0.0f));
         }
-    }
-    public void DetectKeyPresses()
-    {
     }
 }
