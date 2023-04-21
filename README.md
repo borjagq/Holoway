@@ -97,16 +97,20 @@ To get a local copy up and running follow these simple example steps.
 1. Install Unity editor version **2021.3.17f1** using [Unity Hub](https://docs.unity3d.com/2018.2/Documentation/Manual/GettingStartedInstallingHub.html). 
 
 
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+### Opening project
 
 1. Clone the repo
    ```sh
    git clone https://gitlab.scss.tcd.ie/cs7cs3-group-3/holoway
    ```
-2. Open the project in Unity.
-3. Build and run the project from Unity editor.
+2. Open Unity Hub
+3. Inside Unity Hub, browse the project and open it with Unity Editor **2021.3.17f1**.
+
+### Build the project
+
+1. In Unity, go to file > build and run.
+2. Wait until the process is completed.
+3. Get the executable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,11 +133,11 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] Reset cookies when logout (NB+BGQ)
 - [x] Whiteboard complex algorithm (NB+BGQ)
 - [x] Voice implementation (SJ+JL)
+- [x] All functionalities in VR (SCIT)
+- [x] Raytracing (NB+BGQ)
+- [x] Shared documents (using GDocs or whatever)
 - [ ] Multiplayer in VR (HG+SS)
-- [ ] All functionalities in VR (SCIT)
 - [ ] Report writing (ALL)
-- [ ] Raytracing (NB+BGQ)
-- [ ] Shared documents (using GDocs or whatever)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
