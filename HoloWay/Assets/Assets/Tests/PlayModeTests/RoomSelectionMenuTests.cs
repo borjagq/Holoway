@@ -122,7 +122,7 @@ public class RoomSelectionMenuTests
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
         yield return new WaitForSeconds(5f);
-        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+        Assert.AreEqual(8, SceneManager.GetActiveScene().buildIndex);
     }
 
     [UnityTest]
@@ -133,7 +133,7 @@ public class RoomSelectionMenuTests
         Button button = Object.GetComponent<Button>();
         button.onClick.Invoke();
         yield return new WaitForSeconds(5f);
-        Assert.AreEqual(8, SceneManager.GetActiveScene().buildIndex);
+        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
     }
 
     [UnityTest]

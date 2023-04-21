@@ -67,7 +67,7 @@ public class RoomCreationMenuTests
         ButtonInput.text = "small";
         ButtonInput.onEndEdit.Invoke(ButtonInput.text);
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -80,8 +80,8 @@ public class RoomCreationMenuTests
         ButtonInput.text = "medium";
         ButtonInput.onEndEdit.Invoke(ButtonInput.text);
 
-        yield return new WaitForSeconds(5f);
-        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(3f);
+        Assert.AreEqual(8, SceneManager.GetActiveScene().buildIndex);
     }
 
     [UnityTest]
@@ -93,7 +93,7 @@ public class RoomCreationMenuTests
         ButtonInput.text = "large";
         ButtonInput.onEndEdit.Invoke(ButtonInput.text);
 
-        yield return new WaitForSeconds(5f);
-        Assert.AreEqual(7, SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(3f);
+        Assert.AreEqual(9, SceneManager.GetActiveScene().buildIndex);
     }
 }

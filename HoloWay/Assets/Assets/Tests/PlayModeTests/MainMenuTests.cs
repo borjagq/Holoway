@@ -115,7 +115,7 @@ public class MainMenuTests
     public IEnumerator Test_MainCamera()
     {
         yield return null;
-        GameObject Object = GameObject.Find("Main Camera");
+        GameObject Object = GameObject.Find("Camera");
         Assert.NotNull(Object);
     }
 
