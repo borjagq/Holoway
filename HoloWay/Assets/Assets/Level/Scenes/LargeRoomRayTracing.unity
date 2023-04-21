@@ -817,12 +817,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068788471}
   m_LocalRotation: {x: -0, y: -0.9396258, z: -0, w: 0.34220386}
-  m_LocalPosition: {x: 19.096, y: 3.523, z: 10.045}
+  m_LocalPosition: {x: 8.350929, y: 2.2078617, z: 17.47896}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1974444568}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -139.978, z: 0}
 --- !u!114 &1068788476
 MonoBehaviour:
@@ -2036,6 +2036,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2bb51624826b94d9f5c3e7567471d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1974444566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974444568}
+  - component: {fileID: 1974444567}
+  m_Layer: 0
+  m_Name: RayTracingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974444567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974444566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d210c618b62f14c9671b73ac635af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayTracingCam: {fileID: 1068788471}
+--- !u!4 &1974444568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974444566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.745071, y: 1.3151383, z: -7.4339595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1068788475}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3103175660525111756
 PrefabInstance:
   m_ObjectHideFlags: 0

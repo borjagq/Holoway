@@ -22,7 +22,6 @@ using UnityEngine;
         private RenderTexture _converged;
         public int SphereSeed;
 
-
         struct Sphere
         {
             public Vector3 position;
@@ -218,6 +217,7 @@ using UnityEngine;
                 _currentSample = 0;
                 transform.hasChanged = false;
             }
+            
         }
         private void SetShaderParameters()
         {
