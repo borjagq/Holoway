@@ -99,14 +99,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Opening project
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Clone the repo
    ```sh
    git clone https://gitlab.scss.tcd.ie/cs7cs3-group-3/holoway
    ```
 2. Open Unity Hub
 3. Inside Unity Hub, browse the project and open it with Unity Editor **2021.3.17f1**.
+
+### Build the project
+
+1. In Unity, go to file > build and run.
+2. Wait until the process is completed.
+3. Get the executable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
