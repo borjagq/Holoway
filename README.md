@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://azure.borjagq.com/resources/logo/logo.png" alt="Logo" width="240">
+  <img src="https://github.com/borjagq/Holoway/blob/main/API/resources/logo/logo.png?raw=true" alt="Logo" width="240">
 
   <br />
 
@@ -12,7 +11,6 @@
     Advanced Software Engineering (CS7CS3-202223), Trinity College, The University of Dublin
     <br />
     <br />
-    <!--<a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>-->
   </p>
   <span align="center"> 
   
@@ -35,44 +33,45 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#opening-project">Opening project</a></li>
+        <li><a href="#build-the-project">Build the project</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#authors">Authors</a></li>
+    <li><a href="#acknowledgement">Acknowledgement</a></li>
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
-The goal of this project is to create a virtual meeting application that would allow people to have remote meetings in a virtual reality environment. This application will work with a virtual reality headset and will allow the users to interact with each other and with other objects in the virtual meeting rooms. Users who don’t have a virtual reality headset will also be able to join the conference rooms via a web application and see the virtual view in their web browser (and possibly interact with it). Users will also be able to share content with each other like sharing their desktop screen, sharing their webcam or sharing some files with each other. It will be possible to have multiple meetings taking place at the same time in different meeting rooms.
+<p style="display: flex; justify-content: center;">
+  <img src="https://github.com/borjagq/Holoway/blob/main/Screenshots/ChooseRoom.png?raw=true" alt="Choose room" width="50%">
+  <img src="https://github.com/borjagq/Holoway/blob/main/Screenshots/CreateCharacter.png?raw=true" alt="Create character" width="50%">
+</p>
 
-In the application, each user will be able to create or join a meeting room (via the web app or the headset app), see and hear their colleagues and interact with them in real-time, share some content via their web application (from their desktop), interact with other objects (some interaction functionalities like drawing in VR, playing some games and manipulating objects) and move inside the meeting room, use a Google Drive integration to share and save files, and leave the meeting room. The users would also be able to join the meeting with both apps at the same time (to be able to use both apps functionalities)
+This project aims to develop a virtual meeting application facilitating remote meetings within a virtual reality (VR) environment. The application will be compatible with VR headsets, enabling users to interact with each other and manipulate objects within virtual meeting rooms. Additionally, individuals without a VR headset can participate through a web application, accessing the virtual environment via their web browser and potentially engaging in interactions.
 
-Some of the major challenges of this project include the networking part where we allow multiple people to join the virtual meeting rooms, the screen streaming and webcam streaming, sharing the gesture tracking and head movement tracking of the people in the meeting, allowing users to draw in real-time and to make the application cross-platform between the web browser and VR. And If time allows it, we would also like to work on rendering real-time avatars and lip-synching with ambient audio (audio that takes into account users positions) and potentially integrate a web browser inside the application.
+Users can share various content, such as their desktop screens, webcams, or files, fostering collaborative communication. The application will accommodate multiple concurrent meetings in separate rooms.
 
-The meeting room should:
- 
-* Support interaction with the environment through a headset: For example, the user should be able to write on a blackboard existing in the VR scene;
-* From a web application, enable a user to look around the VR scene, and have interactions similar to the headset application;
-* Support the hharing documents (Web and VR). Both applications should be able to share the documents with the other users in the room;
-* Support sharing webcam, screen, and voice (WebApp);
-* Support a connection between the WebApp and VR app;
-* Support the user to see what their teammates are doing in real time (their exact motion in real-time);
-* Support multiple users joining the meeting rooms, with voice transmission.
+Within the application, users can create or join meeting rooms through either the web or headset app. They can visualize and hear colleagues in real-time, share content through the web application, interact with objects (including drawing in VR, playing games, and manipulating objects), move within the meeting room, utilize Google Drive integration for file sharing, and exit the meeting room. Users will also have the option to join a meeting simultaneously using both the web and headset apps to access their respective functionalities.
+
+Major project challenges include developing networking capabilities for multiple participants in virtual meeting rooms, implementing screen and webcam streaming, sharing gesture and head movement tracking, enabling real-time drawing, and ensuring cross-platform functionality between web browsers and VR. Time permitting, the project aims to incorporate real-time avatar rendering and lip-synching synchronized with ambient audio and potentially integrate a web browser within the application.
+
+Key features of the meeting room include:
+
+- **Headset Interaction:** Users can interact with the VR environment, such as writing on a blackboard within the scene.
+- **Web Application Interaction:** The web application allows users to explore the VR scene, providing interactions akin to the headset application.
+- **Document Sharing:** Both web and VR applications support sharing documents with other users in the meeting room.
+- **Media Sharing:** Users can share their webcams, screens, and voices through the web application.
+- **Cross-Platform Connection:** Seamless connectivity between the web application and the VR app.
+- **Real-Time Observation:** Users can observe teammates' actions in real-time, including their exact motions.
+- **Multi-User Support:** The application accommodates multiple users in meeting rooms with voice transmission capabilities.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<!-- BUILT WITH -->
 ### Built With
 
 </br>
@@ -81,11 +80,7 @@ The meeting room should:
 
 This project has been developed using Unity version **2021.3.17f1**.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -96,12 +91,11 @@ To get a local copy up and running follow these simple example steps.
 
 1. Install Unity editor version **2021.3.17f1** using [Unity Hub](https://docs.unity3d.com/2018.2/Documentation/Manual/GettingStartedInstallingHub.html). 
 
-
 ### Opening project
 
 1. Clone the repo
    ```sh
-   git clone https://gitlab.scss.tcd.ie/cs7cs3-group-3/holoway
+   git clone https://github.com/borjagq/Holoway.git
    ```
 2. Open Unity Hub
 3. Inside Unity Hub, browse the project and open it with Unity Editor **2021.3.17f1**.
@@ -114,53 +108,27 @@ To get a local copy up and running follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- DEMO -->
+## Demo
 
+[![Watch the demo](https://img.youtube.com/vi/urFtMEx67wU/0.jpg)](https://www.youtube.com/watch?v=urFtMEx67wU)
 
-<!-- ROADMAP -->
-## Current sprint
+<!-- AUTHORS -->
+## Authors
 
-### Pairs
-
-* Pair 1: Siddharth Shenoy, Hamza Gabajiwala
-* Pair 2: Nour Boulahcen, Borja García Quiroga
-* Pair 3: Shuo Jia, Jiyuan Liu, Stefan-Catalin Iscru-Togan
-
-### Roadmap
-
-- [x] General refactoring (ALL)
-- [x] Review tests (ALL)
-- [x] Login linked with menu (NB+BGQ)
-- [x] Reset cookies when logout (NB+BGQ)
-- [x] Whiteboard complex algorithm (NB+BGQ)
-- [x] Voice implementation (SJ+JL)
-- [x] All functionalities in VR (SCIT)
-- [x] Raytracing (NB+BGQ)
-- [x] Shared documents (using GDocs or whatever)
-- [ ] Multiplayer in VR (HG+SS)
-- [ ] Report writing (ALL)
+* Nour Boulahcen ([@mor3s](https://github.com/mor3s))
+* Hamza Gabajiwala ([@hamzzgab](https://github.com/hamzzgab))
+* Borja García Quiroga ([@borjagq](https://github.com/borjagq))
+* Siddharth Shenoy ([@siddhshenoy](https://github.com/siddhshenoy))
+* Stefan-Catalin Iscru-Togan
+* Shuo Jia
+* Jiyuan Liu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
+<!-- ACKNOWLEDGEMENT -->
 ## Acknowledgement
 
 This project has been developed in partial fulfillment of the requirements for the MSc in Computer Science, Augmented and Virtual Reality at Trinity College, The University of Dublin, 2022-2023.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Authors
-
-* Nour Boulahcen (boulahcn@tcd.ie)
-* Hamza Gabajiwala (gabajiwh@tcd.ie)
-* Borja García Quiroga (garcaqub@tcd.ie)
-* Stefan-Catalin Iscru-Togan (iscrutos@tcd.ie)
-* Shuo Jia (jiash@tcd.ie)
-* Jiyuan Liu (jliu7@tcd.ie)
-* Siddharth Shenoy (shenoys@tcd.ie)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
