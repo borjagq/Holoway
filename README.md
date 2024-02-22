@@ -121,7 +121,7 @@ To get a local copy up and running follow these simple example steps.
 * Borja García Quiroga ([@borjagq](https://github.com/borjagq))
 * Siddharth Shenoy ([@siddhshenoy](https://github.com/siddhshenoy))
 * Stefan-Catalin Iscru-Togan
-* Shuo Jia
+* Shuo Jia([@uchihaseki](https://github.com/uchihaseki))
 * Jiyuan Liu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
